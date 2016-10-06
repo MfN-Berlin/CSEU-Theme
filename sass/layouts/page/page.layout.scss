@@ -1,0 +1,71 @@
+@import 'singularitygs';
+@import 'breakpoint';
+@import 'bourbon';
+
+@import '../../variables/sizes';
+@import '../../variables/variables';
+
+// Sidebars
+
+// Mobile first
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  @include grid-span(1,1);
+  margin-bottom: $vert-spacing-unit;
+}
+// Tab: 8 4
+@include breakpoint($tab, true) {
+  @include layout($grid: 8 4) {
+    .has-sidebar-first,
+    .has-sidebar-second,
+    .has-two-sidebars {
+      .l-content {
+        @include grid-span(1, 1);
+      }
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+        @include grid-span(1, 2);
+        clear: right;
+      }
+    }
+  }  
+}
+// Desktop: 4 8 4
+@include breakpoint($desk, true) {
+  @include layout($grid: 4 8 4) {
+    .has-sidebar-first {
+      .l-content {
+        @include grid-span(2, 2);
+      }
+      .l-region--sidebar-first {
+        @include grid-span(1, 1);
+      }
+    }
+    .has-sidebar-second {
+      .l-content {
+        @include grid-span(2, 1);
+      }
+      .l-region--sidebar-second {
+        @include grid-span(1, 3);
+        clear: none;
+      }
+    }
+  
+    .has-two-sidebars {
+      .l-content {
+        @include grid-span(1, 2);
+      }
+      .l-region--sidebar-first {
+        @include grid-span(1, 1);
+      }
+      .l-region--sidebar-second {
+        @include grid-span(1, 3);
+        clear: none;
+      }
+    }
+  }  
+}
+
+
+
+

@@ -1,5 +1,5 @@
 name = CSEU Theme
-description = Please provide a description for your theme.
+description = Omega 4 based theme for the CSEU portal.
 base theme = omega
 screenshot = screenshot.png
 engine = phptemplate
@@ -19,12 +19,25 @@ scripts[] = js/cseu-theme.behaviors.js
 ; ========================================
 ; Regions
 ; ========================================
-regions[branding] = Branding
-regions[header] = Header
-regions[navigation] = Navigation
-regions[highlighted] = Highlighted
-regions[help] = Help
-regions[content] = Content
-regions[sidebar_first] = First Sidebar
-regions[sidebar_second] = Second Sidebar
-regions[footer] = Footer
+regions[branding]       = Branding
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+
+regions[featured]       = Featured
+regions[slider]         = Slider
+regions[news]           = News
+regions[misc]           = Miscellaneous
+
+regions[sidebar_first]  = First sidebar
+regions[sidebar_second] = Second sidebar
+
+regions[footer]         = Footer
+regions[footer_first]   = Footer First
+regions[footer_second]  = Footer Second
+regions[footer_third]   = Footer Third
+regions[footer_fourth]  = Footer Fourth
+regions[footer_fifth]   = Footer Fifth
+regions[footer_sixth]   = Footer Sixth

@@ -11,6 +11,11 @@
     "gulp-autoprefixer": "^2.3.1",
     "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-watch": "^4.3.3"
+    "gulp-watch": "^4.3.3",
+
+    "gulp-livereload": "^3.8.0",
+    "breakpoint-sass": "^2.6.0",
+    "singularitygs":"^1.6.2",
+    "bourbon": "^4.2.3"
   }
 }
