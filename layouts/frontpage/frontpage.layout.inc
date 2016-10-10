@@ -20,8 +20,7 @@ regions[footer_first]   = Footer First
 regions[footer_second]  = Footer Second
 regions[footer_third]   = Footer Third
 regions[footer_fourth]  = Footer Fourth
-regions[footer_fifth]   = Footer Fifth
-regions[footer_sixth]   = Footer Sixth
+regions[footer_bottom]  = Footer Bottom
 
 ; Stylesheets
 stylesheets[all][] = css/layouts/frontpage/frontpage.layout.css

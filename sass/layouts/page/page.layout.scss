@@ -7,11 +7,13 @@
 
 // Sidebars
 
-// Mobile first
+// Mobile first: 1
 .l-region--sidebar-first,
 .l-region--sidebar-second {
-  @include grid-span(1,1);
-  margin-bottom: $vert-spacing-unit;
+  @include layout(1) {
+    @include grid-span(1,1);
+    margin-bottom: $vert-spacing-unit;    
+  }
 }
 // Tab: 8 4
 @include breakpoint($tab, true) {

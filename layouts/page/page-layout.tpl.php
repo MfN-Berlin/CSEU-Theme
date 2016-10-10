@@ -50,7 +50,6 @@
         <?php print render($page['footer_second']); ?>
         <?php print render($page['footer_third']); ?>
         <?php print render($page['footer_fourth']); ?>
-        <?php print render($page['footer_fifth']); ?>
-        <?php print render($page['footer_sixth']); ?>
+        <?php print render($page['footer_bottom']); ?>
     </footer>
 </div>
