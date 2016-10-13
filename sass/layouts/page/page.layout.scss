@@ -6,13 +6,13 @@
 @import '../../variables/variables';
 
 // Sidebars
-
 // Mobile first: 1
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   @include layout(1) {
     @include grid-span(1,1);
-    margin-bottom: $vert-spacing-unit;    
+    margin-bottom: $vert-spacing-unit;
+    padding-left: $horz-spacing-unit;
   }
 }
 // Tab: 8 4

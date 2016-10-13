@@ -5,7 +5,8 @@
   margin-left: 0;
   margin-right: 0;
   clear: none;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  padding-left: 1em; }
 
 @media (min-width: 540px) {
   .has-sidebar-first .l-content,
@@ -29,7 +30,7 @@
     clear: none;
     clear: right; } }
 
-@media (min-width: 1024px) {
+@media (min-width: 980px) {
   .has-sidebar-first .l-content {
     width: 74.24242%;
     float: right;

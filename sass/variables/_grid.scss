@@ -14,10 +14,23 @@
 .l-region--misc,
 .l-region--footer-bottom, {
   @include grid-span(1,1);
-  margin-bottom: $vert-spacing-unit;
   //@include clearfix;
 }
+.l-page,
+.l-main,
+.l-footer,
+.l-content,
+.l-region--highlighted,
+.l-region--featured,
+.l-region--slider,
+.l-region--misc,
+.l-region--footer-bottom, {
+  margin-bottom: $vert-spacing-unit;
+}
 
+//
+// HEADER
+//
 // Tab: 12
 @include breakpoint($tab, true) {
   @include layout($grid: 8 4, $gutter: .1) {
@@ -53,17 +66,9 @@
 }
 
 
-// Content
-.l-content {
-  @include breakpoint($tab) {
-    //padding: 0 8px;
-  }
-  @include breakpoint($desk) {
-    padding: 0 $content-padding;
-  }
-}
-
-
+//
+// FOOTER
+//
 // Footer
 @include breakpoint($tab, true) {
   @include layout(2) {
