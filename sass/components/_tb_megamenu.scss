@@ -1,0 +1,51 @@
+.tb-megamenu {
+  @include breakpoint($desk, true) {
+    background-color: $main_menu_bg_color;
+  }
+
+  .nav-collapse {
+    > .nav {
+      > {
+        li {
+          margin-bottom: 0;
+          > a {
+            //background-color: $main_menu_bg_color;
+            &:hover {
+              color: $main_menu_hover_color;
+              background-color: $main_menu_bg_hover_color;
+            }
+          }
+        }
+      }
+      li.active > a {
+        background-color: $main_menu_bg_active_color;
+        &:hover, &:focus {
+          color: $main_menu_hover_active_color;
+          background-color: $main_menu_bg_active_color;
+        }
+      }    
+    }
+  }
+  
+  .btn-navbar {
+    margin-bottom: 0;
+    width: 50px;
+    height: 40px;
+    color: $main_menu_bg_active_color;
+  }
+  .btn {
+    font-size: 16px;
+    line-height: 18px;
+  }
+  @include breakpoint($tab, true) {
+    .btn-navbar {
+      width: 50px;
+      height: 50px;
+    }
+    .btn {
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }  
+  
+}

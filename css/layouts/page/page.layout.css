@@ -1,3 +1,18 @@
+.l-region--sidebar-first > .block {
+  background-color: #f6f6f2;
+  margin-bottom: 20px;
+  padding: 1em 0; }
+  .l-region--sidebar-first > .block h2.block__title {
+    font-size: 20px;
+    padding: 0 1em;
+    margin: 0; }
+  .l-region--sidebar-first > .block a {
+    text-decoration: none;
+    color: #27688e; }
+    .l-region--sidebar-first > .block a:hover {
+      color: #01a9b3;
+      text-decoration: underline; }
+
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   width: 100%;

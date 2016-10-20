@@ -1,0 +1,31 @@
+@mixin block-heading {
+  font-size: $block-h2-font-size;
+  padding: 0 1em;
+  margin: 0;
+}
+
+@mixin block-links {
+  text-decoration: none;
+  color: $block_link_color;
+  &:hover {
+    color: $block_link_hover_color;
+    text-decoration: underline;
+  }
+}
+
+%block {
+  background-color: $block_bg_color;
+  margin-bottom: $vert-spacing-unit;
+  padding: 1em 0;
+
+  h2.block__title {
+    @include block-heading;
+  }
+  a {
+    @include block-links;
+  }
+}
+
+
+
+

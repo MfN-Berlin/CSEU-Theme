@@ -33,7 +33,7 @@
 //
 // Tab: 12
 @include breakpoint($tab, true) {
-  @include layout($grid: 8 4, $gutter: .1) {
+  @include layout($grid: 4 8, $gutter: .1) {
     .l-branding {
       @include grid-span(1, 1);
     }

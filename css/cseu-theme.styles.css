@@ -28,13 +28,13 @@
 
 @media (min-width: 540px) {
   .l-branding {
-    width: 66.1157%;
+    width: 33.05785%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .l-region--header {
-    width: 33.05785%;
+    width: 66.1157%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -177,15 +177,22 @@ li {
   margin-bottom: 0.7em;
   font-size: 16px; }
 
-@media (min-width: 980px) {
-  .l-header {
-    margin-bottom: 20px; } }
-
 .l-branding {
-  padding: 0 1em; }
+  padding: 20px 1em; }
+  .l-branding img {
+    width: 100%;
+    max-width: 252px;
+    min-width: 252px; }
+    @media (min-width: 980px) {
+      .l-branding img {
+        max-width: 100%; } }
 
 .l-region--header {
   padding: 0 1em; }
+
+@media (min-width: 980px) {
+  .l-header {
+    margin-bottom: 20px; } }
 
 .l-region--navigation {
   padding: 0 1em; }
@@ -198,3 +205,59 @@ li {
 .l-region--footer-third,
 .l-region--footer-fourth {
   padding: 0 1em; }
+
+.block__content a[href],
+.node__content a[href],
+.taxonomy-term__content a[href],
+.view-content a[href],
+.node-readmore a[href] {
+  color: #01a9b3;
+  text-decoration: none; }
+  .block__content a[href]:hover,
+  .node__content a[href]:hover,
+  .taxonomy-term__content a[href]:hover,
+  .view-content a[href]:hover,
+  .node-readmore a[href]:hover {
+    color: #02d6e2;
+    text-decoration: underline; }
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a {
+  color: #27688e;
+  text-decoration: none; }
+
+@media (min-width: 980px) {
+  .tb-megamenu {
+    background-color: #000; } }
+
+.tb-megamenu .nav-collapse > .nav > li {
+  margin-bottom: 0; }
+  .tb-megamenu .nav-collapse > .nav > li > a:hover {
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); }
+
+.tb-megamenu .nav-collapse > .nav li.active > a {
+  background-color: #68696b; }
+  .tb-megamenu .nav-collapse > .nav li.active > a:hover, .tb-megamenu .nav-collapse > .nav li.active > a:focus {
+    color: white;
+    background-color: #68696b; }
+
+.tb-megamenu .btn-navbar {
+  margin-bottom: 0;
+  width: 50px;
+  height: 40px;
+  color: #68696b; }
+
+.tb-megamenu .btn {
+  font-size: 16px;
+  line-height: 18px; }
+
+@media (min-width: 540px) {
+  .tb-megamenu .btn-navbar {
+    width: 50px;
+    height: 50px; }
+  .tb-megamenu .btn {
+    font-size: 24px;
+    line-height: 24px; } }

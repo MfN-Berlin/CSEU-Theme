@@ -3,7 +3,11 @@
 @import 'bourbon';
 
 @import '../../variables/sizes';
+@import '../../variables/fonts';
 @import '../../variables/variables';
+@import '../../variables/colors';
+@import '../../abstractions/mixins';
+@import '../../components/layout/sidebar_first';
 
 // Sidebars
 // Mobile first: 1

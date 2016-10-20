@@ -1,14 +1,21 @@
-@include breakpoint($desk, true) {
-  .l-header {
-    margin-bottom: $vert-spacing-unit;
-  }
-}
-
 .l-branding {
-  padding: 0 $horz-spacing-unit;
+  padding: $vert-spacing-unit $horz-spacing-unit;
+  img {
+    width: 100%;
+    max-width: 252px;
+    min-width: 252px;
+    @include breakpoint($desk, true) {
+      max-width: 100%;
+    }    
+  }
 }
 
 .l-region--header {
   padding: 0 $horz-spacing-unit;
 }
 
+@include breakpoint($desk, true) {
+  .l-header {
+    margin-bottom: $vert-spacing-unit;
+  }
+}
