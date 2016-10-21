@@ -1,0 +1,56 @@
+// Admin
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest label ,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest label,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-assigned label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-chair label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-cochair label,
+#edit-profile-cseu-profile-assignments-field-cseu-task-assigned label {
+  font-size: 140%;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+}
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und label,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und label ,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer-und label {
+  font-size: inherit;
+  margin-bottom: 8px;
+  border-bottom: 0;
+  font-weight: normal;
+}
+.cseu-wg-label-select,
+.cseu-wg-title-select {
+  font-size: 110%;
+  font-weight: normal;
+}
+.cseu-task-wg-label-select,
+.cseu-task-label-select,
+.cseu-task-title-select {
+  font-size: 110%;
+  font-weight: normal;
+}
+.cseu-wg-descr-select,
+.cseu-task-descr-select {
+  display: block;
+  margin-top: 4px;
+}
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und div,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und div {
+  margin: 1em 0;
+}
+
+// Profile
+.field--name-field-cseu-first-name,
+.field--name-field-cseu-last-name,
+.field--name-field-cseu-institution,
+.field--name-field-cseu-telephone,
+.field--name-field-cseu-url,
+.field--name-field-cseu-facebbok,
+.field--name-field-cseu-twitter,
+.field--name-field-cseu-area-expertise,
+.field--name-field-cseu-year-completion-phd,
+.field--name-field-cseu-gender {
+  margin: 8px 0;
+}

@@ -1,0 +1,91 @@
+// Pages
+.view-cseu-tasks-list-view h3 {
+    font-size: 50%;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+}
+.cseu-wg-list-row,
+.cseu-task-list-row {
+  margin: 1em 0;  
+}
+.cseu-wg-list-name {
+  font-weight: normal;
+}
+.cseu-task-list-name {
+  font-weight: bold;
+}
+
+// Internals
+.view-cseu-internal-user-list-view td,
+.view-cseu-internal-user-interest-view td,
+.view-cseu-internal-users-by-wg-view td,
+.view-cseu-internal-chairs-by-wg-view td,
+.view-cseu-internal-cochairs-by-wg-view td {
+  vertical-align: top;
+}
+.view-cseu-internal-user-list-view .view-footer,
+.view-cseu-internal-user-interest-view .view-footer,
+.view-cseu-internal-user-list-view .view-header,
+.view-cseu-internal-user-interest-view .view-header {
+  margin-bottom: 1em;
+}
+.view-cseu-internal-interest-tasks-view .view-grouping-header {
+  font-size: 120%;
+  margin: 1em 0;
+}
+.view-cseu-internal-interest-wgs-view h3,
+.view-cseu-internal-interest-chair-wg-view h3,
+.view-cseu-internal-interest-cochair-wg-view h3,
+.view-cseu-internal-interest-tasks-view h3,
+.view-cseu-wgs-list-view h3 {
+    margin-bottom: 1em;
+}
+.cseu-interest-by-group-row,
+.cseu-interest-by-task-row,
+.cseu-chairs-by-group-row,
+.cseu-member-subview-row {
+  margin-bottom: 1em;
+}
+.view-cseu-internal-users-by-wg-view caption,
+.view-cseu-internal-chairs-by-wg-view caption,
+.view-cseu-internal-cochairs-by-wg-view caption {
+    font-size: 140%;
+    margin: 1em 0;
+}
+
+// View  Modes
+.user-profile h2 {
+  border-bottom: 2px solid #ccc;   
+}
+.group--cseu-view-mode-wgs,
+.group-cseu-view-mode-tasks {
+  margin: 1em 0;
+}
+.field--name-field-cseu-secondary-proposer .field__label,
+.field--name-field-cseu-group-assigned .field__label,
+.field--name-field-cseu-group-chair .field__label,
+.field--name-field-cseu-group-cochair .field__label,
+.field--name-field-cseu-task-assigned .field__label {
+  font-size: 120%;
+  margin-top: 1em;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal;
+}
+.field--name-field-cseu-secondary-proposer .field__items {
+  margin: 1em 0;
+  .field__item {
+    margin-bottom: 8px;
+  }
+}
+.cseu-view-mode-wgs-field-label,
+.cseu-view-mode-wgs-field-title,
+.cseu-view-mode-tasks-field-wg,
+.cseu-view-mode-tasks-field-label,
+.cseu-view-mode-tasks-field-title,
+.cseu-view-mode-institution-field-title {
+  font-weight: normal;
+}
+.node--cseu-working-group--cseu-ds-view-mode-wgs-label.clearfix::after,
+.view-mode-cseu_ds_view_mode_wgs_label.clearfix::after {
+  display: inline;
+}

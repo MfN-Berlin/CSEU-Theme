@@ -177,6 +177,18 @@ li {
   margin-bottom: 0.7em;
   font-size: 16px; }
 
+fieldset {
+  border: 1px solid #CCC;
+  border-radius: 0;
+  padding: 1.25em;
+  margin: 1.125em 0; }
+  fieldset legend {
+    background: #FFF;
+    padding: 0 0.1875em;
+    margin: 0;
+    margin-left: -0.1875em;
+    font-weight: bold; }
+
 .l-branding {
   padding: 20px 1em; }
   .l-branding img {
@@ -206,18 +218,42 @@ li {
 .l-region--footer-fourth {
   padding: 0 1em; }
 
+table.views-table {
+  width: 100%; }
+  table.views-table tr th {
+    color: #FFF;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.51);
+    border-bottom-style: none; }
+    table.views-table tr th a.active {
+      color: #FFF;
+      text-decoration: none; }
+      table.views-table tr th a.active:hover {
+        color: #FFF;
+        text-decoration: underline; }
+  table.views-table tr th,
+  table.views-table tr td {
+    padding: 8px;
+    border: 1px solid #FFF;
+    text-align: left; }
+
+.feed-icon {
+  margin-top: 1em; }
+
 .block__content a[href],
 .node__content a[href],
 .taxonomy-term__content a[href],
 .view-content a[href],
-.node-readmore a[href] {
+.node-readmore a[href],
+.user-profile a[href] {
   color: #01a9b3;
   text-decoration: none; }
   .block__content a[href]:hover,
   .node__content a[href]:hover,
   .taxonomy-term__content a[href]:hover,
   .view-content a[href]:hover,
-  .node-readmore a[href]:hover {
+  .node-readmore a[href]:hover,
+  .user-profile a[href]:hover {
     color: #02d6e2;
     text-decoration: underline; }
 
@@ -227,6 +263,143 @@ h3 > a,
 h4 > a {
   color: #27688e;
   text-decoration: none; }
+
+.view-cseu-tasks-list-view h3 {
+  font-size: 50%;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd; }
+
+.cseu-wg-list-row,
+.cseu-task-list-row {
+  margin: 1em 0; }
+
+.cseu-wg-list-name {
+  font-weight: normal; }
+
+.cseu-task-list-name {
+  font-weight: bold; }
+
+.view-cseu-internal-user-list-view td,
+.view-cseu-internal-user-interest-view td,
+.view-cseu-internal-users-by-wg-view td,
+.view-cseu-internal-chairs-by-wg-view td,
+.view-cseu-internal-cochairs-by-wg-view td {
+  vertical-align: top; }
+
+.view-cseu-internal-user-list-view .view-footer,
+.view-cseu-internal-user-interest-view .view-footer,
+.view-cseu-internal-user-list-view .view-header,
+.view-cseu-internal-user-interest-view .view-header {
+  margin-bottom: 1em; }
+
+.view-cseu-internal-interest-tasks-view .view-grouping-header {
+  font-size: 120%;
+  margin: 1em 0; }
+
+.view-cseu-internal-interest-wgs-view h3,
+.view-cseu-internal-interest-chair-wg-view h3,
+.view-cseu-internal-interest-cochair-wg-view h3,
+.view-cseu-internal-interest-tasks-view h3,
+.view-cseu-wgs-list-view h3 {
+  margin-bottom: 1em; }
+
+.cseu-interest-by-group-row,
+.cseu-interest-by-task-row,
+.cseu-chairs-by-group-row,
+.cseu-member-subview-row {
+  margin-bottom: 1em; }
+
+.view-cseu-internal-users-by-wg-view caption,
+.view-cseu-internal-chairs-by-wg-view caption,
+.view-cseu-internal-cochairs-by-wg-view caption {
+  font-size: 140%;
+  margin: 1em 0; }
+
+.user-profile h2 {
+  border-bottom: 2px solid #ccc; }
+
+.group--cseu-view-mode-wgs,
+.group-cseu-view-mode-tasks {
+  margin: 1em 0; }
+
+.field--name-field-cseu-secondary-proposer .field__label,
+.field--name-field-cseu-group-assigned .field__label,
+.field--name-field-cseu-group-chair .field__label,
+.field--name-field-cseu-group-cochair .field__label,
+.field--name-field-cseu-task-assigned .field__label {
+  font-size: 120%;
+  margin-top: 1em;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal; }
+
+.field--name-field-cseu-secondary-proposer .field__items {
+  margin: 1em 0; }
+  .field--name-field-cseu-secondary-proposer .field__items .field__item {
+    margin-bottom: 8px; }
+
+.cseu-view-mode-wgs-field-label,
+.cseu-view-mode-wgs-field-title,
+.cseu-view-mode-tasks-field-wg,
+.cseu-view-mode-tasks-field-label,
+.cseu-view-mode-tasks-field-title,
+.cseu-view-mode-institution-field-title {
+  font-weight: normal; }
+
+.node--cseu-working-group--cseu-ds-view-mode-wgs-label.clearfix::after,
+.view-mode-cseu_ds_view_mode_wgs_label.clearfix::after {
+  display: inline; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest label,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest label,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-assigned label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-chair label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-cochair label,
+#edit-profile-cseu-profile-assignments-field-cseu-task-assigned label {
+  font-size: 140%;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und label,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und label,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer-und label {
+  font-size: inherit;
+  margin-bottom: 8px;
+  border-bottom: 0;
+  font-weight: normal; }
+
+.cseu-wg-label-select,
+.cseu-wg-title-select {
+  font-size: 110%;
+  font-weight: normal; }
+
+.cseu-task-wg-label-select,
+.cseu-task-label-select,
+.cseu-task-title-select {
+  font-size: 110%;
+  font-weight: normal; }
+
+.cseu-wg-descr-select,
+.cseu-task-descr-select {
+  display: block;
+  margin-top: 4px; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und div,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und div {
+  margin: 1em 0; }
+
+.field--name-field-cseu-first-name,
+.field--name-field-cseu-last-name,
+.field--name-field-cseu-institution,
+.field--name-field-cseu-telephone,
+.field--name-field-cseu-url,
+.field--name-field-cseu-facebbok,
+.field--name-field-cseu-twitter,
+.field--name-field-cseu-area-expertise,
+.field--name-field-cseu-year-completion-phd,
+.field--name-field-cseu-gender {
+  margin: 8px 0; }
 
 @media (min-width: 980px) {
   .tb-megamenu {

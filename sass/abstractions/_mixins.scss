@@ -1,3 +1,4 @@
+// Blocks
 @mixin block-heading {
   font-size: $block-h2-font-size;
   padding: 0 1em;
@@ -27,5 +28,46 @@
 }
 
 
+// Fieldsets
+$rem-base: 16px !default;
+@function strip-unit($num) {
+  @return $num / ($num * 0 + 1);
+}
+@function convert-to-rem($value, $base-value: $rem-base)  {
+  $value: strip-unit($value) / strip-unit($base-value) * 1em;
+  @if ($value == 0em) { $value: 0; } // Turn 0em into 0
+  @return $value;
+}
+@function rem-calc($values, $base-value: $rem-base) {
+  $max: length($values);
 
+  @if $max == 1 { @return convert-to-rem(nth($values, 1), $base-value); }
+
+  $remValues: ();
+  @for $i from 1 through $max {
+    $remValues: append($remValues, convert-to-rem(nth($values, $i), $base-value));
+  }
+  @return $remValues;
+}
+
+$fieldset_border: 1px solid $fieldset_border_color !default;
+$fieldset_border_radius: 0 !default;
+$fieldset_padding: rem-calc(20) !default;
+$fieldset_margin: rem-calc(18 0) !default;
+$legend_padding: rem-calc(0 3) !default;
+
+%fieldset {
+  border: $fieldset_border;
+  border-radius: $fieldset_border_radius;
+  padding: $fieldset_padding;
+  margin: $fieldset_margin;
+
+  legend {
+    background: $body_bg_color;
+    padding: $legend_padding;
+    margin: 0;
+    margin-left: rem-calc(-3);
+    font-weight: bold;
+  }
+}
 

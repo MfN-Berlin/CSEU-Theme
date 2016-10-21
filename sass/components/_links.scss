@@ -2,7 +2,8 @@
 .node__content a[href],
 .taxonomy-term__content a[href],
 .view-content a[href],
-.node-readmore a[href] {
+.node-readmore a[href],
+.user-profile a[href] {
   color: $link_color;
   text-decoration: none;
   
