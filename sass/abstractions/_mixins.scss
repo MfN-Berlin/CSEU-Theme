@@ -77,8 +77,10 @@ $legend_padding: rem-calc(0 3) !default;
     color: $footer_link_color;
     font-size: $footer-font-size;
     text-transform: uppercase;
+    text-decoration: none;
     &:hover {
       color: $footer_link_hover_color;
+      text-decoration: underline;
     }
     &:active {
       color: $footer_link_hover_color;
