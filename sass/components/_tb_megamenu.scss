@@ -10,7 +10,7 @@
           margin-bottom: 0;
           > a {
             //background-color: $main_menu_bg_color;
-            &:hover {
+            &:hover, &:focus {
               color: $main_menu_hover_color;
               background-color: $main_menu_bg_hover_color;
             }
@@ -48,4 +48,32 @@
     }
   }  
   
+  .dropdown-menu {
+    border-bottom: 3px solid $main_menu_bg_active_color;
+    li > a {
+      color: $block_link_color;
+      &:hover, &:focus {
+        color: $block_link_hover_color;
+      }
+    }
+  }
+  
+  .nav li.dropdown {
+    &.open > .dropdown-toggle {
+      color: $main_menu_hover_color;
+      background-color: $main_menu_bg_hover_color;
+    }
+    &.active > .dropdown-toggle, &.open.active > .dropdown-toggle {
+      background-color: #ff0;
+      color: #f0f;
+    }
+  }
+}
+
+
+.cseu-login-menu-block {
+  background-color: $block_bg_color;
+  .form-submit {
+    margin-top: 1em;
+  }
 }

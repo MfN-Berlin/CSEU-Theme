@@ -56,7 +56,7 @@ $fieldset_padding: rem-calc(20) !default;
 $fieldset_margin: rem-calc(18 0) !default;
 $legend_padding: rem-calc(0 3) !default;
 
-%fieldset {
+@mixin fieldset {
   border: $fieldset_border;
   border-radius: $fieldset_border_radius;
   padding: $fieldset_padding;
@@ -71,3 +71,17 @@ $legend_padding: rem-calc(0 3) !default;
   }
 }
 
+// Footer Menu
+@mixin footer-menu {
+  a {
+    color: $footer_link_color;
+    font-size: $footer-font-size;
+    text-transform: uppercase;
+    &:hover {
+      color: $footer_link_hover_color;
+    }
+    &:active {
+      color: $footer_link_hover_color;
+    }
+  }
+}
