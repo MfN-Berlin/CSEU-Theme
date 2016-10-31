@@ -8,18 +8,15 @@
 @import 'variables/sizes';
 @import 'variables/colors';
 @import 'variables/grid';
-@import 'base/base';
 @import 'abstractions/mixins';
+@import 'base/base';
 
 @import 'components/layout/header';
 @import 'components/layout/navigation';
 @import 'components/layout/content';
 @import 'components/layout/footer';
 
-@import 'components/tables';
 @import 'components/links';
-@import 'components/headings';
-@import 'components/fieldsets';
 @import 'components/views';
 @import 'components/profiles';
 @import 'components/tb_megamenu';

@@ -5,3 +5,8 @@
 @import '../../variables/sizes';
 @import '../../variables/variables';
 
+.l-region--featured,
+.l-region--slider,
+.l-region--misc {
+  @include grid-span(1,1);
+}
