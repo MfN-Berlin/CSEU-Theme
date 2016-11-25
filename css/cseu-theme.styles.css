@@ -1,3 +1,147 @@
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-size: 32px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em; }
+
+h2 {
+  font-size: 24px;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em; }
+
+h3 {
+  font-size: 18px;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+
+h4 {
+  font-size: 16px;
+  margin-top: 1.33em;
+  margin-bottom: 1.33em; }
+
+h5 {
+  font-size: 13px;
+  margin-top: 1.67em;
+  margin-bottom: 1.67em; }
+
+h6 {
+  font-size: 11px;
+  margin-top: 2.33em;
+  margin-bottom: 2.33em; }
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 300;
+  color: black;
+  margin-top: 0em;
+  margin-bottom: 0.7em;
+  text-align: left; }
+
+strong {
+  font-weight: bold; }
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px; }
+
+li {
+  display: list-item;
+  margin-bottom: 0.7em;
+  font-size: 16px; }
+
+fieldset {
+  border: 1px solid #CCC;
+  border-radius: 0;
+  padding: 1.25em;
+  margin: 1.125em 0; }
+  fieldset legend {
+    background: #FFF;
+    padding: 0 0.1875em;
+    margin: 0;
+    margin-left: -0.1875em;
+    font-weight: bold; }
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a {
+  color: #27688e;
+  text-decoration: none; }
+
+.feed-icon {
+  margin-top: 1em; }
+
+input[type=text],
+input[type=password] {
+  max-width: 100%; }
+
+ul.tabs--primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden; }
+  ul.tabs--primary li {
+    display: block;
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    background-color: #f6f6f2; }
+  ul.tabs--primary li.active a {
+    color: #333; }
+  ul.tabs--primary li a {
+    color: #01a9b3;
+    height: 1.8em;
+    line-height: 1.9;
+    display: block;
+    padding: 0 10px 3px;
+    margin: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+  ul.tabs--primary li.active a {
+    background-color: #FFF;
+    color: #333; }
+  ul.tabs--primary a:hover, ul.tabs--primary a:focus {
+    color: #02d6e2;
+    background-color: #68696b; }
+
+ul.tabs--secondary {
+  padding: 0.5em 0;
+  margin: 0;
+  overflow: hidden; }
+  ul.tabs--secondary li {
+    display: block;
+    vertical-align: bottom;
+    margin: 0 5px 0 0;
+    background-color: #f6f6f2; }
+  ul.tabs--secondary li.active a {
+    color: #333; }
+  ul.tabs--secondary li a {
+    color: #01a9b3;
+    height: 1.8em;
+    line-height: 1.9;
+    display: block;
+    padding: 0 10px 3px;
+    margin: 0;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
+  ul.tabs--secondary li.active a {
+    background-color: #FFF;
+    color: #333; }
+  ul.tabs--secondary a:hover, ul.tabs--secondary a:focus {
+    color: #02d6e2;
+    background-color: #68696b; }
+
+.tabs,
+ul.tabs--primary,
+ul.tabs--secondary {
+  margin-bottom: 20px; }
+
 body {
   height: 100%;
   background-color: #FFF; }
@@ -150,91 +294,6 @@ body {
     margin-right: 0;
     clear: none;
     clear: both; } }
-
-* {
-  box-sizing: border-box; }
-
-h1 {
-  font-size: 32px;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em; }
-
-h2 {
-  font-size: 24px;
-  margin-top: 0.83em;
-  margin-bottom: 0.83em; }
-
-h3 {
-  font-size: 18px;
-  margin-top: 1em;
-  margin-bottom: 1em; }
-
-h4 {
-  font-size: 16px;
-  margin-top: 1.33em;
-  margin-bottom: 1.33em; }
-
-h5 {
-  font-size: 13px;
-  margin-top: 1.67em;
-  margin-bottom: 1.67em; }
-
-h6 {
-  font-size: 11px;
-  margin-top: 2.33em;
-  margin-bottom: 2.33em; }
-
-p {
-  font-size: 16px;
-  line-height: 1.6;
-  font-weight: 300;
-  color: black;
-  margin-top: 0em;
-  margin-bottom: 0.7em;
-  text-align: left; }
-
-strong {
-  font-weight: bold; }
-
-ul {
-  display: block;
-  list-style-type: disc;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 40px; }
-
-li {
-  display: list-item;
-  margin-bottom: 0.7em;
-  font-size: 16px; }
-
-fieldset {
-  border: 1px solid #CCC;
-  border-radius: 0;
-  padding: 1.25em;
-  margin: 1.125em 0; }
-  fieldset legend {
-    background: #FFF;
-    padding: 0 0.1875em;
-    margin: 0;
-    margin-left: -0.1875em;
-    font-weight: bold; }
-
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a {
-  color: #27688e;
-  text-decoration: none; }
-
-.feed-icon {
-  margin-top: 1em; }
-
-input[type=text],
-input[type=password] {
-  max-width: 100%; }
 
 .l-branding {
   padding: 20px 1em; }

@@ -7,10 +7,10 @@
 @import 'variables/fonts';
 @import 'variables/sizes';
 @import 'variables/colors';
-@import 'variables/grid';
 @import 'abstractions/mixins';
 @import 'base/base';
 
+@import 'components/layout/grid';
 @import 'components/layout/header';
 @import 'components/layout/navigation';
 @import 'components/layout/content';

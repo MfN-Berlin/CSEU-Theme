@@ -88,5 +88,75 @@ input[type=password] {
   max-width: 100%;
 }
 
+// Tabs
+ul.tabs--primary {
+  padding: 0 3px;
+  margin: 0;
+  overflow: hidden;
+  li {
+      display: block;
+      vertical-align: bottom;
+      margin: 0 5px 0 0;
+      background-color: $tab_bg_color;
+  }
+  li.active a {
+      color: $tab_link_active_color;
+  }
+  li a {
+      color: $tab_link_color;
+      height: 1.8em;
+      line-height: 1.9;
+      display: block;
+      padding: 0 10px 3px;
+      margin: 0;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+  }
+  li.active a {
+      background-color: #FFF;
+      color: $tab_link_active_color;
+  }
+  a:hover, a:focus {
+      color: $tab_link_hover_color;
+      background-color: $tab_bg_hover_color;
+  }
+}  
+ul.tabs--secondary {
+  padding: 0.5em 0;
+  margin: 0;
+  overflow: hidden;
+  li {
+      display: block;
+      vertical-align: bottom;
+      margin: 0 5px 0 0;
+      background-color: $tab_bg_color;
+  }
+  li.active a {
+      color: $tab_link_active_color;
+  }
+  li a {
+      color: $tab_link_color;
+      height: 1.8em;
+      line-height: 1.9;
+      display: block;
+      padding: 0 10px 3px;
+      margin: 0;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+  }
+  li.active a {
+      background-color: #FFF;
+      color: $tab_link_active_color;
+  }
+  a:hover, a:focus {
+      color: $tab_link_hover_color;
+      background-color: $tab_bg_hover_color;
+  }
+}  
+.tabs,
+ul.tabs--primary,
+ul.tabs--secondary {
+  margin-bottom: $vert-spacing-unit;
+}
 
 
