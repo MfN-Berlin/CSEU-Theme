@@ -53,6 +53,30 @@
     margin: 1em 0;
 }
 
+// Emails
+.view-cseu-restricted-emails-by-wg-view,
+.view-cseu-restricted-emails-chairs-view,
+.view-cseu-restricted-emails-cochairs-view,
+.view-cseu-restricted-emails-by-status-view,
+.view-cseu-restricted-emails-members-view {
+  margin-bottom: 1em;
+  h3 {
+    font-size: 120%;
+    margin: 1em 0;      
+  }
+}
+.view-cseu-restricted-emails-by-status-view .view-content {
+  margin: 1em 0;
+}
+.cseu-emails-row {
+  display: inline-block;
+  font-weight: normal;
+  font-size: 1em;
+  line-height: 120%;
+  letter-spacing: 1px;
+  margin-right: 0.5em;
+}
+
 // View  Modes
 .user-profile h2 {
   border-bottom: 2px solid #ccc;   
