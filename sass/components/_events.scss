@@ -1,0 +1,111 @@
+//
+// Frontpage
+//
+.block--views-cseu-events-calendar-view-up,
+.block--views-cseu-events-calendar-view-upcal {
+  position: relative;
+
+  ul {
+    list-style-type: none;
+    padding :0px;
+    .cseu-event-heading {
+      font-weight: bold;
+      background-color: $events-heading-bg;
+      &>a {
+        color: white;
+        text-decoration: none;
+      }
+    }
+    .cseu-event-date {
+      display: inline-block;
+      margin-right: 5px;
+    }
+    .cseu-event-venue {
+      display: inline-block;
+      margin-left: 5px;
+    }
+    .cseu-event-title a {
+      text-decoration: none;
+      color: $text-color;
+    }
+    .cseu-event-title a:visited {
+      color: $text-color;
+    }
+  }
+
+  .cseu-event-heading,
+  .cseu-event-title {
+    padding: 10px;
+  }
+
+  .more-link {
+    @include frontpage-readmore-nav;
+    text-align: right;
+    a {
+      @include frontpage-readmore-nav-link;
+    }
+  }
+
+  .view-content {
+    border-bottom: $separator-width solid $separator-color;
+  }
+}
+
+
+
+//
+// Pages
+//
+.page-events .view-display-id-all {
+  h3 {
+    font-weight: bold;
+  }
+  
+  @include breakpoint($tab) {
+    @include layout(2 6, 0.1) {
+      .cseu-events-calendar-row {
+        @include grid-span(2, 1);
+      }
+      .cseu-event-date {
+        @include grid-span(1, 1);
+      }
+      .cseu-event-content {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+  @include breakpoint($desk) {
+    @include layout(1 7, 0.05) {
+      .cseu-events-calendar-row {
+        @include grid-span(2, 1);
+      }
+      .cseu-event-date {
+        @include grid-span(1, 1);
+      }
+      .cseu-event-content {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+}
+
+.node--cseu-event {
+  .field--name-field-cseu-event-date {
+    margin-bottom: 0.7em;
+    font-size: 110%;
+  }
+  .field--name-field-cseu-event-type {
+    margin-bottom: 0.7em;
+  }
+  .field--name-field-cseu-event-venue {
+    margin-bottom: $vert-spacing-unit;
+  }
+}
+
+.cseu-events-calendar-row,
+.node--cseu-event--teaser {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+}

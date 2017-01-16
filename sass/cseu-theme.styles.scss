@@ -13,11 +13,16 @@
 @import 'components/layout/grid';
 @import 'components/layout/header';
 @import 'components/layout/navigation';
-@import 'components/layout/content';
+@import 'components/layout/main';
 @import 'components/layout/footer';
 
-@import 'components/links';
-@import 'components/views';
+@import 'components/media';
 @import 'components/profiles';
+@import 'components/lists';
+@import 'components/events';
+@import 'components/news';
+
+
+
 @import 'components/tb_megamenu';
 @import 'components/menus';

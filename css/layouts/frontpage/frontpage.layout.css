@@ -6,3 +6,40 @@
   margin-right: -100%;
   margin-left: 0;
   clear: none; }
+
+@media (max-width: 479px) {
+  .l-region--news #block-views-cseu-block-frontpage-news-block,
+  .l-region--news #block-views-cseu-events-calendar-view-up {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  .l-region--news #block-views-cseu-block-frontpage-news-block {
+    width: 47.61905%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .l-region--news #block-views-cseu-events-calendar-view-up {
+    width: 47.61905%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+
+@media (min-width: 980px) {
+  .l-region--news #block-views-cseu-block-frontpage-news-block {
+    width: 44.44444%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .l-region--news #block-views-cseu-events-calendar-view-up {
+    width: 44.44444%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }

@@ -1,0 +1,14 @@
+// First Sidebar
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-top: $vert-spacing-unit;
+  @include breakpoint($mobile) {
+    padding: 0 $horz-spacing-unit;
+  }
+}
+.l-region--sidebar-first > .block,
+.l-region--sidebar-second > .block {
+  @include block;
+}
+
+

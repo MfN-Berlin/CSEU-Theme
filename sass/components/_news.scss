@@ -1,0 +1,39 @@
+//
+// Frontpage
+//
+.block--views-cseu-block-frontpage-news-block {
+  .view-content {
+    border-bottom: $separator-width solid $separator-color;
+  }
+  .more-link {
+    @include frontpage-readmore-nav;
+    text-align: right;
+    a {
+      @include frontpage-readmore-nav-link;
+    }
+  }
+}
+.cseu-block-frontpage-row {
+  font-size: $frontpage-list-title-font-size;
+  line-height: $frontpage-list-title-line-height;
+  padding-bottom: 1em;
+  .cseu-block-frontpage-title {
+    a {
+      color: $link_heading_color;
+      text-decoration: none;
+    }
+  }
+}
+
+//
+// Pages
+//
+.cseu-teasers-row {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+}
+
+
+

@@ -1,7 +1,6 @@
-$mobile: max-width 539px;
-$tab: 540px 979px;
-//$desk: 1024px;
-$desk: 980px;
-
+// Grid
+$mobile: max-width ($tablet-width - 1);
+$tab: $tablet-width ($desktop-width - 1);
+$desk: $desktop-width;
 
 

@@ -37,7 +37,7 @@
             <?php endif; ?>
             <?php print render($page['news']); ?>
             <?php print render($page['misc']); ?>
-            <?php print $feed_icons; ?>
+            <?php //print $feed_icons; ?>
         </div>
     </div>
     <footer class="l-footer" role="contentinfo">

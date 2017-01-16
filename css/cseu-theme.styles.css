@@ -1,3 +1,8 @@
+body {
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.6; }
+
 * {
   box-sizing: border-box; }
 
@@ -31,6 +36,22 @@ h6 {
   margin-top: 2.33em;
   margin-bottom: 2.33em; }
 
+@media (max-width: 479px) {
+  h1 {
+    font-size: 20px; }
+  h2 {
+    font-size: 18px; }
+  h3 {
+    font-size: 16px; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  h1 {
+    font-size: 24px; }
+  h2 {
+    font-size: 20px; }
+  h3 {
+    font-size: 18px; } }
+
 p {
   font-size: 16px;
   line-height: 1.6;
@@ -42,6 +63,9 @@ p {
 
 strong {
   font-weight: bold; }
+
+em, i {
+  font-style: italic; }
 
 ul {
   display: block;
@@ -57,6 +81,13 @@ li {
   margin-bottom: 0.7em;
   font-size: 16px; }
 
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a {
+  color: #27688e;
+  text-decoration: none; }
+
 fieldset {
   border: 1px solid #CCC;
   border-radius: 0;
@@ -68,13 +99,6 @@ fieldset {
     margin: 0;
     margin-left: -0.1875em;
     font-weight: bold; }
-
-h1 > a,
-h2 > a,
-h3 > a,
-h4 > a {
-  color: #27688e;
-  text-decoration: none; }
 
 .feed-icon {
   margin-top: 1em; }
@@ -142,6 +166,23 @@ ul.tabs--primary,
 ul.tabs--secondary {
   margin-bottom: 20px; }
 
+.block__content a[href],
+.node__content a[href],
+.taxonomy-term__content a[href],
+.view-content a[href],
+.node-readmore a[href],
+.user-profile a[href] {
+  color: #01a9b3;
+  text-decoration: none; }
+  .block__content a[href]:hover,
+  .node__content a[href]:hover,
+  .taxonomy-term__content a[href]:hover,
+  .view-content a[href]:hover,
+  .node-readmore a[href]:hover,
+  .user-profile a[href]:hover {
+    color: #02d6e2;
+    text-decoration: underline; }
+
 body {
   height: 100%;
   background-color: #FFF; }
@@ -160,7 +201,7 @@ body {
   max-width: 100%;
   margin: 0 auto; }
 
-@media (max-width: 539px) {
+@media (max-width: 479px) {
   .l-header .l-branding,
   .l-header .l-region--header,
   .l-header .l-region--navigation {
@@ -170,7 +211,7 @@ body {
     margin-right: 0;
     clear: none; } }
 
-@media (min-width: 540px) and (max-width: 979px) {
+@media (min-width: 480px) and (max-width: 979px) {
   .l-header .l-branding {
     width: 48.78049%;
     float: left;
@@ -221,7 +262,7 @@ body {
   margin-right: 0;
   clear: none; }
 
-@media (max-width: 539px) {
+@media (max-width: 479px) {
   .l-footer .l-region--footer-first,
   .l-footer .l-region--footer-second,
   .l-footer .l-region--footer-third,
@@ -233,7 +274,7 @@ body {
     margin-right: 0;
     clear: none; } }
 
-@media (min-width: 540px) and (max-width: 979px) {
+@media (min-width: 480px) and (max-width: 979px) {
   .l-footer .l-region--footer-first {
     width: 45.45455%;
     float: left;
@@ -312,11 +353,11 @@ body {
   .l-header {
     margin-bottom: 20px; } }
 
-@media (max-width: 539px) {
+@media (max-width: 479px) {
   .l-region--navigation {
     display: none; } }
 
-@media (min-width: 540px) and (max-width: 979px) {
+@media (min-width: 480px) and (max-width: 979px) {
   .l-region--navigation {
     display: none; } }
 
@@ -326,8 +367,20 @@ body {
     .l-region--navigation #block-system-main-menu {
       display: none !important; } }
 
-.l-content {
-  padding: 0 1em; }
+.l-main {
+  margin-bottom: 20px; }
+
+@media (max-width: 479px) {
+  .l-content {
+    padding: 0 1em; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  .l-content {
+    padding: 0 1em; } }
+
+@media (min-width: 980px) {
+  .l-content {
+    padding: 0 1em; } }
 
 .l-region--footer-first,
 .l-region--footer-second,
@@ -335,22 +388,77 @@ body {
 .l-region--footer-fourth {
   padding: 0 1em; }
 
-.block__content a[href],
-.node__content a[href],
-.taxonomy-term__content a[href],
-.view-content a[href],
-.node-readmore a[href],
-.user-profile a[href] {
-  color: #01a9b3;
-  text-decoration: none; }
-  .block__content a[href]:hover,
-  .node__content a[href]:hover,
-  .taxonomy-term__content a[href]:hover,
-  .view-content a[href]:hover,
-  .node-readmore a[href]:hover,
-  .user-profile a[href]:hover {
-    color: #02d6e2;
-    text-decoration: underline; }
+.file-image {
+  max-width: 100%; }
+  .file-image img {
+    padding-bottom: 8px;
+    max-width: 100%;
+    height: auto; }
+  .file-image .field--name-field-file-image-caption-text > div > div {
+    font-size: 12px;
+    line-height: 1.2; }
+  .file-image .field--name-field-file-image-credit-text > div > div {
+    font-size: 12px;
+    line-height: 1.2;
+    margin-bottom: 8px; }
+
+.file-icon {
+  padding-right: 4px; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest label,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest label,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-assigned label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-chair label,
+#edit-profile-cseu-profile-assignments-field-cseu-group-cochair label,
+#edit-profile-cseu-profile-assignments-field-cseu-task-assigned label {
+  font-size: 140%;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  font-weight: normal; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und label,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und label,
+#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer-und label {
+  font-size: inherit;
+  margin-bottom: 8px;
+  border-bottom: 0;
+  font-weight: normal; }
+
+.cseu-wg-label-select,
+.cseu-wg-title-select {
+  font-size: 110%;
+  font-weight: normal; }
+
+.cseu-task-wg-label-select,
+.cseu-task-label-select,
+.cseu-task-title-select {
+  font-size: 110%;
+  font-weight: normal; }
+
+.cseu-wg-descr-select,
+.cseu-task-descr-select {
+  display: block;
+  margin-top: 4px; }
+
+#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und div,
+#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und div {
+  margin: 1em 0; }
+
+.user-profile h2 {
+  border-bottom: 2px solid #ccc; }
+
+.field--name-field-cseu-first-name,
+.field--name-field-cseu-last-name,
+.field--name-field-cseu-institution,
+.field--name-field-cseu-telephone,
+.field--name-field-cseu-url,
+.field--name-field-cseu-facebbok,
+.field--name-field-cseu-twitter,
+.field--name-field-cseu-area-expertise,
+.field--name-field-cseu-year-completion-phd,
+.field--name-field-cseu-gender {
+  margin: 8px 0; }
 
 .view-cseu-tasks-list-view h3 {
   font-size: 50%;
@@ -428,9 +536,6 @@ body {
   letter-spacing: 1px;
   margin-right: 0.5em; }
 
-.user-profile h2 {
-  border-bottom: 2px solid #ccc; }
-
 .group--cseu-view-mode-wgs,
 .group-cseu-view-mode-tasks {
   margin: 1em 0; }
@@ -481,57 +586,152 @@ table.views-table {
     border: 1px solid #FFF;
     text-align: left; }
 
-#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest label,
-#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest label,
-#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer label,
-#edit-profile-cseu-profile-assignments-field-cseu-group-assigned label,
-#edit-profile-cseu-profile-assignments-field-cseu-group-chair label,
-#edit-profile-cseu-profile-assignments-field-cseu-group-cochair label,
-#edit-profile-cseu-profile-assignments-field-cseu-task-assigned label {
-  font-size: 140%;
-  margin-bottom: 8px;
-  border-bottom: 1px solid #ddd;
-  font-weight: normal; }
+.block--views-cseu-events-calendar-view-up,
+.block--views-cseu-events-calendar-view-upcal {
+  position: relative; }
+  .block--views-cseu-events-calendar-view-up ul,
+  .block--views-cseu-events-calendar-view-upcal ul {
+    list-style-type: none;
+    padding: 0px; }
+    .block--views-cseu-events-calendar-view-up ul .cseu-event-heading,
+    .block--views-cseu-events-calendar-view-upcal ul .cseu-event-heading {
+      font-weight: bold;
+      background-color: #27688e; }
+      .block--views-cseu-events-calendar-view-up ul .cseu-event-heading > a,
+      .block--views-cseu-events-calendar-view-upcal ul .cseu-event-heading > a {
+        color: white;
+        text-decoration: none; }
+    .block--views-cseu-events-calendar-view-up ul .cseu-event-date,
+    .block--views-cseu-events-calendar-view-upcal ul .cseu-event-date {
+      display: inline-block;
+      margin-right: 5px; }
+    .block--views-cseu-events-calendar-view-up ul .cseu-event-venue,
+    .block--views-cseu-events-calendar-view-upcal ul .cseu-event-venue {
+      display: inline-block;
+      margin-left: 5px; }
+    .block--views-cseu-events-calendar-view-up ul .cseu-event-title a,
+    .block--views-cseu-events-calendar-view-upcal ul .cseu-event-title a {
+      text-decoration: none;
+      color: #575656; }
+    .block--views-cseu-events-calendar-view-up ul .cseu-event-title a:visited,
+    .block--views-cseu-events-calendar-view-upcal ul .cseu-event-title a:visited {
+      color: #575656; }
+  .block--views-cseu-events-calendar-view-up .cseu-event-heading,
+  .block--views-cseu-events-calendar-view-up .cseu-event-title,
+  .block--views-cseu-events-calendar-view-upcal .cseu-event-heading,
+  .block--views-cseu-events-calendar-view-upcal .cseu-event-title {
+    padding: 10px; }
+  .block--views-cseu-events-calendar-view-up .more-link,
+  .block--views-cseu-events-calendar-view-upcal .more-link {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: right; }
+    .block--views-cseu-events-calendar-view-up .more-link a,
+    .block--views-cseu-events-calendar-view-upcal .more-link a {
+      color: #27688e;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+      background-repeat: no-repeat;
+      background-position: right;
+      padding-right: 15px; }
+  .block--views-cseu-events-calendar-view-up .view-content,
+  .block--views-cseu-events-calendar-view-upcal .view-content {
+    border-bottom: 2px solid #e0e0e0; }
 
-#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und label,
-#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und label,
-#edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer-und label {
-  font-size: inherit;
-  margin-bottom: 8px;
-  border-bottom: 0;
-  font-weight: normal; }
+.page-events .view-display-id-all h3 {
+  font-weight: bold; }
 
-.cseu-wg-label-select,
-.cseu-wg-title-select {
-  font-size: 110%;
-  font-weight: normal; }
+@media (min-width: 480px) and (max-width: 979px) {
+  .page-events .view-display-id-all .cseu-events-calendar-row {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-date {
+    width: 24.69136%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-content {
+    width: 74.07407%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
 
-.cseu-task-wg-label-select,
-.cseu-task-label-select,
-.cseu-task-title-select {
-  font-size: 110%;
-  font-weight: normal; }
+@media (min-width: 980px) {
+  .page-events .view-display-id-all .cseu-events-calendar-row {
+    width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-date {
+    width: 12.42236%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-content {
+    width: 86.95652%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
 
-.cseu-wg-descr-select,
-.cseu-task-descr-select {
-  display: block;
-  margin-top: 4px; }
+.node--cseu-event .field--name-field-cseu-event-date {
+  margin-bottom: 0.7em;
+  font-size: 110%; }
 
-#edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest-und div,
-#edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest-und div {
-  margin: 1em 0; }
+.node--cseu-event .field--name-field-cseu-event-type {
+  margin-bottom: 0.7em; }
 
-.field--name-field-cseu-first-name,
-.field--name-field-cseu-last-name,
-.field--name-field-cseu-institution,
-.field--name-field-cseu-telephone,
-.field--name-field-cseu-url,
-.field--name-field-cseu-facebbok,
-.field--name-field-cseu-twitter,
-.field--name-field-cseu-area-expertise,
-.field--name-field-cseu-year-completion-phd,
-.field--name-field-cseu-gender {
-  margin: 8px 0; }
+.node--cseu-event .field--name-field-cseu-event-venue {
+  margin-bottom: 20px; }
+
+.cseu-events-calendar-row,
+.node--cseu-event--teaser {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0; }
+
+.block--views-cseu-block-frontpage-news-block .view-content {
+  border-bottom: 2px solid #e0e0e0; }
+
+.block--views-cseu-block-frontpage-news-block .more-link {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: right; }
+  .block--views-cseu-block-frontpage-news-block .more-link a {
+    color: #27688e;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 15px; }
+
+.cseu-block-frontpage-row {
+  font-size: 16px;
+  line-height: 1.6;
+  padding-bottom: 1em; }
+  .cseu-block-frontpage-row .cseu-block-frontpage-title a {
+    color: #27688e;
+    text-decoration: none; }
+
+.cseu-teasers-row {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0; }
 
 @media (min-width: 980px) {
   .tb-megamenu {
@@ -559,7 +759,7 @@ table.views-table {
   font-size: 16px;
   line-height: 18px; }
 
-@media (min-width: 540px) and (max-width: 979px) {
+@media (min-width: 480px) and (max-width: 979px) {
   .tb-megamenu .btn-navbar {
     width: 50px;
     height: 50px; }

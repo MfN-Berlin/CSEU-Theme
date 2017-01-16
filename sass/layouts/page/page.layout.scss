@@ -2,12 +2,14 @@
 @import 'breakpoint';
 @import 'bourbon';
 
-@import '../../variables/sizes';
-@import '../../variables/fonts';
 @import '../../variables/variables';
+@import '../../variables/fonts';
+@import '../../variables/sizes';
 @import '../../variables/colors';
 @import '../../abstractions/mixins';
-@import '../../components/layout/sidebar_first';
+//@import '../../base/base';
+
+@import '../../components/layout/sidebars';
 
 // Sidebars
 // Mobile first: 1

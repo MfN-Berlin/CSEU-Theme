@@ -1,3 +1,9 @@
+body {
+  margin: 0 auto;
+  font-size: $main-font-size;
+  line-height: 1.6;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -34,6 +40,30 @@ h6 {
   margin-top: 2.33em;
   margin-bottom: 2.33em;
 }
+// Mobile
+@include breakpoint($mobile) {
+  h1 {
+    font-size: $h1-font-size-mobile;
+  } 
+  h2 {
+    font-size: $h2-font-size-mobile;
+  } 
+  h3 {
+    font-size: $h3-font-size-mobile;
+  }  
+}
+// Tab
+@include breakpoint($tab) {
+  h1 {
+    font-size: $h1-font-size-tab;
+  } 
+  h2 {
+    font-size: $h2-font-size-tab;
+  } 
+  h3 {
+    font-size: $h3-font-size-tab;
+  }  
+}
 
 p {
   font-size: $p-font-size;
@@ -49,6 +79,11 @@ strong {
   font-weight: bold; 
 }
 
+em, i {
+  font-style:italic;
+}
+
+// List
 ul {
   display: block;
   list-style-type: disc;
@@ -58,17 +93,13 @@ ul {
   margin-right: 0;
   padding-left: 40px; 
 }
-
 li {
   display: list-item;
   margin-bottom: 0.7em;
   font-size: $p-font-size;
 }
 
-fieldset {
-  @include fieldset;
-}
-
+// Headings
 h1,
 h2,
 h3,
@@ -77,6 +108,11 @@ h4 {
     color: $link_heading_color;
     text-decoration: none;
   }
+}
+
+// Fieldset
+fieldset {
+  @include fieldset;
 }
 
 .feed-icon {
@@ -159,4 +195,18 @@ ul.tabs--secondary {
   margin-bottom: $vert-spacing-unit;
 }
 
-
+// Links
+.block__content a[href],
+.node__content a[href],
+.taxonomy-term__content a[href],
+.view-content a[href],
+.node-readmore a[href],
+.user-profile a[href] {
+  color: $link_color;
+  text-decoration: none;
+  
+  &:hover {
+    color: $link_hover_color;
+    text-decoration: underline;
+  }
+}

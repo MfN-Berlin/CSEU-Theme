@@ -1,15 +1,27 @@
-.l-region--sidebar-first > .block {
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  margin-top: 20px; }
+  @media (max-width: 479px) {
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      padding: 0 1em; } }
+
+.l-region--sidebar-first > .block,
+.l-region--sidebar-second > .block {
   background-color: #f6f6f2;
   margin-bottom: 20px;
   padding: 1em 0; }
-  .l-region--sidebar-first > .block h2.block__title {
+  .l-region--sidebar-first > .block h2.block__title,
+  .l-region--sidebar-second > .block h2.block__title {
     font-size: 20px;
     padding: 0 1em;
     margin: 0; }
-  .l-region--sidebar-first > .block a {
+  .l-region--sidebar-first > .block a,
+  .l-region--sidebar-second > .block a {
     text-decoration: none;
     color: #27688e; }
-    .l-region--sidebar-first > .block a:hover {
+    .l-region--sidebar-first > .block a:hover,
+    .l-region--sidebar-second > .block a:hover {
       color: #01a9b3;
       text-decoration: underline; }
 
@@ -23,7 +35,7 @@
   margin-bottom: 20px;
   padding-left: 1em; }
 
-@media (min-width: 540px) and (max-width: 979px) {
+@media (min-width: 480px) and (max-width: 979px) {
   .has-sidebar-first .l-content,
   .has-sidebar-second .l-content,
   .has-two-sidebars .l-content {

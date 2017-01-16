@@ -2,8 +2,9 @@ $body_bg_color: #FFF;
 
 $link_color: #01a9b3;
 $link_hover_color: #02d6e2;
-//$link_heading_color: #02aab3;
 $link_heading_color: #27688e;
+
+$text-color: hsl(0, 0.58%, 33.92%);
 
 $main_menu_bg_color: #000;
 $main_menu_bg_active_color: #68696b;
@@ -38,6 +39,9 @@ $footer_bg_color: hsl(0, 0.00%, 100.00%);
 $footer_link_color: $link_heading_color;
 $footer_link_hover_color: $link_color;
 
+// Separator
+$separator-color: hsl(0, 0.00%, 87.84%);
 
-
+// Frontpage
+$events-heading-bg: $link_heading_color;
 
