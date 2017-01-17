@@ -210,3 +210,8 @@ ul.tabs--secondary {
     text-decoration: underline;
   }
 }
+
+// Admin Toolbar
+body.adminimal-menu div.toolbar-shortcuts {
+    display: none;
+}

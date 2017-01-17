@@ -183,6 +183,9 @@ ul.tabs--secondary {
     color: #02d6e2;
     text-decoration: underline; }
 
+body.adminimal-menu div.toolbar-shortcuts {
+  display: none; }
+
 body {
   height: 100%;
   background-color: #FFF; }
