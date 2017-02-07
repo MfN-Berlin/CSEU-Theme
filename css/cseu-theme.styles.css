@@ -736,6 +736,48 @@ table.views-table {
   padding-bottom: 1em;
   border-bottom: 2px solid #e0e0e0; }
 
+.cseu-documents-view-row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 20px;
+  min-height: 250px;
+  border-bottom: 2px solid #e0e0e0;
+  clear: both; }
+
+@media (max-width: 479px) {
+  .cseu-view-documents-cover {
+    box-shadow: 8px 8px 4px #888; }
+  .cseu-view-documents-cover img {
+    max-width: 120px;
+    height: auto; }
+  .cseu-documents-view-col1 {
+    max-width: 120px; } }
+
+@media (min-width: 480px) and (max-width: 979px) {
+  .cseu-view-documents-cover {
+    box-shadow: 8px 8px 4px #888; }
+  .cseu-view-documents-cover img {
+    max-width: 120px;
+    height: auto; }
+  .cseu-documents-view-col1 {
+    width: 120px;
+    float: left; }
+  .cseu-documents-view-col2 {
+    margin-left: 136px;
+    width: auto; } }
+
+@media (min-width: 980px) {
+  .cseu-view-documents-cover {
+    box-shadow: 8px 8px 4px #888; }
+  .cseu-view-documents-cover img {
+    max-height: 225px; }
+  .cseu-documents-view-col1 {
+    width: 150px;
+    float: left; }
+  .cseu-documents-view-col2 {
+    margin-left: 170px;
+    width: auto; } }
+
 @media (min-width: 980px) {
   .tb-megamenu {
     background-color: #000; } }
