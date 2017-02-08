@@ -1,27 +1,34 @@
 .tb-megamenu {
   @include breakpoint($desk, true) {
-    background-color: $main_menu_bg_color;
+    background-color: $navigation-bg-color;
   }
 
   .nav-collapse {
     > .nav {
       > {
         li {
+          background-color: $main-menu-bg-color;
           margin-bottom: 0;
           > a {
-            //background-color: $main_menu_bg_color;
+            border-color: $main-menu-bg-color;
+            color: $main-menu-color;
+            text-decoration: none;
             &:hover, &:focus {
-              color: $main_menu_hover_color;
-              background-color: $main_menu_bg_hover_color;
+              color: $main-menu-hover-color;
+              text-decoration: none;
+              border-color: $navigation-border-color;
+              background-color: $main-menu-bg-hover-color;
             }
           }
         }
       }
       li.active > a {
-        background-color: $main_menu_bg_active_color;
+        background-color: $main-menu-bg-active-color;
+        border-color: $main-menu-bg-active-color;
         &:hover, &:focus {
           color: $main_menu_hover_active_color;
-          background-color: $main_menu_bg_active_color;
+          background-color: $main-menu-bg-active-color;
+          border-color: $main-menu-bg-active-color;
         }
       }    
     }
@@ -31,7 +38,7 @@
     margin-bottom: 0;
     width: 50px;
     height: 40px;
-    color: $main_menu_bg_active_color;
+    color: $main-menu-bg-active-color;
   }
   .btn {
     font-size: 16px;
@@ -49,30 +56,75 @@
   }  
   
   .dropdown-menu {
-    border-bottom: 3px solid $main_menu_bg_active_color;
+    background-color: $dropdown-bg-color;
+    border-bottom: 3px solid $main-menu-bg-active-color;
     li > a {
-      color: $block_link_color;
+      color: $dropdown-color;
+      text-decoration: none;
+      background-color: $dropdown-bg-color;
+      border-top: 1px solid $navigation-shadow-color;
       &:hover, &:focus {
-        color: $block_link_hover_color;
+        color: $dropdown-hover-color;
+        background-color: inherit;
+        text-decoration: underline;
+      }
+    }
+    .active > a {
+      background-image: none;
+      background-color: $dropdown-bg-color;
+      &:hover, &:focus {
+        color: $dropdown-hover-color;
+        background-image: none;
+        background-color: inherit;
       }
     }
   }
   
   .nav li.dropdown {
     &.open > .dropdown-toggle {
-      color: $main_menu_hover_color;
-      background-color: $main_menu_bg_hover_color;
+      color: $main-menu-hover-color;
+      background-color: $main-menu-bg-hover-color;
+      border-color: $main-menu-bg-active-color;
     }
     &.active > .dropdown-toggle, &.open.active > .dropdown-toggle {
-      background-color: #ff0;
-      color: #f0f;
+      background-color: $main-menu-bg-active-color;
+      color: $dropdown-color;
+      border-color: $main-menu-bg-active-color;
     }
   }
-}
+  .nav {
+    > li.dropdown.open.active {
+      > a {
+        &:hover {
+          background-color: $main-menu-bg-active-color;
+          border-color: $main-menu-bg-active-color;
+        }
+      }
+    }
+  }
+  
+  ul.tb-megamenu-subnav .nav-child{
+    li {
+      background-color: $dropdown-bg-color;
+      a {
+        border-color: $navigation-shadow-color;
+      }
+    }    
+  }
+}//.tb-megamenu
 
 
+// Login block
 .cseu-login-menu-block {
   background-color: $block_bg_color;
+  a {
+    color: $link_color !important;
+    text-decoration: none;
+    &:hover {
+      color: $link_hover_color !important;
+      text-decoration: underline;
+    }    
+  }
   .form-submit {
     margin-top: 1em;
   }
