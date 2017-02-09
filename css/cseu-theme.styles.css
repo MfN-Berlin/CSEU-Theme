@@ -778,6 +778,9 @@ table.views-table {
     margin-left: 170px;
     width: auto; } }
 
+.cseu-community-map-table-view {
+  margin: 20px 0; }
+
 @media (min-width: 980px) {
   .tb-megamenu {
     background-color: #000; } }
