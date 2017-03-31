@@ -3,6 +3,11 @@
     background-color: $navigation-bg-color;
   }
 
+  .nav > li > a {
+    font-weight: normal;
+    padding: 8px 12px;
+  }
+
   .nav-collapse {
     > .nav {
       > {
@@ -10,21 +15,25 @@
           background-color: $main-menu-bg-color;
           margin-bottom: 0;
           > a {
-            border-color: $main-menu-bg-color;
+            border-color: $main-menu-border-color;
             color: $main-menu-color;
             text-decoration: none;
+            //font-weight: normal;
             &:hover, &:focus {
               color: $main-menu-hover-color;
               text-decoration: none;
               border-color: $navigation-border-color;
               background-color: $main-menu-bg-hover-color;
             }
+            
           }
         }
       }
       li.active > a {
         background-color: $main-menu-bg-active-color;
-        border-color: $main-menu-bg-active-color;
+        border-color: $main-menu-border-color;
+        //font-weight: normal;
+        color: $main-menu-active-color;
         &:hover, &:focus {
           color: $main_menu_hover_active_color;
           background-color: $main-menu-bg-active-color;
@@ -57,12 +66,14 @@
   
   .dropdown-menu {
     background-color: $dropdown-bg-color;
-    border-bottom: 3px solid $main-menu-bg-active-color;
+    border-top: 1px solid $dropdown-hover-border-top-color;
+    border-bottom: 1px solid $dropdown-hover-border-bottom-color;
     li > a {
       color: $dropdown-color;
       text-decoration: none;
       background-color: $dropdown-bg-color;
       border-top: 1px solid $navigation-shadow-color;
+      //font-weight: normal;
       &:hover, &:focus {
         color: $dropdown-hover-color;
         background-color: inherit;
@@ -72,6 +83,7 @@
     .active > a {
       background-image: none;
       background-color: $dropdown-bg-color;
+      //font-weight: normal;
       &:hover, &:focus {
         color: $dropdown-hover-color;
         background-image: none;
@@ -98,16 +110,24 @@
         &:hover {
           background-color: $main-menu-bg-active-color;
           border-color: $main-menu-bg-active-color;
+          color: $main-menu-active-color;
         }
       }
     }
-  }
+    .dropdown {
+      .dropdown-toggle {
+        .caret {
+          display: none;
+        }
+      }
+    }
+  } //.nav
   
   ul.tb-megamenu-subnav .nav-child{
     li {
       background-color: $dropdown-bg-color;
       a {
-        border-color: $navigation-shadow-color;
+        border-color: $main-menu-border-color;
       }
     }    
   }

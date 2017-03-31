@@ -40,18 +40,22 @@ $separator-color: hsl(0, 0.00%, 87.84%);
 $events-heading-bg: $link_heading_color;
 
 // TB Megamenu
-$navigation-border-color: #68696b;
-$navigation-bg-color: #000;
-$navigation-shadow-color: #68696b;
-$main-menu-bg-color: #000;
-$main-menu-bg-hover-color: rgba(255, 255, 255, 0.7);
+$navigation-border-color: #FFF;
+$navigation-bg-color: #E07B00;
+$navigation-shadow-color: #FAEAD6;
+$main-menu-bg-color: #E07B00;
+$main-menu-bg-hover-color: #FAEAD6;
+$main-menu-border-color: #FFF;
 $main-menu-color: #FFF;
-$main-menu-hover-color: #333;
-$main-menu-bg-active-color: #68696b;
-$main-menu-hover-active-color: #FFF;
-$dropdown-bg-color: #68696b;
-$dropdown-active-bg-color: rgba(255, 255, 255, 0.7);
-$dropdown-color: #FFF;
-$dropdown-hover-color: #FFF; 
-$dropdown-active-color: #68696b;
+$main-menu-active-color: #A03800;
+$main-menu-hover-color: #A03800;
+$main-menu-bg-active-color: #FAEAD6;
+$main-menu-hover-active-color: #A03800;
+$dropdown-bg-color: #FAEAD6;
+$dropdown-active-bg-color: #FAEAD6;
+$dropdown-color: #A03800;
+$dropdown-hover-color: #A03800; 
+$dropdown-active-color: #FAEAD6;
+$dropdown-hover-border-top-color: #FFF; 
+$dropdown-hover-border-bottom-color: #E07B00; 
 

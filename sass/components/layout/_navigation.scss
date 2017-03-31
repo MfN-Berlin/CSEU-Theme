@@ -1,7 +1,8 @@
 .l-region--navigation {
   // Mobile
   @include breakpoint($mobile, true) {
-    display: none;
+    //display: none;
+    display: block;
   }
   // Tab
   @include breakpoint($tab, true) {

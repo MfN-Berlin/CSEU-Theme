@@ -27,9 +27,10 @@ body{
     .l-region--header,
     .l-region--navigation {
         @include grid-span(1, 1);
-    }  
+    } 
   }
   // Tab: 12
+  /*
   @include breakpoint($tab, true) {
     @include layout($grid: 6 6 , $gutter: .3) {
       .l-branding {
@@ -43,10 +44,10 @@ body{
         clear: both;
       }
     }
-  }
+  }*/
   // Desktop: 16
   @include breakpoint($desk, true) {
-    @include layout($grid: 4 8 4, $gutter: .3) {
+    @include layout($grid: 4 6 4, $gutter: .01) {
       .l-branding {
         @include grid-span(1, 1);
       }
