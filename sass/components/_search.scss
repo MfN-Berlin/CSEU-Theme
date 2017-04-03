@@ -1,12 +1,13 @@
 // Mobile
 @include breakpoint($mobile) {
   #search-block-form {
+    float: right;
     position: absolute;
-    top: 14px;
-    right: 14px;
-    z-index: 999999;
-    height: 55px;
-    width: 55px;
+    top: 0;
+    right: 8px;
+    z-index: 9999999;
+    height: 46px;
+    width: 48px;
     background-color: $main-menu-bg-color;
     -webkit-font-smoothing: antialiased;
     input.form-text  {
@@ -14,8 +15,8 @@
     }
     input.form-submit {
       margin: 0;
-      height: 55px;
-      width: 55px;   
+      height: 46px;
+      width: 48px;   
       text-indent: -9999px;
       cursor: pointer;
       border: none;
@@ -23,13 +24,12 @@
       background-color: $main-menu-bg-color;
     }
   }
-  
-  #search-block-form:hover{
-    width: 170px;
+  #search-block-form:hover {
+    width: 163px;
     input.form-text  {
       display: inline-block;
       height: 28px;
-      margin-top: 14px;
+      margin-top: 10px;
       margin-left: 14px;
     }
     input.form-submit {
@@ -38,7 +38,6 @@
       float: right;
     }    
   }
-  
   .form-item-search-block-form input.form-text{
     width: 100px;
     background-color: $main-menu-bg-hover-color;
@@ -58,31 +57,67 @@
     outline:none;
     width: 100px;
   }
-   
 
 
 }
 
+// Tab
+@include breakpoint($tab) {
+  #block-search-form {
+    display: inline-block;
+    width: 100%;
+    height: 28px;
+  }
+  #search-block-form {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9999999;
+    float: right;
+    margin-right: 12px;
+    margin-top: 12px;
+    input.form-text {
+      margin: 0;
+      border: none;
+      width: 100px;
+      height: 28px;
+      background-color: $main-menu-bg-hover-color;
+      border-bottom: 1px solid $main-menu-bg-color;
+      margin-right: 1px;
+    }
+    input.form-submit {
+      margin: 0;
+      height: 28px;
+      padding: 0 14px;
+      color: #FFF;
+      
+      text-indent: -9999px;
+      cursor: pointer;
+      border: none;
+      background:url("../images/search-icon.svg") center center no-repeat;
+      background-color: $main-menu-bg-color;
+      
+    }
+  }
+}
+
 // Desktop
 @include breakpoint($desk) {
-  #search-block-form {
-    float: right;
-  }
   #block-search-form {
     display: inline-block;
     width: 100%;
     margin-top: 42px;
     height: 28px;
   }
-    
   #search-block-form {
+    float: right;
     input.form-text {
       margin: 0;
       border: none;
       width: 196px;
       height: 28px;
       background-color: $main-menu-bg-hover-color;
-      border-bottom: 1px solid $dropdown-hover-border-bottom-color;
+      border-bottom: 1px solid $main-menu-bg-color;
       margin-right: 1px;
     }
     input.form-submit {
@@ -92,10 +127,7 @@
       cursor: pointer;
       border: none;
       color: #FFF;
-      background-color: $dropdown-hover-border-bottom-color;
-      @include breakpoint($mobile) {
-        width: 100px;
-      }
+      background-color: $main-menu-bg-color;
     }
   }
 }
@@ -110,7 +142,7 @@
       width: 392px;
       height: 28px;
       background-color: $main-menu-bg-hover-color;
-      border-bottom: 1px solid $dropdown-hover-border-bottom-color;
+      border-bottom: 1px solid $main-menu-bg-color;
       margin-right: 1px;
       @include breakpoint($mobile) {
         width: 100px;
@@ -123,7 +155,7 @@
       cursor: pointer;
       border: none;
       color: #FFF;
-      background-color: $dropdown-hover-border-bottom-color;
+      background-color: $main-menu-bg-color;
       @include breakpoint($mobile) {
         width: 100px;
       }

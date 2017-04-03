@@ -1,8 +1,11 @@
 .l-region--navigation {
   // Mobile
   @include breakpoint($mobile, true) {
-    //display: none;
     display: block;
+    position: fixed;
+    z-index: 99999;
+    top: 0px;
+    padding: 0;    
   }
   // Tab
   @include breakpoint($tab, true) {
@@ -10,9 +13,6 @@
   }
   // Desktop
   @include breakpoint($desk, true) {
-    #block-system-main-menu {
-      display: none !important;
-    }
-    padding: 0 $horz-spacing-unit;
+    display: none;
   }
 }

@@ -30,21 +30,13 @@ body{
     } 
   }
   // Tab: 12
-  /*
   @include breakpoint($tab, true) {
-    @include layout($grid: 6 6 , $gutter: .3) {
-      .l-branding {
+    .l-branding,
+    .l-region--header,
+    .l-region--navigation {
         @include grid-span(1, 1);
-      }
-      .l-region--header {
-        @include grid-span(1, 2);
-      }
-      .l-region--navigation {
-        @include grid-span(2, 1);
-        clear: both;
-      }
     }
-  }*/
+  }
   // Desktop: 16
   @include breakpoint($desk, true) {
     @include layout($grid: 4 6 4, $gutter: .01) {

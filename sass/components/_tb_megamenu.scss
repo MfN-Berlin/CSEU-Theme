@@ -34,12 +34,24 @@
         border-color: $main-menu-border-color;
         //font-weight: normal;
         color: $main-menu-active-color;
+        border-color: $main-menu-bg-active-color;
         &:hover, &:focus {
           color: $main_menu_hover_active_color;
           background-color: $main-menu-bg-active-color;
           border-color: $main-menu-bg-active-color;
         }
-      }    
+      }
+      li.level-2.active >  a {
+        filter: alpha(opacity=75);
+        opacity: .75;
+      } 
+    }
+    .dropdown-menu {
+      background-color: $dropdown-bg-color;
+      a {
+       color: $dropdown-color; 
+       border-top: 1px solid $main-menu-bg-active-color;
+      }
     }
   }
   
@@ -53,6 +65,7 @@
     font-size: 16px;
     line-height: 18px;
   }
+  
   @include breakpoint($tab, true) {
     .btn-navbar {
       width: 50px;
@@ -61,6 +74,16 @@
     .btn {
       font-size: 24px;
       line-height: 24px;
+    }
+    .nav-collapse {
+      margin-top: 24px;
+      .nav {
+        li {
+          a {
+            border-color: $main-menu-bg-active-color;
+          }
+        }
+      }
     }
   }  
   

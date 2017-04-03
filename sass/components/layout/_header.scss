@@ -1,26 +1,81 @@
-.l-branding {
-  padding: $vert-spacing-unit;
-  padding-bottom: 0;
-  img {
-    width: 100%;
-    max-width: 220px;
-    @include breakpoint($desk, true) {
-      //max-width: 100%;
-    }    
+.l-header {
+  @include breakpoint($tab, true) {
+    position: relative;
   }
-}
-
-.l-region--header {
-  height: 148px;
-  //padding: 0 $horz-spacing-unit;
-  #block-tb-megamenu-main-menu {
-    //margin-top: 2 * $vert-spacing-unit;
-    margin-top: 42px;
-  }
-}
-
-@include breakpoint($desk, true) {
-  .l-header {
+  @include breakpoint($desk, true) {
     margin-bottom: $vert-spacing-unit;
   }
 }
+
+.l-branding {
+  @include breakpoint($mobile, true) {
+    img {
+      margin-top: 55px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+    
+  }
+  @include breakpoint($tab, true) {
+    img {
+      margin-top: 12px;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+  } 
+  @include breakpoint($desk, true) {
+    padding: $vert-spacing-unit;
+    padding-bottom: 0;
+  } 
+
+  img {
+    width: 100%;
+    max-width: 220px;
+  }
+}
+
+
+.l-region--header {
+  // Mobile
+  @include breakpoint($mobile, true) {
+    display: block;
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    padding: 0;
+    #block-tb-megamenu-main-menu {
+      display: none;
+    }
+  }
+  // Tab
+  @include breakpoint($tab, true) {
+    display: block;
+    position: absolute;
+    z-index: 999999;
+    top: 0;
+    right: 0;
+    padding: 0;
+    #block-search-form {
+      margin: 0;
+    }
+    #block-tb-megamenu-main-menu {
+      margin: 0 12px;
+      margin-top: -24px;
+    }
+  }
+  // Desk
+  @include breakpoint($desk, true) {
+    height: 148px;
+    //padding: 0 $horz-spacing-unit;
+    #block-tb-megamenu-main-menu {
+      //margin-top: 2 * $vert-spacing-unit;
+      margin-top: 42px;
+    }    
+  }
+
+}
+
+

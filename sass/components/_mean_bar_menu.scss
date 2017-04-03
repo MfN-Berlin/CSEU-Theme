@@ -1,19 +1,35 @@
 .mean-container {
   .mean-bar {
     background: none;
-    margin-top: 14px;
-    margin-left: 12px;
+    background-color: $main-menu-bg-color;
+    padding: 2px 0;
   }
   a.meanmenu-reveal {
     background-color: $main-menu-bg-color;
-    padding: 15px 15px 15px;
   }
   .mean-nav {
-    margin-left: -12px;
-    margin-top: 52px;
+    background-color: $main-menu-bg-color;
+    ul {
+      li {
+        margin-bottom: 0;
+        a,
+        li a {
+          border-top: 1px solid #FFF;
+          padding: 8px 5%;
+        }
+        a.mean-expand {
+          margin-top: 1px;
+          width: 26px;
+          height: 26px;
+          padding: 8px !important ;
+          border-left: 1px solid #FFF !important;
+          border-bottom: 1px solid #FFF !important;
+          &:hover {
+            background: none;
+            background-color: $main-menu-bg-color;
+          } 
+        }
+      }
+    }
   }
-}
-
-.site-logo {
-  text-align: center;
 }
