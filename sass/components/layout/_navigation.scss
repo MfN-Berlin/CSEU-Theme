@@ -2,7 +2,6 @@
   // Mobile
   @include breakpoint($mobile, true) {
     display: block;
-    //position: fixed;
     position: absolute;
     z-index: 99999;
     top: 0px;

@@ -41,7 +41,6 @@
   // Mobile
   @include breakpoint($mobile, true) {
     display: block;
-    //position: fixed;
     position: absolute;
     z-index: 999999;
     top: 0;
@@ -63,16 +62,14 @@
       margin: 0;
     }
     #block-tb-megamenu-main-menu {
-      margin: 0 12px;
-      margin-top: -24px;
+      margin: 0 1em;
+      margin-top: -6px;
     }
   }
   // Desk
   @include breakpoint($desk, true) {
     height: 148px;
-    //padding: 0 $horz-spacing-unit;
     #block-tb-megamenu-main-menu {
-      //margin-top: 2 * $vert-spacing-unit;
       margin-top: 42px;
     }    
   }
