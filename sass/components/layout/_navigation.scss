@@ -16,3 +16,9 @@
     display: none;
   }
 }
+
+// Admin menu
+#admin-menu,
+#admin-menu .dropdown {
+  z-index: 999999;
+}

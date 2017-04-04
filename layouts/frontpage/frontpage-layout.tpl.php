@@ -4,9 +4,6 @@
             <?php if ($logo): ?>
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="site-logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
             <?php endif; ?>
-
-
-
             <?php print render($page['branding']); ?>
         </div>
 
@@ -35,7 +32,6 @@
         <?php print render($page['footer_first']); ?>
         <?php print render($page['footer_second']); ?>
         <?php print render($page['footer_third']); ?>
-        <?php print render($page['footer_fourth']); ?>
         <?php print render($page['footer_bottom']); ?>
     </footer>
 </div>

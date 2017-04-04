@@ -1,4 +1,7 @@
 .l-header {
+  @include breakpoint($mobile, true) {
+    position: relative;
+  }
   @include breakpoint($tab, true) {
     position: relative;
   }
@@ -63,7 +66,7 @@
     }
     #block-tb-megamenu-main-menu {
       margin: 0 1em;
-      margin-top: -6px;
+      margin-top: -14px;
     }
   }
   // Desk
