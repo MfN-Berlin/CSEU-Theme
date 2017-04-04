@@ -34,7 +34,7 @@
     width: 100%;
     max-width: 220px;
   }
-}
+} //.l-branding
 
 
 .l-region--header {
@@ -68,12 +68,12 @@
   }
   // Desk
   @include breakpoint($desk, true) {
-    height: 148px;
+    height: 155px;
     #block-tb-megamenu-main-menu {
-      margin-top: 42px;
+      margin-top: 40px;
     }    
   }
 
-}
+} //.l-region--header 
 
 
