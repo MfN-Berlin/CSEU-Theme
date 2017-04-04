@@ -1,14 +1,17 @@
 .mean-container {
   .mean-bar {
     background: none;
-    background-color: $main-menu-bg-color;
+    //background-color: $main-menu-bg-color;
     padding: 2px 0;
   }
   a.meanmenu-reveal {
     background-color: $main-menu-bg-color;
+    margin-left: 12px;
+    margin-top: 12px;
   }
   .mean-nav {
     background-color: $main-menu-bg-color;
+    margin-top: 56px;
     ul {
       li {
         margin-bottom: 0;

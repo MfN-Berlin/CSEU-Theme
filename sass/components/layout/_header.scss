@@ -10,7 +10,7 @@
 .l-branding {
   @include breakpoint($mobile, true) {
     img {
-      margin-top: 55px;
+      margin-top: 12px;
       margin-left: auto;
       margin-right: auto;
       display: block;
@@ -41,7 +41,8 @@
   // Mobile
   @include breakpoint($mobile, true) {
     display: block;
-    position: fixed;
+    //position: fixed;
+    position: absolute;
     z-index: 999999;
     top: 0;
     right: 0;
