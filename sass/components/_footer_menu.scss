@@ -1,0 +1,72 @@
+.l-region--footer {
+  .block--menu-menu-cseu-footer-bottom-menu {
+    @include footer-menu;
+    text-align: center;
+    width: 100%;
+    ul.menu {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        margin: 0 1em;
+        @include breakpoint($mobile) {
+          margin: 0 0.5em;
+        }
+      }
+    }    
+  }
+  .cseu-footer-social-links {
+    text-align: center;
+    width: 100%;
+    ul.cseu-social-links-bottom {
+      list-style-type: none;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      li {
+        display: inline-block;
+        margin: 0 1em;
+        @include breakpoint($mobile) {
+          margin: 0 0.5em;
+        }
+      }
+    }       
+  }
+  
+  @include breakpoint($mobile) {
+    #block-cseu-blocks-builder-cseu-footer-banner {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+  }
+  @include breakpoint($tab) {
+    #block-cseu-blocks-builder-cseu-footer-banner {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 14px;
+    }
+  }
+  @include breakpoint($desk) {
+    position: relative;
+    height: 134px;
+    #block-cseu-blocks-builder-cseu-footer-banner {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+    }
+  }
+
+  
+  .cseu-footer-banner-cost {
+    max-width: 226px;
+    height: auto;
+    img {
+      max-width: 226px;
+      height: auto;
+    }
+  }
+  
+}

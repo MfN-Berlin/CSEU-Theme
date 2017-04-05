@@ -14,10 +14,8 @@ regions[content]        = Content
 regions[sidebar_first]  = First sidebar
 regions[sidebar_second] = Second sidebar
 
+regions[news]           = News
 regions[footer]         = Footer
-regions[footer_first]   = Footer First
-regions[footer_second]  = Footer Second
-regions[footer_third]   = Footer Third
 regions[footer_bottom]  = Footer Bottom
 
 ; Stylesheets

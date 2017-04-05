@@ -3,47 +3,17 @@
 @import 'bourbon';
 
 @import '../../variables/variables';
-//@import '../../variables/fonts';
 @import '../../variables/sizes';
-//@import '../../variables/colors';
-//@import '../../abstractions/mixins';
-//@import '../../base/base';
+
 
 .l-region--featured,
 .l-region--slider,
+.l-region--disruptive,
 .l-region--misc {
-  @include grid-span(1,1);
+  @include layout(1) {
+    @include grid-span(1,1);
+  }
 }
 
 
-// Articles and Events
-.l-region--news {
-  @include breakpoint($mobile, true) {
-    @include layout(1) {
-      #block-views-cseu-block-frontpage-news-block,
-      #block-views-cseu-events-calendar-view-up {
-        @include grid-span(1, 1);
-      }
-    }
-  }
-  @include breakpoint($tab, true) {
-    @include layout(2, 0.1) {
-      #block-views-cseu-block-frontpage-news-block {
-        @include grid-span(1, 1);
-      }
-      #block-views-cseu-events-calendar-view-up {
-        @include grid-span(1, 2);
-      }   
-    }
-  }
-  @include breakpoint($desk, true) {
-    @include layout(2) {
-      #block-views-cseu-block-frontpage-news-block {
-        @include grid-span(1, 1);
-      }
-      #block-views-cseu-events-calendar-view-up {
-        @include grid-span(1, 2);
-      }   
-    }
-  }
-}
+

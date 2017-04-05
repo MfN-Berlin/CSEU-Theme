@@ -32,10 +32,8 @@
         <?php print render($page['sidebar_second']); ?>
     </div>
     <footer class="l-footer" role="contentinfo">
+        <?php print render($page['news']); ?>
         <?php print render($page['footer']); ?>
-        <?php print render($page['footer_first']); ?>
-        <?php print render($page['footer_second']); ?>
-        <?php print render($page['footer_third']); ?>
         <?php print render($page['footer_bottom']); ?>
     </footer>
 </div>

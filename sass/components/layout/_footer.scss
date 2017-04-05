@@ -1,11 +1,10 @@
 .l-footer {
+  .l-region--news {
+    padding: 0 $horz-spacing-unit;
+  }
 }
-
-.l-region--footer-first,
-.l-region--footer-second,
-.l-region--footer-third {
-  padding: 0 $horz-spacing-unit;
+.l-region--footer {
+  background-color: $footer_bg_color;
 }
-
 .l-region--footer-bottom {
 }

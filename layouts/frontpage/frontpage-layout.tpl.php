@@ -23,15 +23,13 @@
                 <ul class="action-links"><?php print render($action_links); ?></ul>
             <?php endif; ?>
             <?php print render($page['news']); ?>
+            <?php print render($page['disruptive']); ?>
             <?php print render($page['misc']); ?>
             <?php //print $feed_icons; ?>
         </div>
     </div>
     <footer class="l-footer" role="contentinfo">
         <?php print render($page['footer']); ?>
-        <?php print render($page['footer_first']); ?>
-        <?php print render($page['footer_second']); ?>
-        <?php print render($page['footer_third']); ?>
         <?php print render($page['footer_bottom']); ?>
     </footer>
 </div>

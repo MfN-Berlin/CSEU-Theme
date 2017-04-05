@@ -13,12 +13,10 @@ regions[help]           = Help
 regions[featured]       = Featured
 regions[slider]         = Slider
 regions[news]           = News
+regions[disruptive]     = Disruptive
 regions[misc]           = Miscellaneous
 
 regions[footer]         = Footer
-regions[footer_first]   = Footer First
-regions[footer_second]  = Footer Second
-regions[footer_third]   = Footer Third
 regions[footer_bottom]  = Footer Bottom
 
 ; Stylesheets
