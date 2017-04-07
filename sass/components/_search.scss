@@ -22,7 +22,8 @@
       text-indent: -9999px;
       cursor: pointer;
       border: none;
-      background:url("../images/search-icon.svg") center center no-repeat;
+      background:url("../images/search-icon-white.svg") center center no-repeat;
+      background-size: 70% 70%;
       background-color: $main-menu-bg-color;
     }
   }
@@ -35,7 +36,8 @@
       margin-left: 14px;
     }
     input.form-submit {
-      background:url("../images/search-icon.svg") center center no-repeat;
+      background:url("../images/search-icon-white.svg") center center no-repeat;
+      background-size: 70% 70%;
       background-position: right middle;
       float: right;
     }    
@@ -96,7 +98,8 @@
       text-indent: -9999px;
       cursor: pointer;
       border: none;
-      background:url("../images/search-icon.svg") center center no-repeat;
+      background:url("../images/search-icon-white.svg") center center no-repeat;
+      background-size: 50% 50%;
       background-color: $main-menu-bg-color;
       
     }

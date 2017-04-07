@@ -1,0 +1,31 @@
+//
+// Frontpage
+//
+.l-region--disruptive {
+  .block--views-cseu-block-disruptive-block {
+    background: #A03800 url("../../../images/bg-disruptive.png") center center no-repeat;
+    background-size: 100% 100%;
+    max-width: 782px;
+    margin: 0 auto;
+    text-align: center;
+    color: #FFF;
+    h2 {
+      margin: 0;
+      padding-top: 1em;
+      text-transform: uppercase;
+    }
+    .cseu-block-frontpage-disruptive-row {
+      padding: 1em 1em;
+      p {
+        color: inherit;
+        filter: alpha(opacity=75);
+        opacity: 0.75;
+      }
+      a {
+        color: inherit;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
