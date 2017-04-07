@@ -27,10 +27,12 @@
       padding-left: 0;
       li {
         display: inline-block;
-        margin: 0 1em;
-        @include breakpoint($mobile) {
-          margin: 0 0.5em;
-        }
+        height: 40px;
+        width: 40px;
+        margin-right: 2px;
+        margin-bottom: 0;
+        background-color: #FFF;
+        font-size: 24px;
       }
     }       
   }
