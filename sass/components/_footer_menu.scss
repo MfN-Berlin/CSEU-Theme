@@ -3,11 +3,13 @@
     @include footer-menu;
     text-align: center;
     width: 100%;
+    margin-top: 14px;
     ul.menu {
       list-style-type: none;
       display: flex;
       justify-content: center;
       padding-left: 0;
+      margin: 0;
       li {
         display: inline-block;
         margin: 0 1em;
@@ -20,11 +22,14 @@
   .cseu-footer-social-links {
     text-align: center;
     width: 100%;
+    margin: 0;
+    margin-top: 24px;
     ul.cseu-social-links-bottom {
       list-style-type: none;
       display: flex;
       justify-content: center;
       padding-left: 0;
+      margin: 0;
       li {
         display: inline-block;
         height: 40px;
@@ -41,22 +46,22 @@
     #block-cseu-blocks-builder-cseu-footer-banner {
       display: flex;
       justify-content: center;
-      margin-bottom: 14px;
+      margin: 14px 0;
     }
   }
   @include breakpoint($tab) {
     #block-cseu-blocks-builder-cseu-footer-banner {
       display: flex;
       justify-content: center;
-      margin-bottom: 14px;
+      margin: 14px 0;
     }
   }
   @include breakpoint($desk) {
     position: relative;
-    height: 134px;
+    height: 144px;
     #block-cseu-blocks-builder-cseu-footer-banner {
       position: absolute;
-      top: 14px;
+      top: 24px;
       left: 14px;
     }
   }
