@@ -65,16 +65,6 @@
         }
       }      
     }
-
   } 
-
-
-  @include breakpoint($tab-2) {
-  } // tab-2
-  @include breakpoint($tab-3) {
-  } // tab-3
-  @include breakpoint($desk) {
-
-  }
 }
 
