@@ -1,0 +1,80 @@
+.l-region--slider {
+  @include breakpoint($mobile) {
+    display: none;
+  }
+  .view-cseu-block-fp-slideshow {
+    .owl-carousel {
+      position: relative;
+      .owl-wrapper-outer {
+        .owl-item {
+          .cseu-slider-content {
+            position: relative;
+            max-width: 100%;
+            img {
+              height: auto;
+              width: 100%;
+              margin: 0;
+              padding: 0;
+              max-height: 340px;
+            }
+            .cseu-slider-text {
+              position: absolute;
+              bottom: 32px;
+              width: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .cseu-slider-title {
+                display: inline-block;
+                background-color: $frontpage-heading-bg;
+                padding: 0 2em;
+                h2 {
+                  margin: 0;
+                  text-align: center;
+                  a {
+                    color: #FFF;
+                  }
+                }
+              }
+          
+  
+            }
+          }
+        }      
+      }
+      .owl-controls {
+        position: absolute;
+        bottom: 40%;
+        width: 100%;
+        .owl-buttons {
+          .owl-prev {
+            float: left;
+          }
+          .owl-next {
+            float: right;
+          }
+          .owl-prev, 
+          .owl-next {
+            font-size: 2em;
+            padding: 3px 10px;
+            background: $frontpage-heading-bg;   
+          }
+        }
+        .owl-pagination {
+          display: none;
+        }
+      }      
+    }
+
+  } 
+
+
+  @include breakpoint($tab-2) {
+  } // tab-2
+  @include breakpoint($tab-3) {
+  } // tab-3
+  @include breakpoint($desk) {
+
+  }
+}
+

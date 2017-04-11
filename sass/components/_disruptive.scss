@@ -27,5 +27,9 @@
       }
     }
   }
+  padding-bottom: $vert-spacing-unit;
+  @include breakpoint($desk) {
+    padding-top: $vert-spacing-unit;
+  }
 }
 

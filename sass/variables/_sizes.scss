@@ -1,6 +1,8 @@
 // Grid
 $mobile: max-width ($tablet-width - 1);
 $tab: $tablet-width ($desktop-width - 1);
+$tab-2: $tablet-width ($tablet-width-2 - 1);
+$tab-3: $tablet-width-2 ($desktop-width - 1);
 $desk: $desktop-width;
 
 

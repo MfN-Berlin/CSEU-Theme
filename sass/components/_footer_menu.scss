@@ -1,4 +1,7 @@
 .l-region--footer {
+  background: $footer_bg_color url("../images/bg-footer.png") center center no-repeat;
+  background-size: 100% 100%;
+      
   .block--menu-menu-cseu-footer-bottom-menu {
     @include footer-menu;
     text-align: center;
@@ -43,14 +46,14 @@
   }
   
   @include breakpoint($mobile) {
-    #block-cseu-blocks-builder-cseu-footer-banner {
+    #block-cseu-blocks-builder-footer-logos {
       display: flex;
       justify-content: center;
       margin: 14px 0;
     }
   }
   @include breakpoint($tab) {
-    #block-cseu-blocks-builder-cseu-footer-banner {
+    #block-cseu-blocks-builder-footer-logos {
       display: flex;
       justify-content: center;
       margin: 14px 0;
@@ -59,7 +62,7 @@
   @include breakpoint($desk) {
     position: relative;
     height: 144px;
-    #block-cseu-blocks-builder-cseu-footer-banner {
+    #block-cseu-blocks-builder-footer-logos {
       position: absolute;
       top: 24px;
       left: 14px;

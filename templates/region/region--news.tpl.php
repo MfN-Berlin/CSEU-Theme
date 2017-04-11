@@ -32,7 +32,7 @@
 <?php if ($content): ?>
   <div<?php print $attributes; ?>>
     <div id="region-news-block-heading" class="region--news-block-heading">
-      <h2>News & Events</h2>
+      <h2>News  &amp; Events</h2>
       <p>Everything you need to know about CA 151212</p>
     </div>
     <?php print $content; ?>

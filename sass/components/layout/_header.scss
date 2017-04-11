@@ -4,6 +4,7 @@
   }
   @include breakpoint($tab, true) {
     position: relative;
+    margin-bottom: $vert-spacing-unit;
   }
   @include breakpoint($desk, true) {
     margin-bottom: $vert-spacing-unit;

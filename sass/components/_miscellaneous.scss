@@ -1,0 +1,94 @@
+// Miscellaneous
+.l-region--misc {
+  @include breakpoint($mobile, true) {
+    @include layout(2) {
+      #block-cseu-blocks-builder-scientists {
+        @include grid-span(1, 1);
+      }
+      #block-cseu-blocks-builder-countries {
+        @include grid-span(1, 2);
+      }
+      #block-cseu-blocks-builder-working-groups {
+        @include grid-span(1, 1);
+        clear: both;
+      }
+      #block-cseu-blocks-builder-goals {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+  @include breakpoint($tab-2, true) {
+    @include layout(2) {
+      #block-cseu-blocks-builder-scientists {
+        @include grid-span(1, 1);
+      }
+      #block-cseu-blocks-builder-countries {
+        @include grid-span(1, 2);
+      }
+      #block-cseu-blocks-builder-working-groups {
+        @include grid-span(1, 1);
+        clear: both;
+      }
+      #block-cseu-blocks-builder-goals {
+        @include grid-span(1, 2);
+      }
+    }
+  }
+  @include breakpoint($tab-3, true) {
+    @include layout(4) {
+      #block-cseu-blocks-builder-scientists {
+        @include grid-span(1, 1);
+      }
+      #block-cseu-blocks-builder-countries {
+        @include grid-span(1, 2);
+      }
+      #block-cseu-blocks-builder-working-groups {
+        @include grid-span(1, 3);
+      }
+      #block-cseu-blocks-builder-goals {
+        @include grid-span(1, 4);
+      }      
+    }
+  }
+  @include breakpoint($desk, true) {
+    @include layout(4) {
+      #block-cseu-blocks-builder-scientists {
+        @include grid-span(1, 1);
+      }
+      #block-cseu-blocks-builder-countries {
+        @include grid-span(1, 2);
+      }
+      #block-cseu-blocks-builder-working-groups {
+        @include grid-span(1, 3);
+      }
+      #block-cseu-blocks-builder-goals {
+        @include grid-span(1, 4);
+      }      
+    }
+  }
+}
+
+//
+// Frontpage
+//
+.cseu-misc-block {
+  text-align: center;
+  margin: 0;
+  margin-bottom: $vert-spacing-unit;
+  h2 {
+    color: $frontpage-heading-bg;
+    margin: 0;
+  }
+  .cseu-misc-block-number {
+    width: 158px;
+    height: 133px;
+    background: #FFF url("../../../images/bg-misc.png") center center no-repeat;
+    background-size: 100% 100%;
+    margin: 0 auto;
+    font-size: 3em;
+    color: $frontpage-heading-bg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
