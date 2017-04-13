@@ -1071,36 +1071,56 @@ table.views-table {
     top: 0;
     right: 0;
     z-index: 9999999;
-    height: 46px;
-    width: 48px;
+    width: 173px;
     margin-right: 14px;
     margin-top: 12px;
-    background-color: #E07B00;
     -webkit-font-smoothing: antialiased; }
+    #search-block-form .cseu-search-container {
+      margin: 0;
+      background-color: #E07B00;
+      float: right; }
+      #search-block-form .cseu-search-container a span {
+        display: block;
+        text-indent: -9999px;
+        cursor: pointer;
+        border: none;
+        background: url("../images/search-icon-white.svg") center center no-repeat;
+        background-size: 70% 70%;
+        height: 46px;
+        width: 48px;
+        margin: 0; }
+    #search-block-form .container-inline {
+      display: none;
+      height: 46px;
+      width: 173px;
+      background-color: #E07B00;
+      float: left; }
     #search-block-form input.form-text {
       display: none; }
     #search-block-form input.form-submit {
-      margin: 0;
-      height: 46px;
-      width: 48px;
-      text-indent: -9999px;
-      cursor: pointer;
-      border: none;
-      background: url("../images/search-icon-white.svg") center center no-repeat;
-      background-size: 70% 70%;
-      background-color: #E07B00; }
-  #search-block-form:hover {
-    width: 163px; }
-    #search-block-form:hover input.form-text {
-      display: inline-block;
-      height: 28px;
-      margin-top: 10px;
-      margin-left: 14px; }
-    #search-block-form:hover input.form-submit {
-      background: url("../images/search-icon-white.svg") center center no-repeat;
-      background-size: 70% 70%;
-      background-position: right middle;
-      float: right; }
+      display: none; }
+  #search-block-form:hover .container-inline {
+    display: block;
+    height: 46px;
+    width: 173px;
+    background-color: #E07B00;
+    float: left; }
+  #search-block-form:hover input.form-text {
+    display: inline-block;
+    height: 28px;
+    margin-top: 10px;
+    margin-left: 14px; }
+  #search-block-form:hover input.form-submit {
+    display: inline-block;
+    margin: 0;
+    height: 46px;
+    width: 58px;
+    cursor: pointer;
+    border: none;
+    float: right;
+    color: #FFF;
+    font-weight: bold;
+    background-color: #E07B00; }
   .form-item-search-block-form input.form-text {
     width: 100px;
     background-color: #FAEAD6;

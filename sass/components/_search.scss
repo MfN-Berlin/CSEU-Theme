@@ -6,29 +6,50 @@
     top: 0;
     right: 0;
     z-index: 9999999;
-    height: 46px;
-    width: 48px;
+    width: 173px;
     margin-right: 14px;
     margin-top: 12px;
-    background-color: $main-menu-bg-color;
     -webkit-font-smoothing: antialiased;
+    .cseu-search-container {
+      margin: 0; 
+      background-color: $main-menu-bg-color;
+      float: right;
+      a {
+        span {
+          display: block;
+          text-indent: -9999px;
+          cursor: pointer;
+          border: none;
+          background:url("../images/search-icon-white.svg") center center no-repeat;
+          background-size: 70% 70%;
+          height: 46px;
+          width: 48px;
+          margin: 0;
+        }
+      }
+    }
+    .container-inline {
+      display: none;
+      height: 46px;
+      width: 173px;
+      background-color: $main-menu-bg-color;
+      float: left;
+    }
     input.form-text  {
       display: none;
     }
     input.form-submit {
-      margin: 0;
-      height: 46px;
-      width: 48px;   
-      text-indent: -9999px;
-      cursor: pointer;
-      border: none;
-      background:url("../images/search-icon-white.svg") center center no-repeat;
-      background-size: 70% 70%;
-      background-color: $main-menu-bg-color;
+      display: none;
     }
   }
   #search-block-form:hover {
-    width: 163px;
+    .container-inline {
+      display: block;
+      height: 46px;
+      width: 173px;
+      background-color: $main-menu-bg-color;
+      float: left;
+    }
     input.form-text  {
       display: inline-block;
       height: 28px;
@@ -36,10 +57,16 @@
       margin-left: 14px;
     }
     input.form-submit {
-      background:url("../images/search-icon-white.svg") center center no-repeat;
-      background-size: 70% 70%;
-      background-position: right middle;
+      display: inline-block;
+      margin: 0;
+      height: 46px;
+      width: 58px;
+      cursor: pointer;
+      border: none;
       float: right;
+      color: #FFF;
+      font-weight: bold;
+      background-color: $main-menu-bg-color;      
     }    
   }
   .form-item-search-block-form input.form-text{
@@ -61,8 +88,6 @@
     outline:none;
     width: 100px;
   }
-
-
 }
 
 // Tab
@@ -94,7 +119,6 @@
       height: 28px;
       padding: 0 14px;
       color: #FFF;
-      
       text-indent: -9999px;
       cursor: pointer;
       border: none;
