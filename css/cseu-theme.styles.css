@@ -478,6 +478,12 @@ body {
 .cseu-task-list-name {
   font-weight: bold; }
 
+.node--article--teaser {
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0; }
+
 .view-cseu-internal-user-list-view td,
 .view-cseu-internal-user-interest-view td,
 .view-cseu-internal-users-by-wg-view td,
