@@ -3,6 +3,7 @@ body {
   margin: 0 auto;
   font-size: $main-font-size;
   line-height: 1.6;
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 * {
@@ -15,31 +16,42 @@ h1 {
   font-size: $h1-font-size;
   margin-top: 0.67em;
   margin-bottom: 0.67em;
+  background: $navigation-bg-color url("../images/bg-headline.png") center center no-repeat;
+  background-size: 100% 100%;
+  padding: 4px 0;
+  text-align: center;
+  color: #FFF;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h2 {
   font-size: $h2-font-size;
   margin-top: 0.83em;
   margin-bottom: 0.83em;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h3 {
   font-size: $h3-font-size;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h4 {
   font-size: $h4-font-size;
   margin-top: 1.33em;
   margin-bottom: 1.33em;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h5 {
   font-size: $h5-font-size;
   margin-top: 1.67em;
   margin-bottom: 1.67em;
+  font-family: 'Roboto Slab', sans-serif;
 }
 h6 {
   font-size: $h6-font-size;
   margin-top: 2.33em;
   margin-bottom: 2.33em;
+  font-family: 'Roboto Slab', sans-serif;
 }
 // Mobile
 @include breakpoint($mobile) {

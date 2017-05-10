@@ -98,7 +98,21 @@
     margin-bottom: 0.7em;
   }
   .field--name-field-cseu-event-venue {
+    margin-bottom: 0.7em;
+  }
+  .field--name-field-cseu-event-geofield {
     margin-bottom: $vert-spacing-unit;
+  }
+  .cseu-event-register-form {
+    margin: $vert-spacing-unit 0;
+    .field__label {
+      background-color: $main-menu-bg-color;
+      color: #FFF;
+      padding: 0 8px;
+    }
+    .field__items {
+      padding-left: 8px;
+    }
   }
 }
 
