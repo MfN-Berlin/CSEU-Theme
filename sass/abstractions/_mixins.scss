@@ -17,7 +17,7 @@
 @mixin block {
   background-color: $block_bg_color;
   margin-bottom: $vert-spacing-unit;
-  padding: 1em 0;
+  padding: 0.5em 0;
 
   h2.block__title {
     @include block-heading;

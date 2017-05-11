@@ -2,7 +2,7 @@ $body_bg_color: #FFF;
 
 $link_color: #3457A0;
 $link_hover_color: #01A9B3;
-$link_heading_color: #27688e;
+$link_heading_color: #A03800;
 
 $text-color: hsl(0, 0.58%, 33.92%);
 
@@ -14,9 +14,9 @@ $tab_link_hover_color: #02d6e2;
 $tab_link_active_color: #333;
 
 // Block
-$block_bg_color: #f6f6f2;
-$block_link_color: $link_heading_color;
-$block_link_hover_color: $link_color;
+$block_bg_color: #FAEAD6;
+$block_link_color: #A03800;
+$block_link_hover_color: #A03800;
 
 // Fieldset
 $fieldset_border_color: #CCC;
@@ -57,5 +57,11 @@ $dropdown-color: #A03800;
 $dropdown-hover-color: #A03800; 
 $dropdown-active-color: #FAEAD6;
 $dropdown-hover-border-top-color: #FFF; 
-$dropdown-hover-border-bottom-color: #E07B00; 
+$dropdown-hover-border-bottom-color: #E07B00;
+
+// Submentree
+$submenutree-bg-expanded-color: #F3DCC5;
+
+
+
 

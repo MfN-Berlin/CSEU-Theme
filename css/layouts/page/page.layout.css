@@ -8,9 +8,9 @@
 
 .l-region--sidebar-first > .block,
 .l-region--sidebar-second > .block {
-  background-color: #f6f6f2;
+  background-color: #FAEAD6;
   margin-bottom: 20px;
-  padding: 1em 0; }
+  padding: 0.5em 0; }
   .l-region--sidebar-first > .block h2.block__title,
   .l-region--sidebar-second > .block h2.block__title {
     font-size: 20px;
@@ -19,11 +19,35 @@
   .l-region--sidebar-first > .block a,
   .l-region--sidebar-second > .block a {
     text-decoration: none;
-    color: #27688e; }
+    color: #A03800; }
     .l-region--sidebar-first > .block a:hover,
     .l-region--sidebar-second > .block a:hover {
-      color: #3457A0;
+      color: #A03800;
       text-decoration: underline; }
+
+.block--submenutree ul.menu {
+  padding: 0;
+  margin: 0; }
+  .block--submenutree ul.menu li {
+    list-style-image: unset;
+    list-style-type: unset;
+    margin: 8px 0; }
+    .block--submenutree ul.menu li a {
+      padding-left: 20px; }
+    .block--submenutree ul.menu li a.active {
+      font-weight: bold; }
+  .block--submenutree ul.menu li.expanded {
+    background: #F3DCC5;
+    padding-top: 8px;
+    padding-bottom: 4px; }
+    .block--submenutree ul.menu li.expanded a.active-trail,
+    .block--submenutree ul.menu li.expanded a.active {
+      font-weight: bold; }
+    .block--submenutree ul.menu li.expanded ul.menu {
+      margin: 0; }
+      .block--submenutree ul.menu li.expanded ul.menu li {
+        padding-left: 20px;
+        margin: 0; }
 
 .l-region--sidebar-first,
 .l-region--sidebar-second {

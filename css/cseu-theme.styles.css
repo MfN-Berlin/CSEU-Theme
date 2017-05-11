@@ -98,11 +98,11 @@ h1 > a,
 h2 > a,
 h3 > a,
 h4 > a {
-  color: #27688e;
+  color: #A03800;
   text-decoration: none; }
 
 h2.site-slogan {
-  color: #27688e; }
+  color: #A03800; }
 
 fieldset {
   border: 1px solid #CCC;
@@ -651,7 +651,7 @@ table.views-table {
     text-align: right; }
     .block--views-cseu-events-calendar-view-up .more-link a,
     .block--views-cseu-events-calendar-view-upcal .more-link a {
-      color: #27688e;
+      color: #A03800;
       font-size: 14px;
       font-weight: bold;
       text-decoration: none;
@@ -1105,7 +1105,7 @@ input.form-submit {
     border-color: #FFF; }
 
 .cseu-login-menu-block {
-  background-color: #f6f6f2; }
+  background-color: #FAEAD6; }
   .cseu-login-menu-block a {
     color: #3457A0 !important;
     text-decoration: none; }
