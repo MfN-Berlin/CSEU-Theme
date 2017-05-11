@@ -922,6 +922,8 @@ table.views-table {
   .node--webform--full .node--cseu-event--cseu-ds-view-mode-event {
     margin-bottom: 1em;
     font-size: 110%; }
+    .node--webform--full .node--cseu-event--cseu-ds-view-mode-event span.date-display-single {
+      padding-left: 1em; }
 
 input.form-text {
   margin: 0;
