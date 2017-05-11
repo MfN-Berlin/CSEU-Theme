@@ -725,7 +725,11 @@ table.views-table {
     color: #FFF;
     padding: 0 8px; }
   .node--cseu-event .cseu-event-register-form .field__items {
-    padding-left: 8px; }
+    background-color: #E07B00;
+    color: #FFF;
+    padding: 0 8px; }
+    .node--cseu-event .cseu-event-register-form .field__items a {
+      color: #FFF; }
 
 .cseu-events-calendar-row,
 .node--cseu-event--teaser {

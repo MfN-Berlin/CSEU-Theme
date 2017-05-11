@@ -108,7 +108,8 @@
      <div class="field__items">
        <div class="field__item">
          <a href="/'. $variables['cseu_event_register_form']['alias'] .'" target="_blank">'.
-            $variables['cseu_event_register_form']['title'] .'
+            //$variables['cseu_event_register_form']['title'] .'
+            t('Please fill out the form to attend this event') .'
          </a>
        </div>
      </div>
