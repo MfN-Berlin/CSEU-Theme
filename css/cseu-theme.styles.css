@@ -98,11 +98,11 @@ h1 > a,
 h2 > a,
 h3 > a,
 h4 > a {
-  color: #A03800;
+  color: #3457A0;
   text-decoration: none; }
 
 h2.site-slogan {
-  color: #A03800; }
+  color: #3457A0; }
 
 fieldset {
   border: 1px solid #CCC;
@@ -651,7 +651,7 @@ table.views-table {
     text-align: right; }
     .block--views-cseu-events-calendar-view-up .more-link a,
     .block--views-cseu-events-calendar-view-upcal .more-link a {
-      color: #A03800;
+      color: #3457A0;
       font-size: 14px;
       font-weight: bold;
       text-decoration: none;
