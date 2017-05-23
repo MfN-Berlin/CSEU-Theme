@@ -997,6 +997,14 @@ input.form-submit {
   color: #FFF;
   background-color: #E07B00; }
 
+.webform-component {
+  margin-top: 1.4em;
+  clear: both; }
+  .webform-component div.description {
+    font-size: 80%;
+    margin-bottom: 1em;
+    clear: both; }
+
 @media (min-width: 980px) {
   .tb-megamenu {
     background-color: #E07B00; } }

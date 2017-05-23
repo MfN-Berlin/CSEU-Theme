@@ -114,4 +114,13 @@ input.form-submit {
   background-color: $main-menu-bg-color;
 }
 
+.webform-component {
+  margin-top: 1.4em;
+  clear:both;
+  div.description {
+    font-size: 80%;
+    margin-bottom: 1em;
+    clear: both;
+  }
+}
 
