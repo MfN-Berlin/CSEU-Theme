@@ -727,15 +727,16 @@ table.views-table {
 .node--cseu-event .cseu-event-register-form {
   margin: 20px 0; }
   .node--cseu-event .cseu-event-register-form .field__label {
-    background-color: #E07B00;
+    background-color: #A03800;
     color: #FFF;
-    padding: 0 8px; }
+    padding: .5em .7em; }
   .node--cseu-event .cseu-event-register-form .field__items {
-    background-color: #E07B00;
+    background-color: #A03800;
     color: #FFF;
-    padding: 0 8px; }
+    padding: .5em .7em; }
     .node--cseu-event .cseu-event-register-form .field__items a {
-      color: #FFF; }
+      color: #FFF;
+      text-decoration: underline; }
 
 .cseu-events-calendar-row,
 .node--cseu-event--teaser {

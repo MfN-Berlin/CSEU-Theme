@@ -49,6 +49,54 @@
         padding-left: 20px;
         margin: 0; }
 
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image {
+  margin-bottom: 20px; }
+
+@media (min-width: 980px) {
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text {
+    width: 61.53846%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none;
+    clear: both;
+    margin-bottom: 60px; }
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image {
+    width: 30.76923%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    margin-bottom: 60px; } }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text h2, .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text h3 {
+  margin: 0; }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text h3 {
+  font-weight: bold;
+  margin-bottom: .7em; }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-label,
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-content {
+  display: inline-block; }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-label {
+  font-weight: bold; }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-content {
+  display: inline-block; }
+
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image .cseu-wgs-list-profile {
+  width: 220px;
+  background: #A03800;
+  color: #FFF;
+  padding-bottom: 1em; }
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image .cseu-wgs-list-profile .cseu-wgs-list-member {
+    font-weight: bold; }
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image .cseu-wgs-list-profile .cseu-wgs-list-member,
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-image .cseu-wgs-list-profile .cseu-wgs-list-institution {
+    padding: 0 .7em; }
+
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   width: 100%;
