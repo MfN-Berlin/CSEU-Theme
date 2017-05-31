@@ -108,7 +108,6 @@
      <div class="field__items">
        <div class="field__item">
          <a href="/'. $variables['cseu_event_register_form']['alias'] .'" target="_blank">'.
-            //$variables['cseu_event_register_form']['title'] .'
             t('Please fill out the form to register') .'
          </a>
        </div>
@@ -117,6 +116,20 @@
       }
 
       print render($content);
+
+      if (!empty($variables['cseu_event_register_form'])) {
+        print '<div class="field cseu-event-register-form field--label-inline clearfix">
+     <div class="field__label">' . t('Registration') .':</div>
+     <div class="field__items">
+       <div class="field__item">
+         <a href="/'. $variables['cseu_event_register_form']['alias'] .'" target="_blank">'.
+            t('Please fill out the form to register') .'
+         </a>
+       </div>
+     </div>
+               </div>';
+      }
+
     ?>
 
   </div>

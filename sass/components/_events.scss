@@ -106,16 +106,17 @@
   .cseu-event-register-form {
     margin: $vert-spacing-unit 0;
     .field__label {
-      background-color: $main-menu-bg-color;
+      background-color: $members_bg_color;
       color: #FFF;
-      padding: 0 8px;
+      padding: .5em .7em;
     }
     .field__items {
-      background-color: $main-menu-bg-color;
+      background-color: $members_bg_color;
       color: #FFF;
-      padding: 0 8px;
+      padding: .5em .7em;
       a {
         color: #FFF;
+        text-decoration: underline;
       }
     }
   }
