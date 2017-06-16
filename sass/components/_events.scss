@@ -60,7 +60,7 @@
   h3 {
     font-weight: bold;
   }
-  
+
   @include breakpoint($tab) {
     @include layout(2 6, 0.1) {
       .cseu-events-calendar-row {
@@ -106,12 +106,12 @@
   .cseu-event-register-form {
     margin: $vert-spacing-unit 0;
     .field__label {
-      background-color: $members_bg_color;
+      background-color: $chairs_bg_color;
       color: #FFF;
       padding: .5em .7em;
     }
     .field__items {
-      background-color: $members_bg_color;
+      background-color: $chairs_bg_color;
       color: #FFF;
       padding: .5em .7em;
       a {

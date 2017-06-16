@@ -25,16 +25,96 @@
   }//row
 }
 
+// Working Group page
+.view-cseu-wgs-list-view {
+  .cseu-wgs-list-view-row {
+    .cseu-wgs-list-col-image {
+      margin-bottom: $vert-spacing-unit;
+    }
+    @include breakpoint($desk) {
+      @include layout(2 1) {
+        .cseu-wgs-list-col-text {
+          @include grid-span(1, 1);
+          clear: both;
+          margin-bottom: 3 * $vert-spacing-unit;
+        }
+        .cseu-wgs-list-col-image {
+          @include grid-span(1, 2);
+          margin-bottom: 3 * $vert-spacing-unit;
+        }
+      }
+    }//desk
+  }//.cseu-wgs-list-view-row
+
+  .view-display-id-chairs,
+  .view-display-id-members {
+    clear: both;
+  }
+  .cseu-wgs-list-attachment-chairs-row {
+    .cseu-wgs-list-request-link {
+      margin: 1em 0;
+      @include breakpoint($desk) {
+        margin-top: 38px;
+      }
+      background: $membership_request_bg_color;
+      color: $block_link_color;
+      font-size: 110%;
+      a {
+        color: $block_link_color;
+        text-decoration: underline;
+      }
+      padding: 1em;
+    }
+    @include breakpoint($desk) {
+      @include layout(3, 0.01) {
+        @for $i from 1 through 3 {
+          .cseu-wgs-list-attachment-chairs:nth-of-type(#{$i}) {
+            @include grid-span(1, $i);
+          }
+        }
+      }
+    }//desk
+  }
+  .cseu-wgs-list-attachment-members-row {
+    clear: both;
+    @include breakpoint($mobile) {
+      .cseu-wgs-list-attachment-members-col-1,
+      .cseu-wgs-list-attachment-members-col-2,
+      .cseu-wgs-list-attachment-members-col-3 {
+        padding: 1em 0;
+      }
+    }
+    @include breakpoint($tab) {
+      .cseu-wgs-list-attachment-members-col-1,
+      .cseu-wgs-list-attachment-members-col-2,
+      .cseu-wgs-list-attachment-members-col-3 {
+        padding: $vert-spacing-unit 0;
+      }
+    }
+    @include breakpoint($desk) {
+      padding-top: 2 * $vert-spacing-unit;
+      @include layout(3, 0.01) {
+        .cseu-wgs-list-attachment-members-col-1 {
+          @include grid-span(1, 1);
+        }
+        .cseu-wgs-list-attachment-members-col-2 {
+          @include grid-span(1, 2);
+        }
+        .cseu-wgs-list-attachment-members-col-3 {
+          @include grid-span(1, 3);
+
+        }
+      }
+    }//desk
+  }
+  .cseu-wgs-list-attachment-members-row:nth-of-type(1) {
+    padding-top: 0;
+  }
+}
+
 .view-cseu-wgs-list-view {
   .cseu-wgs-list-view-row {
     .cseu-wgs-list-col-text {
-      h2, h3 {
-        margin: 0;
-      }
-      h3 {
-        font-weight: bold;
-        margin-bottom: .7em;
-      }
       .cseu-wgs-list-field {
         .cseu-wgs-list-field-label,
         .cseu-wgs-list-field-content {
@@ -47,27 +127,60 @@
           display:inline-block;
         }
       }
-      //margin-bottom: $vert-spacing-unit;
     }
     .cseu-wgs-list-col-image {
-      .cseu-wgs-list-profile {
-        width: 220px;
-        background: $members_bg_color;
-        color: #FFF;
-        .cseu-wgs-list-image {
-          .user-picture {
-          }
-        }
-        .cseu-wgs-list-member {
-          font-weight: bold;
-        }
-        .cseu-wgs-list-member, 
-        .cseu-wgs-list-institution {
-          padding: 0 .7em;
-        }
-        padding-bottom: 1em;
-      }
-      //margin-bottom: $vert-spacing-unit;
     }
   }//row
+}
+
+.cseu-wgs-list-col-text,
+.cseu-wgs-list-attachment-chairs,
+.view-display-id-members {
+  h2, h3 {
+    margin: 0;
+  }
+  h3 {
+    font-weight: bold;
+    margin-bottom: .7em;
+  }
+}
+.view-display-id-members {
+  h2 {
+    padding-top: 2 * $vert-spacing-unit;
+  }
+}
+
+.cseu-wgs-list-profile {
+  width: 220px;
+  background: $chairs_bg_color;
+  color: #FFF;
+  .cseu-wgs-list-image {
+    .user-picture {
+    }
+  }
+  .cseu-wgs-list-info {
+    min-height: 100px;
+  }
+  .cseu-wgs-list-member {
+    font-weight: bold;
+  }
+  .cseu-wgs-list-member,
+  .cseu-wgs-list-institution {
+    padding: 0 .7em;
+  }
+  padding-bottom: 1em;
+}
+
+.cseu-wgs-list-attachment-members-row {
+  .cseu-wgs-list-profile {
+    background: $members_bg_color;
+    color: #000;
+  }
+  .cseu-wgs-list-info {
+    //min-height: 180px;
+  }
+}
+
+.cseu-wgs-list-view-title-hidden {
+  display: none;
 }
