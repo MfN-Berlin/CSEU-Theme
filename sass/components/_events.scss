@@ -56,7 +56,8 @@
 //
 // Pages
 //
-.page-events .view-display-id-all {
+.page-events .view-display-id-all,
+.page-wgs-events .view-cseu-wg-events-list {
   h3 {
     font-weight: bold;
   }
@@ -89,6 +90,14 @@
   }
 }
 
+.page-wgs-events .view-cseu-wg-events-list {
+  @include breakpoint($desk) {
+	.cseu-event-title,
+	.cseu-event-venue {
+	  padding-left: 1em;
+    }
+  }
+}
 .node--cseu-event {
   .field--name-field-cseu-event-date {
     margin-bottom: 0.7em;

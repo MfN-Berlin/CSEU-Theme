@@ -668,23 +668,27 @@ table.views-table {
   .block--views-cseu-events-calendar-view-upcal .view-content {
     border-bottom: 2px solid #e0e0e0; }
 
-.page-events .view-display-id-all h3 {
+.page-events .view-display-id-all h3,
+.page-wgs-events .view-cseu-wg-events-list h3 {
   font-weight: bold; }
 
 @media (min-width: 480px) and (max-width: 979px) {
-  .page-events .view-display-id-all .cseu-events-calendar-row {
+  .page-events .view-display-id-all .cseu-events-calendar-row,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-  .page-events .view-display-id-all .cseu-event-date {
+  .page-events .view-display-id-all .cseu-event-date,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-date {
     width: 24.69136%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  .page-events .view-display-id-all .cseu-event-content {
+  .page-events .view-display-id-all .cseu-event-content,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 74.07407%;
     float: right;
     margin-left: 0;
@@ -692,24 +696,32 @@ table.views-table {
     clear: none; } }
 
 @media (min-width: 980px) {
-  .page-events .view-display-id-all .cseu-events-calendar-row {
+  .page-events .view-display-id-all .cseu-events-calendar-row,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; }
-  .page-events .view-display-id-all .cseu-event-date {
+  .page-events .view-display-id-all .cseu-event-date,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-date {
     width: 12.42236%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  .page-events .view-display-id-all .cseu-event-content {
+  .page-events .view-display-id-all .cseu-event-content,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 86.95652%;
     float: right;
     margin-left: 0;
     margin-right: 0;
     clear: none; } }
+
+@media (min-width: 980px) {
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-title,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-venue {
+    padding-left: 1em; } }
 
 .node--cseu-event .field--name-field-cseu-event-date {
   margin-bottom: 0.7em;
