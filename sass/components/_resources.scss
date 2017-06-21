@@ -1,0 +1,12 @@
+//
+// Page
+//
+.view-cseu-wg-resources-list {
+  .ui-accordion {
+    .ui-accordion-content-active {
+      .node--article--teaser:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}

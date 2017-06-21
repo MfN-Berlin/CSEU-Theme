@@ -57,25 +57,25 @@ h6 {
 @include breakpoint($mobile) {
   h1 {
     font-size: $h1-font-size-mobile;
-  } 
+  }
   h2 {
     font-size: $h2-font-size-mobile;
-  } 
+  }
   h3 {
     font-size: $h3-font-size-mobile;
-  }  
+  }
 }
 // Tab
 @include breakpoint($tab) {
   h1 {
     font-size: $h1-font-size-tab;
-  } 
+  }
   h2 {
     font-size: $h2-font-size-tab;
-  } 
+  }
   h3 {
     font-size: $h3-font-size-tab;
-  }  
+  }
 }
 
 p {
@@ -89,7 +89,7 @@ p {
 }
 
 strong {
-  font-weight: bold; 
+  font-weight: bold;
 }
 
 em, i {
@@ -104,7 +104,7 @@ ol {
   margin-bottom: 1em;
   margin-left: 0;
   margin-right: 0;
-  padding-left: 40px; 
+  padding-left: 40px;
 }
 ul {
   list-style-type: disc;
@@ -180,7 +180,7 @@ ul.tabs--primary {
       color: $tab_link_hover_color;
       background-color: $tab_bg_hover_color;
   }
-}  
+}
 ul.tabs--secondary {
   padding: 0.5em 0;
   margin: 0;
@@ -212,7 +212,7 @@ ul.tabs--secondary {
       color: $tab_link_hover_color;
       background-color: $tab_bg_hover_color;
   }
-}  
+}
 .tabs,
 ul.tabs--primary,
 ul.tabs--secondary {
@@ -228,12 +228,52 @@ ul.tabs--secondary {
 .user-profile a[href] {
   color: $link_color;
   text-decoration: none;
-  
+
   &:hover {
     color: $link_hover_color;
     text-decoration: underline;
   }
 }
+.node-readmore a[href] {
+  font-size: 90%;
+}
+
+// Accordion
+.ui-accordion {
+  margin-bottom: $vert-spacing-unit;
+  h3.ui-accordion-header {
+    margin-bottom: 2px;
+    font-weight: normal;
+    border: 1px solid $accordion_header_bg_color;
+    background: $accordion_header_bg_color url(../images/bg-accordion.png) 50% 50% repeat-x;
+    .ui-icon {
+      background-image: url(../images/ui-icons_ffffff_256x240.png);
+    }
+	span.ui-icon-triangle-1-e {
+      background-position: -64px -128px;
+	}
+  }
+  h3.ui-accordion-header-active {
+    margin-bottom: 0;
+    border: 1px solid $accordion_header_active_bg_color;
+    background: $accordion_header_active_bg_color url(../images/bg-accordion-active.png) 50% 50% repeat-x;
+    span.ui-icon-triangle-1-s {
+      background-position: -32px -128px;
+    }
+  }
+  h3.ui-accordion-header,
+  h3.ui-accordion-header-active {
+    color: #FFF;
+    a, a:hover {
+      color: inherit;
+    }
+  }
+  .ui-accordion-content {
+    margin-bottom: $vert-spacing-unit;
+    border: none;
+  }
+}
+
 
 // Admin Toolbar
 body.adminimal-menu div.toolbar-shortcuts {

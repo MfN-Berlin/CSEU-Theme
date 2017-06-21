@@ -205,6 +205,37 @@ ul.tabs--secondary {
     color: #01A9B3;
     text-decoration: underline; }
 
+.node-readmore a[href] {
+  font-size: 90%; }
+
+.ui-accordion {
+  margin-bottom: 20px; }
+  .ui-accordion h3.ui-accordion-header {
+    margin-bottom: 2px;
+    font-weight: normal;
+    border: 1px solid #E07B00;
+    background: #E07B00 url(../images/bg-accordion.png) 50% 50% repeat-x; }
+    .ui-accordion h3.ui-accordion-header .ui-icon {
+      background-image: url(../images/ui-icons_ffffff_256x240.png); }
+    .ui-accordion h3.ui-accordion-header span.ui-icon-triangle-1-e {
+      background-position: -64px -128px; }
+  .ui-accordion h3.ui-accordion-header-active {
+    margin-bottom: 0;
+    border: 1px solid #A03800;
+    background: #A03800 url(../images/bg-accordion-active.png) 50% 50% repeat-x; }
+    .ui-accordion h3.ui-accordion-header-active span.ui-icon-triangle-1-s {
+      background-position: -32px -128px; }
+  .ui-accordion h3.ui-accordion-header,
+  .ui-accordion h3.ui-accordion-header-active {
+    color: #FFF; }
+    .ui-accordion h3.ui-accordion-header a, .ui-accordion h3.ui-accordion-header a:hover,
+    .ui-accordion h3.ui-accordion-header-active a,
+    .ui-accordion h3.ui-accordion-header-active a:hover {
+      color: inherit; }
+  .ui-accordion .ui-accordion-content {
+    margin-bottom: 20px;
+    border: none; }
+
 body.adminimal-menu div.toolbar-shortcuts {
   display: none; }
 
@@ -668,8 +699,7 @@ table.views-table {
   .block--views-cseu-events-calendar-view-upcal .view-content {
     border-bottom: 2px solid #e0e0e0; }
 
-.page-events .view-display-id-all h3,
-.page-wgs-events .view-cseu-wg-events-list h3 {
+.page-events .view-display-id-all h3 {
   font-weight: bold; }
 
 @media (min-width: 480px) and (max-width: 979px) {
@@ -756,6 +786,9 @@ table.views-table {
   margin-bottom: 2em;
   padding-bottom: 1em;
   border-bottom: 2px solid #e0e0e0; }
+
+.view-cseu-wg-events-list .ui-accordion .ui-accordion-content-active .cseu-events-calendar-row:last-child {
+  border-bottom: none; }
 
 .l-region--news {
   margin-bottom: 20px; }
@@ -874,47 +907,8 @@ table.views-table {
 .not-front .region--news-block-heading {
   display: none; }
 
-.cseu-documents-view-row {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 20px;
-  min-height: 250px;
-  border-bottom: 2px solid #e0e0e0;
-  clear: both; }
-
-@media (max-width: 479px) {
-  .cseu-view-documents-cover {
-    box-shadow: 8px 8px 4px #888; }
-  .cseu-view-documents-cover img {
-    max-width: 120px;
-    height: auto; }
-  .cseu-documents-view-col1 {
-    max-width: 120px; } }
-
-@media (min-width: 480px) and (max-width: 979px) {
-  .cseu-view-documents-cover {
-    box-shadow: 8px 8px 4px #888; }
-  .cseu-view-documents-cover img {
-    max-width: 120px;
-    height: auto; }
-  .cseu-documents-view-col1 {
-    width: 120px;
-    float: left; }
-  .cseu-documents-view-col2 {
-    margin-left: 136px;
-    width: auto; } }
-
-@media (min-width: 980px) {
-  .cseu-view-documents-cover {
-    box-shadow: 8px 8px 4px #888; }
-  .cseu-view-documents-cover img {
-    max-height: 225px; }
-  .cseu-documents-view-col1 {
-    width: 150px;
-    float: left; }
-  .cseu-documents-view-col2 {
-    margin-left: 170px;
-    width: auto; } }
+.view-cseu-wg-resources-list .ui-accordion .ui-accordion-content-active .node--article--teaser:last-child {
+  border-bottom: none; }
 
 .cseu-community-map-table-view {
   margin: 20px 0; }

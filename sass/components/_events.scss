@@ -56,12 +56,13 @@
 //
 // Pages
 //
-.page-events .view-display-id-all,
-.page-wgs-events .view-cseu-wg-events-list {
+.page-events .view-display-id-all {
   h3 {
     font-weight: bold;
   }
-
+}
+.page-events .view-display-id-all,
+.page-wgs-events .view-cseu-wg-events-list {
   @include breakpoint($tab) {
     @include layout(2 6, 0.1) {
       .cseu-events-calendar-row {
@@ -138,3 +139,14 @@
   padding-bottom: 1em;
   border-bottom: $separator-width solid $separator-color;
 }
+
+.view-cseu-wg-events-list {
+  .ui-accordion {
+    .ui-accordion-content-active {
+      .cseu-events-calendar-row:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
