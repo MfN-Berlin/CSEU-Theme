@@ -31,7 +31,7 @@
       }
       #block-views-cseu-block-fp-events-block {
         @include grid-span(1, 2);
-      }   
+      }
     }
   }
   margin-bottom: $vert-spacing-unit;
@@ -123,6 +123,21 @@
   .region--news-block-heading {
     display: none;
   }
+}
+
+.view-cseu-wgs-list-view {
+  .view-display-id-news {
+    clear: both;
+    padding-top: $vert-spacing-unit;
+    .ui-accordion {
+      .ui-accordion-content-active {
+        .node--article--teaser:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+
 }
 
 

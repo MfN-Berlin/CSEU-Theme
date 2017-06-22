@@ -907,6 +907,12 @@ table.views-table {
 .not-front .region--news-block-heading {
   display: none; }
 
+.view-cseu-wgs-list-view .view-display-id-news {
+  clear: both;
+  padding-top: 20px; }
+  .view-cseu-wgs-list-view .view-display-id-news .ui-accordion .ui-accordion-content-active .node--article--teaser:last-child {
+    border-bottom: none; }
+
 .view-cseu-wg-resources-list .ui-accordion .ui-accordion-content-active .node--article--teaser:last-child {
   border-bottom: none; }
 
