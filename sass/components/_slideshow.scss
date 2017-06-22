@@ -15,7 +15,6 @@
               width: 100%;
               margin: 0;
               padding: 0;
-              max-height: 340px;
             }
             .cseu-slider-text {
               position: absolute;
@@ -36,11 +35,11 @@
                   }
                 }
               }
-          
-  
+
+
             }
           }
-        }      
+        }
       }
       .owl-controls {
         position: absolute;
@@ -53,18 +52,18 @@
           .owl-next {
             float: right;
           }
-          .owl-prev, 
+          .owl-prev,
           .owl-next {
             font-size: 2em;
             padding: 3px 10px;
-            background: $frontpage-heading-bg;   
+            background: $frontpage-heading-bg;
           }
         }
         .owl-pagination {
           display: none;
         }
-      }      
+      }
     }
-  } 
+  }
 }
 
