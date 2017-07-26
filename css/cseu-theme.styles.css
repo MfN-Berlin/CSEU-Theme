@@ -454,6 +454,11 @@ body {
     line-height: 1.2;
     margin-bottom: 8px; }
 
+img.file-media-cseu-cover-photo {
+  width: 100%;
+  max-width: 1133px;
+  padding-bottom: 0; }
+
 .file-icon {
   padding-right: 4px; }
 

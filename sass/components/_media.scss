@@ -16,8 +16,13 @@
     margin-bottom: 8px;
   }
 }
+img.file-media-cseu-cover-photo {
+  width: 100%;
+  max-width: $max-screen-width;
+  padding-bottom: 0;
+}
 
-// File icons 
+// File icons
 .file-icon {
   padding-right: 4px;
 }
