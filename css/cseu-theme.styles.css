@@ -707,10 +707,22 @@ table.views-table {
 .page-events .view-display-id-all h3 {
   font-weight: bold; }
 
+@media (max-width: 479px) {
+  .page-events .view-display-id-all .cseu-event-category,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
+    display: none; } }
+
 @media (min-width: 480px) and (max-width: 979px) {
   .page-events .view-display-id-all .cseu-events-calendar-row,
   .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-category,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
+    width: 74.07407%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -721,19 +733,30 @@ table.views-table {
     float: left;
     margin-right: -100%;
     margin-left: 0;
-    clear: none; }
+    clear: none;
+    clear: both; }
   .page-events .view-display-id-all .cseu-event-content,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 74.07407%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-category-mobile,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-category-mobile {
+    display: none; } }
 
 @media (min-width: 980px) {
   .page-events .view-display-id-all .cseu-events-calendar-row,
   .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-category,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
+    width: 86.95652%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -744,14 +767,18 @@ table.views-table {
     float: left;
     margin-right: -100%;
     margin-left: 0;
-    clear: none; }
+    clear: none;
+    clear: both; }
   .page-events .view-display-id-all .cseu-event-content,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 86.95652%;
     float: right;
     margin-left: 0;
     margin-right: 0;
-    clear: none; } }
+    clear: none; }
+  .page-events .view-display-id-all .cseu-event-category-mobile,
+  .page-wgs-events .view-cseu-wg-events-list .cseu-event-category-mobile {
+    display: none; } }
 
 @media (min-width: 980px) {
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-title,
@@ -794,6 +821,17 @@ table.views-table {
 
 .view-cseu-wg-events-list .ui-accordion .ui-accordion-content-active .cseu-events-calendar-row:last-child {
   border-bottom: none; }
+
+.cseu-event-category-43,
+.cseu-event-category-44 {
+  font-weight: bold;
+  font-size: 80%; }
+
+.cseu-event-category-43 {
+  color: #E07B00; }
+
+.cseu-event-category-44 {
+  color: #A03800; }
 
 .l-region--news {
   margin-bottom: 20px; }

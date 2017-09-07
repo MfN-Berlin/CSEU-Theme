@@ -63,17 +63,29 @@
 }
 .page-events .view-display-id-all,
 .page-wgs-events .view-cseu-wg-events-list {
+  @include breakpoint($mobile) {
+    .cseu-event-category {
+      display: none;
+    }
+  }
   @include breakpoint($tab) {
     @include layout(2 6, 0.1) {
       .cseu-events-calendar-row {
         @include grid-span(2, 1);
       }
+      .cseu-event-category {
+        @include grid-span(1, 2);
+      }      
       .cseu-event-date {
         @include grid-span(1, 1);
+        clear: both;
       }
       .cseu-event-content {
         @include grid-span(1, 2);
       }
+    }
+    .cseu-event-category-mobile {
+      display: none;
     }
   }
   @include breakpoint($desk) {
@@ -81,12 +93,19 @@
       .cseu-events-calendar-row {
         @include grid-span(2, 1);
       }
+      .cseu-event-category {
+        @include grid-span(1, 2);
+      }
       .cseu-event-date {
         @include grid-span(1, 1);
+        clear: both;
       }
       .cseu-event-content {
         @include grid-span(1, 2);
       }
+    }
+    .cseu-event-category-mobile {
+      display: none;
     }
   }
 }
@@ -149,4 +168,20 @@
     }
   }
 }
+
+.cseu-event-category-43,
+.cseu-event-category-44 {
+    font-weight: bold;
+    font-size: 80%;
+    //margin-bottom: 4px;  
+}
+.cseu-event-category-43 {
+    color: $internal-event;
+}
+.cseu-event-category-44 {
+    color: $external-event;
+}
+
+
+
 
