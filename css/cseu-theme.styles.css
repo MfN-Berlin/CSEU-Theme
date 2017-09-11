@@ -704,16 +704,19 @@ table.views-table {
   .block--views-cseu-events-calendar-view-upcal .view-content {
     border-bottom: 2px solid #e0e0e0; }
 
-.page-events .view-display-id-all h3 {
+.page-events .view-display-id-all h3,
+.page-events .view-display-id-past h3 {
   font-weight: bold; }
 
 @media (max-width: 479px) {
   .page-events .view-display-id-all .cseu-event-category,
+  .page-events .view-display-id-past .cseu-event-category,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
     display: none; } }
 
 @media (min-width: 480px) and (max-width: 979px) {
   .page-events .view-display-id-all .cseu-events-calendar-row,
+  .page-events .view-display-id-past .cseu-events-calendar-row,
   .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
     float: right;
@@ -721,6 +724,7 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-category,
+  .page-events .view-display-id-past .cseu-event-category,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
     width: 74.07407%;
     float: right;
@@ -728,6 +732,7 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-date,
+  .page-events .view-display-id-past .cseu-event-date,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-date {
     width: 24.69136%;
     float: left;
@@ -736,6 +741,7 @@ table.views-table {
     clear: none;
     clear: both; }
   .page-events .view-display-id-all .cseu-event-content,
+  .page-events .view-display-id-past .cseu-event-content,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 74.07407%;
     float: right;
@@ -743,11 +749,13 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-category-mobile,
+  .page-events .view-display-id-past .cseu-event-category-mobile,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-category-mobile {
     display: none; } }
 
 @media (min-width: 980px) {
   .page-events .view-display-id-all .cseu-events-calendar-row,
+  .page-events .view-display-id-past .cseu-events-calendar-row,
   .page-wgs-events .view-cseu-wg-events-list .cseu-events-calendar-row {
     width: 100%;
     float: right;
@@ -755,6 +763,7 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-category,
+  .page-events .view-display-id-past .cseu-event-category,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-category {
     width: 86.95652%;
     float: right;
@@ -762,6 +771,7 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-date,
+  .page-events .view-display-id-past .cseu-event-date,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-date {
     width: 12.42236%;
     float: left;
@@ -770,6 +780,7 @@ table.views-table {
     clear: none;
     clear: both; }
   .page-events .view-display-id-all .cseu-event-content,
+  .page-events .view-display-id-past .cseu-event-content,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-content {
     width: 86.95652%;
     float: right;
@@ -777,6 +788,7 @@ table.views-table {
     margin-right: 0;
     clear: none; }
   .page-events .view-display-id-all .cseu-event-category-mobile,
+  .page-events .view-display-id-past .cseu-event-category-mobile,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-category-mobile {
     display: none; } }
 
@@ -832,6 +844,24 @@ table.views-table {
 
 .cseu-event-category-44 {
   color: #A03800; }
+
+.page-events ul.tabs--primary {
+  display: -ms-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-events ul.tabs--primary li {
+    display: inline-block;
+    list-style: none; }
+    .page-events ul.tabs--primary li a {
+      background-color: #FAEAD6;
+      color: #A03800; }
+  .page-events ul.tabs--primary li.active a {
+    background-color: #F3DCC5;
+    font-weight: bold; }
+  .page-events ul.tabs--primary li:not(:last-of-type) {
+    margin: 0 8px; }
+  .page-events ul.tabs--primary li:last-of-type {
+    margin-left: auto; }
 
 .l-region--news {
   margin-bottom: 20px; }

@@ -56,12 +56,14 @@
 //
 // Pages
 //
-.page-events .view-display-id-all {
+.page-events .view-display-id-all,
+.page-events .view-display-id-past {
   h3 {
     font-weight: bold;
   }
 }
 .page-events .view-display-id-all,
+.page-events .view-display-id-past,
 .page-wgs-events .view-cseu-wg-events-list {
   @include breakpoint($mobile) {
     .cseu-event-category {
@@ -173,13 +175,40 @@
 .cseu-event-category-44 {
     font-weight: bold;
     font-size: 80%;
-    //margin-bottom: 4px;  
 }
 .cseu-event-category-43 {
     color: $internal-event;
 }
 .cseu-event-category-44 {
     color: $external-event;
+}
+
+.page-events {
+  ul.tabs--primary {
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    li {
+      display: inline-block;
+      list-style: none;
+      a {
+        background-color: $event-tab-bg-color;
+        color: $event-tab-link-color;
+      }
+    }
+    li.active {
+      a {
+        background-color: $event-tab-bg-active-color;
+        font-weight: bold;
+      }      
+    }
+    li:not(:last-of-type) {
+      margin: 0 8px;
+    }
+    li:last-of-type {
+      margin-left: auto;
+    }
+  }
 }
 
 
