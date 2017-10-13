@@ -1,5 +1,5 @@
 body {
-  max-width: 1133px;
+  max-width: 980px;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.6;
@@ -456,7 +456,7 @@ body {
 
 img.file-media-cseu-cover-photo {
   width: 100%;
-  max-width: 1133px;
+  max-width: 980px;
   padding-bottom: 0; }
 
 .file-icon {
