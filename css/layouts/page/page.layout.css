@@ -89,8 +89,8 @@
     clear: none;
     margin-bottom: 60px; } }
 
-.view-cseu-wgs-list-view .view-display-id-chairs,
-.view-cseu-wgs-list-view .view-display-id-members {
+.view-cseu-wgs-list-view .attachment-wg-chairs,
+.view-cseu-wgs-list-view .attachment-wg-members {
   clear: both; }
 
 .view-cseu-wgs-list-view .cseu-wgs-list-attachment-chairs-row .cseu-wgs-list-request-link {
@@ -176,17 +176,17 @@
 .cseu-wgs-list-col-text h2, .cseu-wgs-list-col-text h3,
 .cseu-wgs-list-attachment-chairs h2,
 .cseu-wgs-list-attachment-chairs h3,
-.view-display-id-members h2,
-.view-display-id-members h3 {
+.attachment-wg-members h2,
+.attachment-wg-members h3 {
   margin: 0; }
 
 .cseu-wgs-list-col-text h3,
 .cseu-wgs-list-attachment-chairs h3,
-.view-display-id-members h3 {
+.attachment-wg-members h3 {
   font-weight: bold;
   margin-bottom: .7em; }
 
-.view-display-id-members h2 {
+.attachment-wg-members h2 {
   padding-top: 40px; }
 
 .cseu-wgs-list-profile {

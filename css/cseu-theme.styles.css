@@ -795,7 +795,7 @@ table.views-table {
 @media (min-width: 980px) {
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-title,
   .page-wgs-events .view-cseu-wg-events-list .cseu-event-venue {
-    padding-left: 1em; } }
+    padding-left: 2em; } }
 
 .node--cseu-event .field--name-field-cseu-event-date {
   margin-bottom: 0.7em;
@@ -833,6 +833,10 @@ table.views-table {
 
 .view-cseu-wg-events-list .ui-accordion .ui-accordion-content-active .cseu-events-calendar-row:last-child {
   border-bottom: none; }
+
+@media (min-width: 980px) {
+  .cseu-event-category {
+    padding-left: 2.5em; } }
 
 .cseu-event-category-43,
 .cseu-event-category-44 {
