@@ -46,8 +46,8 @@
     }//desk
   }//.cseu-wgs-list-view-row
 
-  .view-display-id-chairs,
-  .view-display-id-members {
+  .attachment-wg-chairs,
+  .attachment-wg-members {
     clear: both;
   }
   .cseu-wgs-list-attachment-chairs-row {
@@ -135,7 +135,7 @@
 
 .cseu-wgs-list-col-text,
 .cseu-wgs-list-attachment-chairs,
-.view-display-id-members {
+.attachment-wg-members {
   h2, h3 {
     margin: 0;
   }
@@ -144,7 +144,7 @@
     margin-bottom: .7em;
   }
 }
-.view-display-id-members {
+.attachment-wg-members {
   h2 {
     padding-top: 2 * $vert-spacing-unit;
   }
