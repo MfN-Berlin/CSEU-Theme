@@ -1101,6 +1101,15 @@ input.form-submit {
     margin-bottom: 1em;
     clear: both; }
 
+.page-node-361 ul.quicktabs-tabs {
+  background-color: #FAEAD6; }
+  .page-node-361 ul.quicktabs-tabs li {
+    margin-right: 2em; }
+    .page-node-361 ul.quicktabs-tabs li a {
+      color: #A03800; }
+  .page-node-361 ul.quicktabs-tabs li.active a {
+    font-weight: bold; }
+
 @media (min-width: 980px) {
   .tb-megamenu {
     background-color: #E07B00; } }

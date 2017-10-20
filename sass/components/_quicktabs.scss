@@ -1,0 +1,20 @@
+//
+// Page
+//
+
+.page-node-361 {
+  ul.quicktabs-tabs {
+    background-color: $event-tab-bg-color;
+    li {
+      margin-right: 2em;
+      a {
+        color: $event-tab-link-color;
+      }
+    }
+    li.active {
+      a {
+        font-weight: bold;
+      }      
+    }
+  }
+}
