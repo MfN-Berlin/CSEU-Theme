@@ -1107,6 +1107,8 @@ input.form-submit {
     margin-right: 2em; }
     .page-node-361 ul.quicktabs-tabs li a {
       color: #A03800; }
+    .page-node-361 ul.quicktabs-tabs li a:hover, .page-node-361 ul.quicktabs-tabs li a:focus {
+      color: #A03800; }
   .page-node-361 ul.quicktabs-tabs li.active a {
     font-weight: bold; }
 

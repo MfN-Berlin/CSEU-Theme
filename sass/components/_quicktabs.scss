@@ -10,6 +10,9 @@
       a {
         color: $event-tab-link-color;
       }
+      a:hover, a:focus {
+        color: $event-tab-link-color;
+      }
     }
     li.active {
       a {
