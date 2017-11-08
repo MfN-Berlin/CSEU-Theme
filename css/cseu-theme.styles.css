@@ -462,6 +462,27 @@ img.file-media-cseu-cover-photo {
 .file-icon {
   padding-right: 4px; }
 
+.file-document {
+  margin-bottom: 20px; }
+  .file-document .file .cseu-file-icon {
+    display: inline-block;
+    height: 43px;
+    width: 32px;
+    margin-right: 8px; }
+  .file-document .file .cseu-file-document {
+    display: inline-block;
+    height: 43px; }
+    .file-document .file .cseu-file-document .cseu-file-link {
+      margin: 0; }
+      .file-document .file .cseu-file-document .cseu-file-link a {
+        vertical-align: top;
+        line-height: 1.0;
+        text-decoration: underline; }
+  .file-document .field--name-field-description {
+    margin: 0;
+    font-size: 90%;
+    line-height: 0.4; }
+
 #edit-profile-cseu-profile-groups-interest-field-cseu-groups-interest label,
 #edit-profile-cseu-profile-tasks-interest-field-cseu-tasks-interest label,
 #edit-profile-cseu-profile-assignments-field-cseu-secondary-proposer label,
