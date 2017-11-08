@@ -578,15 +578,24 @@ img.file-media-cseu-cover-photo {
 .view-cseu-restricted-emails-chairs-view,
 .view-cseu-restricted-emails-cochairs-view,
 .view-cseu-restricted-emails-by-status-view,
-.view-cseu-restricted-emails-members-view {
+.view-cseu-restricted-csv-email-all-view {
   margin-bottom: 1em; }
   .view-cseu-restricted-emails-by-wg-view h3,
   .view-cseu-restricted-emails-chairs-view h3,
   .view-cseu-restricted-emails-cochairs-view h3,
   .view-cseu-restricted-emails-by-status-view h3,
-  .view-cseu-restricted-emails-members-view h3 {
+  .view-cseu-restricted-csv-email-all-view h3 {
     font-size: 120%;
     margin: 1em 0; }
+  .view-cseu-restricted-emails-by-wg-view .view-footer,
+  .view-cseu-restricted-emails-chairs-view .view-footer,
+  .view-cseu-restricted-emails-cochairs-view .view-footer,
+  .view-cseu-restricted-emails-by-status-view .view-footer,
+  .view-cseu-restricted-csv-email-all-view .view-footer {
+    margin-top: 20px;
+    padding-top: 1em;
+    border-top: 2px solid #e0e0e0;
+    font-size: 80%; }
 
 .view-cseu-restricted-emails-by-status-view .view-content {
   margin: 1em 0; }

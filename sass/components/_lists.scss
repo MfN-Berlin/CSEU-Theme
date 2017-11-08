@@ -65,11 +65,17 @@
 .view-cseu-restricted-emails-chairs-view,
 .view-cseu-restricted-emails-cochairs-view,
 .view-cseu-restricted-emails-by-status-view,
-.view-cseu-restricted-emails-members-view {
+.view-cseu-restricted-csv-email-all-view {
   margin-bottom: 1em;
   h3 {
     font-size: 120%;
     margin: 1em 0;      
+  }
+  .view-footer {
+    margin-top: $vert-spacing-unit;
+    padding-top: 1em;
+    border-top: $separator-width solid $separator-color;
+    font-size: 80%;
   }
 }
 .view-cseu-restricted-emails-by-status-view .view-content {
