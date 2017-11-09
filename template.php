@@ -52,7 +52,8 @@ function cseu_theme_file_link($variables) {
     $options['attributes']['target'] = '_blank';
   }
 
-  $link_text .= '<br />3445KB';
+  // File size
+  $link_text .= '<br />'. $file_size;
   $options['html'] = TRUE;
 
     return '<div class="file"><div class="cseu-file-icon">' . $icon . '</div>'.
