@@ -27,32 +27,27 @@ img.file-media-cseu-cover-photo {
   padding-right: 4px;
 }
 
-// Docs
+
+// Documents
 .file-document {
+  margin: 8px 0;
   .file {
-    .cseu-file-icon {
-      display: inline-block;
-      height: 43px;
-      width: 32px;
+    display: table;
+    .file-icon {
+      display: table-cell;
+      padding: 0;
+      margin: 0;
       margin-right: 8px;
-    }
-    .cseu-file-document {
-      display: inline-block;
-      height: 43px;
-      .cseu-file-link {
-        margin: 0;
-        a {
-          vertical-align: top;
-          line-height: 1.0;
-          text-decoration: underline;
-        } 
+      img {
+        height: 45px;
+        vertical-align: top;
       }
     }
+    .file-link {
+      display: table-cell;
+      vertical-align: top;
+      padding: 0;
+      margin: 0;
+    }
   }
-  .field--name-field-description {
-    margin: 0;
-    font-size: 90%;
-    line-height: 0.4;
-  }
-  margin-bottom: $vert-spacing-unit;
 }

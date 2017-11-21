@@ -56,7 +56,10 @@ function cseu_theme_file_link($variables) {
   $link_text .= '<br />'. $file_size;
   $options['html'] = TRUE;
 
-    return '<div class="file"><div class="cseu-file-icon">' . $icon . '</div>'.
-            '<div class="cseu-file-document"><div class="cseu-file-link">' . l($link_text, $url, $options) .'</div>'.
-            '</div>';
+  return '<div class="file">'.
+				'<div class="file-icon">' . $icon . '</div>'.
+				'<div class="file-link">' . l($link_text, $url, $options) .'</div>'.
+        '</div>';
 }
+
+
