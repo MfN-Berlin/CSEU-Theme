@@ -29,7 +29,8 @@ img.file-media-cseu-cover-photo {
 
 
 // Documents
-.file-document {
+.file-document,
+.file-undefined {
   margin: 8px 0;
   .file {
     display: table;

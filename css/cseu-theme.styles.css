@@ -462,24 +462,30 @@ img.file-media-cseu-cover-photo {
 .file-icon {
   padding-right: 4px; }
 
-.file-document {
+.file-document,
+.file-undefined {
   margin: 8px 0; }
-  .file-document .file {
+  .file-document .file,
+  .file-undefined .file {
     display: table; }
-    .file-document .file .file-icon {
+    .file-document .file .file-icon,
+    .file-undefined .file .file-icon {
       display: table-cell;
       padding: 0;
       margin: 0;
       margin-right: 8px; }
-      .file-document .file .file-icon img {
+      .file-document .file .file-icon img,
+      .file-undefined .file .file-icon img {
         height: 45px;
         vertical-align: top; }
-    .file-document .file .file-link {
+    .file-document .file .file-link,
+    .file-undefined .file .file-link {
       display: table-cell;
       vertical-align: top;
       padding: 0;
       margin: 0; }
-  .file-document .field--name-field-description {
+  .file-document .field--name-field-description,
+  .file-undefined .field--name-field-description {
     margin: 0 !important;
     padding: 0 !important;
     font-size: 90%; }
