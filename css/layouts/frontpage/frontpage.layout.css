@@ -9,10 +9,15 @@
     color: #FFF; }
     .l-region--disruptive .block--views-cseu-block-disruptive-block h2 {
       margin: 0;
-      padding-top: 1em;
+      padding-top: 8px;
       text-transform: uppercase; }
     .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row {
-      padding: 1em 1em; }
+      padding: 0 1em;
+      padding-bottom: 8px; }
+      .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row h3 {
+        margin: 0;
+        margin-bottom: 8px;
+        line-height: 1; }
       .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row p {
         color: inherit;
         filter: alpha(opacity=75);
