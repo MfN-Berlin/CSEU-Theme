@@ -1318,7 +1318,8 @@ input.form-submit {
         margin-right: 2px;
         margin-bottom: 0;
         background-color: #FFF;
-        font-size: 24px; }
+        font-size: 24px;
+        margin-left: 24px; }
   @media (max-width: 479px) {
     .l-region--footer #block-cseu-blocks-builder-footer-logos {
       display: -ms-flexbox;
