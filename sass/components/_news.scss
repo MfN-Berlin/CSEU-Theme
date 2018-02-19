@@ -71,12 +71,6 @@
 }
 .block--views-cseu-block-frontpage-news-block,
 .block--views-cseu-block-fp-events-block {
-  .view-cseu-block-frontpage-news,
-  .view-cseu-block-fp-events {
-    @include breakpoint($desk) {
-      height: 220px;
-    }
-  }
   .view-header {
     h2 {
       display: inline-block;
