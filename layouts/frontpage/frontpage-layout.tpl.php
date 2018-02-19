@@ -16,6 +16,7 @@
         <?php print render($page['featured']); ?>
         <?php print render($page['slider']); ?>
         <?php print $messages; ?>
+        <?php print render($page['disruptive']); ?>
         <div class="l-content" role="main">
             <a id="main-content"></a>
             <?php print render($page['help']); ?>
@@ -23,7 +24,6 @@
                 <ul class="action-links"><?php print render($action_links); ?></ul>
             <?php endif; ?>
             <?php print render($page['news']); ?>
-            <?php print render($page['disruptive']); ?>
             <?php print render($page['misc']); ?>
             <?php //print $feed_icons; ?>
         </div>
