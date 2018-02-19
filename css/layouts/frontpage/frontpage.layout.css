@@ -3,7 +3,7 @@
   .l-region--disruptive .block--views-cseu-block-disruptive-block {
     background: #A03800 url("../../../images/bg-disruptive.png") center center no-repeat;
     background-size: 100% 100%;
-    max-width: 782px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     color: #FFF; }
@@ -12,12 +12,14 @@
       padding-top: 8px;
       text-transform: uppercase; }
     .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row {
+      width: 90%;
       padding: 0 1em;
-      padding-bottom: 8px; }
+      padding-bottom: 8px;
+      margin: 0 auto; }
       .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row h3 {
         margin: 0;
         margin-bottom: 8px;
-        line-height: 1; }
+        line-height: 1.2; }
       .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row p {
         color: inherit;
         filter: alpha(opacity=75);
