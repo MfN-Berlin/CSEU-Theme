@@ -567,6 +567,75 @@ img.file-media-cseu-cover-photo {
   padding-bottom: 1em;
   border-bottom: 2px solid #e0e0e0; }
 
+.cseu-article-teaser-row {
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: 2px solid #e0e0e0;
+  clear: both; }
+
+.cseu-article-teaser-header-container .cseu-article-teaser-date,
+.cseu-article-teaser-header-container .cseu-article-teaser-title-meta {
+  margin: 0; }
+
+.cseu-article-teaser-header-container .cseu-article-teaser-date {
+  font-size: 14px;
+  line-height: 1.4; }
+
+.cseu-article-teaser-header-container h2.cseu-article-teaser-title-smaller,
+.cseu-article-teaser-header-container h2.cseu-article-teaser-title-bold {
+  width: 100%; }
+
+.cseu-article-teaser-header-container h2.cseu-article-teaser-title-bold {
+  font-weight: 600; }
+
+.cseu-article-teaser-header-container .cseu-article-teaser-title-meta {
+  margin-bottom: 0.83em;
+  font-weight: 600;
+  color: #4d4d4d; }
+
+.cseu-article-teaser-image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto; }
+
+.cseu-article-teaser-image-container .cseu-article-teaser-image-meta {
+  margin-bottom: 1em; }
+  .cseu-article-teaser-image-container .cseu-article-teaser-image-meta .cseu-article-teaser-image-caption,
+  .cseu-article-teaser-image-container .cseu-article-teaser-image-meta .cseu-article-teaser-image-credit {
+    margin: 0;
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 600; }
+  .cseu-article-teaser-image-container .cseu-article-teaser-image-meta .cseu-article-teaser-image-caption {
+    margin-bottom: 4px; }
+
+.cseu-article-teaser-content-container .cseu-article-teaser-target-link {
+  font-weight: normal; }
+
+@media (min-width: 980px) {
+  .cseu-article-teaser-wrapper {
+    width: 100%;
+    display: table; }
+    .cseu-article-teaser-wrapper .cseu-article-teaser-image-container {
+      display: table-cell;
+      vertical-align: top;
+      width: 326px;
+      height: 116px; }
+      .cseu-article-teaser-wrapper .cseu-article-teaser-image-container img {
+        width: 100%;
+        height: auto;
+        margin-top: 4px;
+        max-width: 326px;
+        max-height: 116px; }
+      .cseu-article-teaser-wrapper .cseu-article-teaser-image-container .cseu-article-teaser-image-meta {
+        display: none; }
+    .cseu-article-teaser-wrapper .cseu-article-teaser-content-container {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 1em; } }
+
 .view-cseu-internal-user-list-view td,
 .view-cseu-internal-user-interest-view td,
 .view-cseu-internal-users-by-wg-view td,

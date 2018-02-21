@@ -15,12 +15,99 @@
   font-weight: bold;
 }
 
+// Teaser
 .node--cseu-blog-entry--teaser,
 .node--article--teaser {
   margin-top: 1em;
   margin-bottom: 2em;
   padding-bottom: 1em;
   border-bottom: $separator-width solid $separator-color;
+}
+
+// Article Teaser
+.cseu-article-teaser-row {
+  margin: 0;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+  clear: both;
+}
+.cseu-article-teaser-header-container {
+  .cseu-article-teaser-date,
+  .cseu-article-teaser-title-meta {
+    margin: 0;
+  }
+  .cseu-article-teaser-date {
+    font-size: $date-font-size;
+    line-height: $date-line-height;
+  }
+  h2.cseu-article-teaser-title-smaller,
+  h2.cseu-article-teaser-title-bold {
+    width: 100%;
+  }
+  h2.cseu-article-teaser-title-bold {
+    font-weight: 600;
+  }
+  .cseu-article-teaser-title-meta {
+    margin-bottom: 0.83em;
+    font-weight: 600;
+    color: #4d4d4d;
+  }
+}
+.cseu-article-teaser-image-container {
+  img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+  .cseu-article-teaser-image-meta {
+    margin-bottom: 1em;
+    .cseu-article-teaser-image-caption,
+    .cseu-article-teaser-image-credit {
+      margin: 0;
+      font-size: $credits-font-size;
+      line-height: $credits-line-height;
+      font-weight: 600;
+    }
+    .cseu-article-teaser-image-caption {
+      margin-bottom: 4px;
+    }
+  }
+}
+.cseu-article-teaser-content-container {
+  .cseu-article-teaser-synopsis {
+  }
+  .cseu-article-teaser-target-link {
+    font-weight: normal;
+  }
+}
+@include breakpoint($desk) {
+  .cseu-article-teaser-wrapper {
+    width: 100%;
+    display: table;
+    .cseu-article-teaser-image-container {
+       display: table-cell;
+       vertical-align: top;
+       width: 326px;
+       height: 116px;
+       img {
+         width: 100%;
+         height: auto;
+         margin-top: 4px;
+         max-width: 326px;
+         max-height: 116px;
+       }
+       .cseu-article-teaser-image-meta {
+         display: none;
+       }
+    }
+    .cseu-article-teaser-content-container {
+      display: table-cell;
+      vertical-align: top;
+      padding-left: 1em;
+    }
+  }
 }
 
 // Internals
