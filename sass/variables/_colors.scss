@@ -22,10 +22,12 @@ $block_link_hover_color: #A03800;
 $fieldset_border_color: #CCC;
 
 // Tables
-$table_th_color: #FFF;
-$table_th_link_color: #FFF;
-$table_th_bg_color: rgba(0, 0, 0, 0.51);
-$table_border_color: #FFF;
+$table_th_color: rgba(0, 0, 0, 0.75);
+$table_th_link_color: #A03800;
+$table_th_bg_color: #FAEAD6;
+$table_border_color: #E07B00;
+$table_tr_even_bg_color: #EEE;
+$table_tr_odd_bg_color: #FAFAFA;
 
 // Footer
 $footer_text_color: hsl(206, 42.36%, 44.90%);

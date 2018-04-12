@@ -1,0 +1,37 @@
+//
+// Page
+//
+
+// Tables
+table {
+  width: 100%;
+  margin: $vert-spacing-unit 0;
+  th {
+    color: $table_th_color;
+    font-weight: bold;
+    background: $table_th_bg_color;
+    border-bottom-style: none;
+    a.active {
+      color: $table_th_link_color;
+      text-decoration: none;
+      &:hover {
+        color: $table_th_link_color;
+        text-decoration: underline;
+      }
+    }
+  }
+  th,
+  td {
+    padding: 8px;
+    border: 1px solid $table_border_color;
+    text-align: left;
+    vertical-align: middle;
+  }
+  tr.even, tr.odd {
+    background: $table_tr_even_bg_color;
+    transition: all, 0.15s;
+  }
+  tr.odd {
+    background: $table_tr_odd_bg_color;
+  }
+}

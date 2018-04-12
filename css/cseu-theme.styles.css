@@ -740,20 +740,20 @@ img.file-media-cseu-cover-photo {
 table.views-table {
   width: 100%; }
   table.views-table tr th {
-    color: #FFF;
+    color: rgba(0, 0, 0, 0.75);
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.51);
+    background: #FAEAD6;
     border-bottom-style: none; }
     table.views-table tr th a.active {
-      color: #FFF;
+      color: #A03800;
       text-decoration: none; }
       table.views-table tr th a.active:hover {
-        color: #FFF;
+        color: #A03800;
         text-decoration: underline; }
   table.views-table tr th,
   table.views-table tr td {
     padding: 8px;
-    border: 1px solid #FFF;
+    border: 1px solid #E07B00;
     text-align: left; }
 
 @media (min-width: 980px) {
@@ -1167,6 +1167,32 @@ input.form-submit {
       color: #A03800; }
   .page-node-361 ul.quicktabs-tabs li.active a {
     font-weight: bold; }
+
+table {
+  width: 100%;
+  margin: 20px 0; }
+  table th {
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: bold;
+    background: #FAEAD6;
+    border-bottom-style: none; }
+    table th a.active {
+      color: #A03800;
+      text-decoration: none; }
+      table th a.active:hover {
+        color: #A03800;
+        text-decoration: underline; }
+  table th,
+  table td {
+    padding: 8px;
+    border: 1px solid #E07B00;
+    text-align: left;
+    vertical-align: middle; }
+  table tr.even, table tr.odd {
+    background: #EEE;
+    transition: all, 0.15s; }
+  table tr.odd {
+    background: #FAFAFA; }
 
 @media (min-width: 980px) {
   .tb-megamenu {
