@@ -1194,6 +1194,9 @@ table {
   table tr.odd {
     background: #FAFAFA; }
 
+table.no-border th, table.no-border td {
+  border: 0; }
+
 @media (min-width: 980px) {
   .tb-megamenu {
     background-color: #E07B00; } }

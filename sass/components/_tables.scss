@@ -35,3 +35,8 @@ table {
     background: $table_tr_odd_bg_color;
   }
 }
+table.no-border {
+  th, td {
+    border: 0;
+  }
+}
