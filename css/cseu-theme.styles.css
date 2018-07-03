@@ -210,27 +210,38 @@ ul.tabs--secondary {
 
 .ui-accordion {
   margin-bottom: 20px; }
-  .ui-accordion h3.ui-accordion-header {
+  .ui-accordion h3.ui-accordion-header,
+  .ui-accordion div.ui-accordion-header {
     margin-bottom: 2px;
     font-weight: normal;
     border: 1px solid #E07B00;
     background: #E07B00 url(../images/bg-accordion.png) 50% 50% repeat-x; }
-    .ui-accordion h3.ui-accordion-header .ui-icon {
+    .ui-accordion h3.ui-accordion-header .ui-icon,
+    .ui-accordion div.ui-accordion-header .ui-icon {
       background-image: url(../images/ui-icons_ffffff_256x240.png); }
-    .ui-accordion h3.ui-accordion-header span.ui-icon-triangle-1-e {
+    .ui-accordion h3.ui-accordion-header span.ui-icon-triangle-1-e,
+    .ui-accordion div.ui-accordion-header span.ui-icon-triangle-1-e {
       background-position: -64px -128px; }
-  .ui-accordion h3.ui-accordion-header-active {
+  .ui-accordion h3.ui-accordion-header-active,
+  .ui-accordion div.ui-accordion-header-active {
     margin-bottom: 0;
     border: 1px solid #A03800;
     background: #A03800 url(../images/bg-accordion-active.png) 50% 50% repeat-x; }
-    .ui-accordion h3.ui-accordion-header-active span.ui-icon-triangle-1-s {
+    .ui-accordion h3.ui-accordion-header-active span.ui-icon-triangle-1-s,
+    .ui-accordion div.ui-accordion-header-active span.ui-icon-triangle-1-s {
       background-position: -32px -128px; }
   .ui-accordion h3.ui-accordion-header,
-  .ui-accordion h3.ui-accordion-header-active {
+  .ui-accordion div.ui-accordion-header,
+  .ui-accordion h3.ui-accordion-header-active,
+  .ui-accordion div.ui-accordion-header-active {
     color: #FFF; }
     .ui-accordion h3.ui-accordion-header a, .ui-accordion h3.ui-accordion-header a:hover,
+    .ui-accordion div.ui-accordion-header a,
+    .ui-accordion div.ui-accordion-header a:hover,
     .ui-accordion h3.ui-accordion-header-active a,
-    .ui-accordion h3.ui-accordion-header-active a:hover {
+    .ui-accordion h3.ui-accordion-header-active a:hover,
+    .ui-accordion div.ui-accordion-header-active a,
+    .ui-accordion div.ui-accordion-header-active a:hover {
       color: inherit; }
   .ui-accordion .ui-accordion-content {
     margin-bottom: 20px;

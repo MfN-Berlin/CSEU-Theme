@@ -241,7 +241,8 @@ ul.tabs--secondary {
 // Accordion
 .ui-accordion {
   margin-bottom: $vert-spacing-unit;
-  h3.ui-accordion-header {
+  h3.ui-accordion-header,
+  div.ui-accordion-header {
     margin-bottom: 2px;
     font-weight: normal;
     border: 1px solid $accordion_header_bg_color;
@@ -253,7 +254,8 @@ ul.tabs--secondary {
       background-position: -64px -128px;
 	}
   }
-  h3.ui-accordion-header-active {
+  h3.ui-accordion-header-active,
+  div.ui-accordion-header-active {
     margin-bottom: 0;
     border: 1px solid $accordion_header_active_bg_color;
     background: $accordion_header_active_bg_color url(../images/bg-accordion-active.png) 50% 50% repeat-x;
@@ -262,7 +264,9 @@ ul.tabs--secondary {
     }
   }
   h3.ui-accordion-header,
-  h3.ui-accordion-header-active {
+  div.ui-accordion-header,
+  h3.ui-accordion-header-active,
+  div.ui-accordion-header-active {
     color: #FFF;
     a, a:hover {
       color: inherit;
