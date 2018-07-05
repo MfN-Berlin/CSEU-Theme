@@ -90,8 +90,10 @@
     margin-bottom: 60px; } }
 
 .view-cseu-wgs-list-view .attachment-wg-chairs,
-.view-cseu-wgs-list-view .attachment-wg-members {
-  clear: both; }
+.view-cseu-wgs-list-view .attachment-wg-members,
+.view-cseu-wgs-list-view .attachment-wg-news {
+  clear: both;
+  padding-top: 1em; }
 
 .view-cseu-wgs-list-view .cseu-wgs-list-attachment-chairs-row .cseu-wgs-list-request-link {
   margin: 1em 0;
