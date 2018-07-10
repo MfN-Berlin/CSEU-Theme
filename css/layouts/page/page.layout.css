@@ -165,6 +165,18 @@
 .view-cseu-wgs-list-view .cseu-wgs-list-attachment-members-row:nth-of-type(1) {
   padding-top: 0; }
 
+.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-group-link {
+  margin-top: 0.5em;
+  margin-bottom: 20px;
+  padding: 0.3em 0.7em;
+  background: #E07B00;
+  width: 160px; }
+  .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-group-link a {
+    color: #FFF;
+    text-decoration: none; }
+    .view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-group-link a:hover {
+      text-decoration: underline; }
+
 .cseu-wgs-list-field .cseu-wgs-list-field-label,
 .cseu-wgs-list-field .cseu-wgs-list-field-content {
   display: inline-block; }

@@ -117,6 +117,20 @@
 .view-cseu-wgs-list-view {
   .cseu-wgs-list-view-row {
     .cseu-wgs-list-col-text {
+      .cseu-wgs-list-group-link {
+        margin-top: 0.5em;
+        margin-bottom: $vert-spacing-unit;
+        padding: 0.3em 0.7em;
+        background: $frontpage-heading-bg;
+        width: 160px;
+        a {
+          color: #FFF;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
     }
     .cseu-wgs-list-col-image {
     }
