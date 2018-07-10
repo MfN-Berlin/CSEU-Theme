@@ -104,17 +104,15 @@
         margin-top: 0.5em;
         margin-bottom: $vert-spacing-unit;
         padding: 0.3em 0.7em;
-        background: $frontpage-heading-bg;
         width: 160px;
+        background: $membership_request_bg_color;
+        color: $block_link_color;
         a {
-          color: #FFF;
-          text-decoration: none;
-          &:hover {
-            text-decoration: underline;
-          }
+          color: $block_link_color;
+          text-decoration: underline;
         }
       }
-    }
+    }//cseu-wgs-list-col-text
     .cseu-wgs-list-col-image {
     }
   }//row
@@ -139,6 +137,7 @@
 .cseu-wgs-event-hidden {
   display: none;
 }
+
 
 .cseu-wgs-list-col-text,
 .cseu-wgs-list-attachment-chairs,
