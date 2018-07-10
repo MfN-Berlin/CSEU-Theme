@@ -165,15 +165,21 @@
 .view-cseu-wgs-list-view .cseu-wgs-list-attachment-members-row:nth-of-type(1) {
   padding-top: 0; }
 
-.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-label,
-.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-content {
+.cseu-wgs-list-field .cseu-wgs-list-field-label,
+.cseu-wgs-list-field .cseu-wgs-list-field-content {
   display: inline-block; }
 
-.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-label {
+.cseu-wgs-list-field .cseu-wgs-list-field-label {
   font-weight: bold; }
 
-.view-cseu-wgs-list-view .cseu-wgs-list-view-row .cseu-wgs-list-col-text .cseu-wgs-list-field .cseu-wgs-list-field-content {
+.cseu-wgs-list-field .cseu-wgs-list-field-content {
   display: inline-block; }
+
+.cseu-wgs-event-visible {
+  display: block; }
+
+.cseu-wgs-event-hidden {
+  display: none; }
 
 .cseu-wgs-list-col-text h2, .cseu-wgs-list-col-text h3,
 .cseu-wgs-list-attachment-chairs h2,

@@ -117,22 +117,30 @@
 .view-cseu-wgs-list-view {
   .cseu-wgs-list-view-row {
     .cseu-wgs-list-col-text {
-      .cseu-wgs-list-field {
-        .cseu-wgs-list-field-label,
-        .cseu-wgs-list-field-content {
-          display:inline-block;
-        }
-        .cseu-wgs-list-field-label {
-          font-weight: bold;
-        }
-        .cseu-wgs-list-field-content {
-          display:inline-block;
-        }
-      }
     }
     .cseu-wgs-list-col-image {
     }
   }//row
+}
+
+.cseu-wgs-list-field {
+  .cseu-wgs-list-field-label,
+  .cseu-wgs-list-field-content {
+    display:inline-block;
+  }
+  .cseu-wgs-list-field-label {
+    font-weight: bold;
+  }
+  .cseu-wgs-list-field-content {
+    display:inline-block;
+  }
+}//cseu-wgs-list-field
+
+.cseu-wgs-event-visible {
+  display: block;
+}
+.cseu-wgs-event-hidden {
+  display: none;
 }
 
 .cseu-wgs-list-col-text,
