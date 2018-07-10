@@ -203,6 +203,8 @@
   .cseu-wgs-list-profile .cseu-wgs-list-member,
   .cseu-wgs-list-profile .cseu-wgs-list-institution {
     padding: 0 .7em; }
+  .cseu-wgs-list-profile .cseu-wgs-list-institution {
+    font-size: 80%; }
 
 .cseu-wgs-list-attachment-members-row .cseu-wgs-list-profile {
   background: #EEEEEE;
