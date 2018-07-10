@@ -208,6 +208,11 @@ ul.tabs--secondary {
 .node-readmore a[href] {
   font-size: 90%; }
 
+.ui-widget {
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Source Sans Pro', sans-serif; }
+
 .ui-accordion {
   margin-bottom: 20px; }
   .ui-accordion h3.ui-accordion-header,

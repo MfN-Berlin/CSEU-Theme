@@ -239,6 +239,11 @@ ul.tabs--secondary {
 }
 
 // Accordion
+.ui-widget {
+  font-size: $main-font-size;
+  line-height: 1.6;
+  font-family: 'Source Sans Pro', sans-serif;
+}
 .ui-accordion {
   margin-bottom: $vert-spacing-unit;
   h3.ui-accordion-header,

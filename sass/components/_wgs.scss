@@ -3,35 +3,11 @@
 //
 
 // Working Groups page
-.view-cseu-wgs-list-view {
-  .cseu-wgs-list-view-row {
-    //.cseu-wgs-list-col-text,
-    .cseu-wgs-list-col-image {
-      margin-bottom: $vert-spacing-unit;
-    }
-    @include breakpoint($desk) {
-      @include layout(2 1) {
-        .cseu-wgs-list-col-text {
-          @include grid-span(1, 1);
-          clear: both;
-          margin-bottom: 3 * $vert-spacing-unit;
-        }
-        .cseu-wgs-list-col-image {
-          @include grid-span(1, 2);
-          margin-bottom: 3 * $vert-spacing-unit;
-        }
-      }
-    }//desk
-  }//row
-}
-
 // Working Group page
 .view-cseu-wgs-list-view {
   .cseu-wgs-list-view-row {
-    .cseu-wgs-list-col-image {
-      margin-bottom: $vert-spacing-unit;
-    }
     @include breakpoint($desk) {
+      padding-top: 1em;
       @include layout(2 1) {
         .cseu-wgs-list-col-text {
           @include grid-span(1, 1);
@@ -44,7 +20,14 @@
         }
       }
     }//desk
+    .cseu-wgs-list-col-image {
+      margin-bottom: $vert-spacing-unit;
+    }
   }//.cseu-wgs-list-view-row
+
+  .view-content {
+    clear: both;
+  }
 
   .attachment-wg-chairs,
   .attachment-wg-members,
