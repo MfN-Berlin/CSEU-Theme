@@ -39,7 +39,7 @@
     .cseu-wgs-list-request-link {
       margin: 1em 0;
       @include breakpoint($desk) {
-        margin-top: 38px;
+        margin-top: 26px;
       }
       background: $membership_request_bg_color;
       color: $block_link_color;
@@ -138,7 +138,6 @@
   display: none;
 }
 
-
 .cseu-wgs-list-col-text,
 .cseu-wgs-list-attachment-chairs,
 .attachment-wg-members {
@@ -152,7 +151,9 @@
 }
 .attachment-wg-members {
   h2 {
-    padding-top: 2 * $vert-spacing-unit;
+    @include breakpoint($desk) {
+      padding-top: 2 * $vert-spacing-unit;
+    }
   }
 }
 
@@ -192,4 +193,15 @@
 
 .cseu-wgs-list-view-title-hidden {
   display: none;
+}
+
+.cseu-wgs-list-col-image,
+.cseu-wgs-list-attachment-chairs,
+.cseu-wgs-list-attachment-members {
+  a.cseu-wgs-list-profile-link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: inherit;
+    }
+  }
 }

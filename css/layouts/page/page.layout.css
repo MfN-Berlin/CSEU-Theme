@@ -88,7 +88,7 @@
   padding: 1em; }
   @media (min-width: 980px) {
     .view-cseu-wgs-list-view .cseu-wgs-list-attachment-chairs-row .cseu-wgs-list-request-link {
-      margin-top: 38px; } }
+      margin-top: 26px; } }
   .view-cseu-wgs-list-view .cseu-wgs-list-attachment-chairs-row .cseu-wgs-list-request-link a {
     color: #A03800;
     text-decoration: underline; }
@@ -190,8 +190,9 @@
   font-weight: bold;
   margin-bottom: .7em; }
 
-.attachment-wg-members h2 {
-  padding-top: 40px; }
+@media (min-width: 980px) {
+  .attachment-wg-members h2 {
+    padding-top: 40px; } }
 
 .cseu-wgs-list-profile {
   width: 220px;
@@ -214,6 +215,15 @@
 
 .cseu-wgs-list-view-title-hidden {
   display: none; }
+
+.cseu-wgs-list-col-image a.cseu-wgs-list-profile-link,
+.cseu-wgs-list-attachment-chairs a.cseu-wgs-list-profile-link,
+.cseu-wgs-list-attachment-members a.cseu-wgs-list-profile-link {
+  text-decoration: none; }
+  .cseu-wgs-list-col-image a.cseu-wgs-list-profile-link:hover,
+  .cseu-wgs-list-attachment-chairs a.cseu-wgs-list-profile-link:hover,
+  .cseu-wgs-list-attachment-members a.cseu-wgs-list-profile-link:hover {
+    text-decoration: inherit; }
 
 .l-region--sidebar-first,
 .l-region--sidebar-second {
