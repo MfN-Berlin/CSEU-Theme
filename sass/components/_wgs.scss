@@ -8,7 +8,7 @@
   .cseu-wgs-list-view-row {
     @include breakpoint($desk) {
       padding-top: 1em;
-      @include layout(2 1) {
+      @include layout(1 1, 0.1) {
         .cseu-wgs-list-col-text {
           @include grid-span(1, 1);
           clear: both;
@@ -114,8 +114,47 @@
       }
     }//cseu-wgs-list-col-text
     .cseu-wgs-list-col-image {
-    }
-  }//row
+      @include breakpoint($desk) {
+        @include layout(1 1, 0.04) {
+          .cseu-wgs-list-col-image-chair {
+            @include grid-span(1, 1);
+          }
+          .cseu-wgs-list-col-image-co-chair {
+            @include grid-span(1, 2);
+          }
+        }//include
+        .cseu-wgs-list-col-image-chair,
+        .cseu-wgs-list-col-image-co-chair {
+          .cseu-wgs-list-profile {
+            width: 100%;
+            .cseu-wgs-list-image {
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+          }
+        }
+      }//desk
+    }//cseu-wgs-list-col-image
+  }//cseu-wgs-list-view-row
+}
+
+.cseu-wgs-list-view-row {
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+  
+  @include breakpoint($desk) {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;    
+  }
+}
+.cseu-wgs-list-view-row:last-of-type {
+  border-bottom: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;   
 }
 
 .cseu-wgs-list-field {
@@ -136,6 +175,15 @@
 }
 .cseu-wgs-event-hidden {
   display: none;
+}
+
+.cseu-wgs-list-col-image-chair,
+.cseu-wgs-list-col-image-co-chair,
+.cseu-wgs-list-attachment-chairs {
+  margin-bottom: $vert-spacing-unit;
+  @include breakpoint($desk) {
+    margin-bottom: 0;
+  }
 }
 
 .cseu-wgs-list-col-text,
@@ -167,6 +215,9 @@
   }
   .cseu-wgs-list-info {
     min-height: 100px;
+    @include breakpoint($desk) {
+      min-height: 112px;
+    }
   }
   .cseu-wgs-list-member {
     font-weight: bold;
@@ -185,9 +236,6 @@
   .cseu-wgs-list-profile {
     background: $members_bg_color;
     color: #000;
-  }
-  .cseu-wgs-list-info {
-    //min-height: 180px;
   }
 }
 
