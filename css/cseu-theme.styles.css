@@ -1333,8 +1333,8 @@ table.no-border th, table.no-border td {
     margin-top: 1em; }
 
 .l-region--footer {
-  background: #395CA4 url("../images/bg-footer.png") center center no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  background-color: #A03800; }
   .l-region--footer .block--menu-menu-cseu-footer-bottom-menu {
     text-align: center;
     width: 100%;
@@ -1384,6 +1384,8 @@ table.no-border th, table.no-border td {
         background-color: #FFF;
         font-size: 24px;
         margin-left: 24px; }
+        .l-region--footer .cseu-footer-social-links ul.cseu-social-links-bottom li a {
+          color: #A03800; }
   @media (max-width: 479px) {
     .l-region--footer #block-cseu-blocks-builder-footer-logos {
       display: -ms-flexbox;

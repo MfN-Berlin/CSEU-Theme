@@ -1,7 +1,6 @@
 .l-region--footer {
-  background: $footer_bg_color url("../images/bg-footer.png") center center no-repeat;
   background-size: 100% 100%;
-      
+  background-color: $footer_bg_color;
   .block--menu-menu-cseu-footer-bottom-menu {
     @include footer-menu;
     text-align: center;
@@ -42,6 +41,9 @@
         background-color: #FFF;
         font-size: 24px;
         margin-left: 24px;
+        a {
+          color: $footer_bg_color;
+        }
       }
     }       
   }
