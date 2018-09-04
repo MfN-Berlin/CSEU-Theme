@@ -1,35 +1,18 @@
 .l-region--disruptive {
-  padding-bottom: 20px; }
+  padding: 20px 0; }
   .l-region--disruptive .block--views-cseu-block-disruptive-block {
-    background: #A03800 url("../../../images/bg-disruptive.png") center center no-repeat;
-    background-size: 100% 100%;
     width: 100%;
     margin: 0 auto;
-    text-align: center;
-    color: #FFF; }
+    text-align: center; }
     .l-region--disruptive .block--views-cseu-block-disruptive-block h2 {
       margin: 0;
-      padding-top: 8px;
-      text-transform: uppercase; }
+      letter-spacing: 0.02em; }
     .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row {
       width: 90%;
-      padding: 0 1em;
-      padding-bottom: 8px;
       margin: 0 auto; }
-      .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row h3 {
-        margin: 0;
-        margin-bottom: 8px;
-        line-height: 1.2; }
-      .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row p {
-        color: inherit;
-        filter: alpha(opacity=75);
-        opacity: 0.75; }
       .l-region--disruptive .block--views-cseu-block-disruptive-block .cseu-block-frontpage-disruptive-row a {
         color: inherit;
         text-decoration: underline; }
-  @media (min-width: 980px) {
-    .l-region--disruptive {
-      padding-top: 20px; } }
 
 @media (max-width: 479px) {
   .l-region--misc #block-cseu-blocks-builder-scientists {
