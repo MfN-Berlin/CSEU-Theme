@@ -1,4 +1,8 @@
-// News
+//
+// Frontpage
+//
+
+// News Region
 .l-region--news {
   @include breakpoint($mobile, true) {
     @include layout(1) {
@@ -19,9 +23,9 @@
     }
   }
   @include breakpoint($desk, true) {
-    @include layout(4 2) {
+    @include layout(1) {
       #block-views-cseu-block-frontpage-news-block {
-        @include grid-span(1, 2);
+        @include grid-span(1, 1);
         //clear: both;
       }
       #block-views-cseu-block-fp-events-block {
@@ -32,66 +36,102 @@
   margin-bottom: $vert-spacing-unit;
 }
 
-//
-// Frontpage
-//
-.block--views-cseu-block-frontpage-news-block,
-.block--views-cseu-block-fp-events-block {
-  h2.block__title {
-    margin: 0;
-    padding-left: $horz-spacing-unit;
-    background-color: $frontpage-heading-bg;
-    color: #FFF;
-  }  
-  .cseu-block-frontpage-row {
-    margin: 12px 0;
-    @include breakpoint($desk) {
-      height: 280px;
-      overflow:hidden;
-    }    
-    span.cseu-block-frontpage-row-date {
-      background-color: $frontpage-heading-bg;
-      padding: 4px 8px;
-      color: #FFF;
-      font-size: 18px;
+// News Frontpage Block
+.view-cseu-block-frontpage-news {
+  @include breakpoint($desk-fpb) {
+    @include layout(3, 0.1) {
+      @for $i from 1 through 3 {
+        .cseu-block-frontpage-row:nth-of-type(#{$i}) {
+          @include grid-span(1, $i)
+        }
+      }
     }
-    h3 {
-      font-size: 18px;
-      line-height: 1.4;
-      margin: 0;
-      margin-top: 12px;
-    }
-    p {
-      margin: 0;
-      margin-top: 8px;
-      line-height: 1.4;
-    }
-  }
-  .view-footer {
-    a {
-      //text-decoration: underline;
-      font-weight: bold;
-      color: $frontpage-heading-bg;
-    }
-  }
-}
-.cseu-block-frontpage-news-row {
-  @include breakpoint($desk) {
-    background-repeat: no-repeat;
-    background-size: 100px 280px;
-    &:nth-of-type(1) {
-      background-image: url('../images/halbewabenews1.png');
-    }
-    &:nth-of-type(2) {
-      background-image: url('../images/halbewabenews2.png');
-    }
-    padding-left: 108px;
-  }
-  &:nth-of-type(1) {
-    margin-bottom: $vert-spacing-unit;
+  }//desk-fpb
+  .cseu-block-link-to-all {
+    clear:both;
   }
 }
 
+// Frontpage block
+.block--views-cseu-block-frontpage-news-block,
+.block--views-cseu-block-fp-events-block {
+  margin-bottom: $vert-spacing-unit;
+  padding-bottom: 1em;
+  border-bottom: $separator-width solid $separator-color;
+  @include breakpoint($desk-fpb) {
+    position: relative;  
+  }
+  h2.block__title {
+    margin: 0;
+  }
+  .cseu-block-frontpage-row {
+    margin: $vert-spacing-unit 0;
+    color: #191919;
+    @include breakpoint($desk-fpb) {
+      height: 280px;
+      overflow:hidden;
+      margin: 12px 0;
+    }
+    a.cseu-block-frontpage-item-link {
+      text-decoration: none;
+      color: inherit;
+      &:hover {
+        text-decoration: node;
+        color: inherit;
+      }
+    }
+  }//cseu-block-frontpage-row
+  .view-footer {
+    @include breakpoint($desk-fpb) {
+      position: absolute;
+      top: 0;
+      right: 0px;
+      padding-top: 8px;
+      padding-right: 4px;
+    }
+    a {
+      font-weight: bold;
+      color: $frontpage-block-footer;
+      &:hover {
+        color: $frontpage-block-footer-hover;
+      }
+    }
+  }//view-footer
+}
+
+// Frontpage block item
+.cseu-block-frontpage-item {
+  position: relative;
+  .cseu-block-frontpage-picture {
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .cseu-block-frontpage-title {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .cseu-block-frontpage-teaser {
+    margin-top: 8px;
+    p {
+      margin: 0;
+      line-height: 1.4;
+    }
+    max-height: 120px;
+    overflow:hidden;
+  }
+  .cseu-block-frontpage-date {
+     position: absolute;
+     top: 0;
+     background-color: $frontpage-heading-bg;
+     padding: 2px 4px;
+     color: #FFF;
+     font-size: 18px;
+     font-weight: 600;
+  }
+}
 
 //
 // Pages
