@@ -26,7 +26,6 @@
     @include layout(1) {
       #block-views-cseu-block-frontpage-news-block {
         @include grid-span(1, 1);
-        //clear: both;
       }
       #block-views-cseu-block-fp-events-block {
         @include grid-span(1, 1);
@@ -102,6 +101,12 @@
 // Frontpage block item
 .cseu-block-frontpage-item {
   position: relative;
+  padding-bottom: $vert-spacing-unit;
+  border-bottom: $separator-item-width solid $separator-item-color;
+  @include breakpoint($desk-fpb) {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
   .cseu-block-frontpage-picture {
     img {
       max-width: 100%;

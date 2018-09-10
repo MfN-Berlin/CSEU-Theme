@@ -185,7 +185,7 @@
 .cseu-wgs-list-view-row {
   margin-bottom: 2em;
   padding-bottom: 1em;
-  border-bottom: 2px solid #e0e0e0; }
+  border-bottom: 1px solid #a8a8a8; }
   @media (min-width: 980px) {
     .cseu-wgs-list-view-row {
       border-bottom: 0;
