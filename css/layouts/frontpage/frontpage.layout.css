@@ -128,7 +128,7 @@
     color: #E07B00;
     margin: 0; }
   .cseu-misc-block .cseu-misc-block-number {
-    width: 158px;
+    max-width: 158px;
     height: 133px;
     background: #FFF url("../../../images/bg-misc.png") center center no-repeat;
     background-size: 100% 100%;
