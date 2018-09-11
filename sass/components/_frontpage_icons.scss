@@ -1,0 +1,40 @@
+//
+// Frontpage
+//
+
+// Icons block
+.block--cseu-blocks-builder-icons {
+  padding-bottom: $vert-spacing-unit;
+}
+.cseu-icons-block {
+  @include layout(3) {
+    @for $i from 1 through 3 {
+      .cseu-icon-block:nth-of-type(#{$i}) {
+        @include grid-span(1, $i)
+      }
+    }
+  }
+}
+
+.cseu-icons-block {
+  a.cseu-icon-block-link {
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+  p.cseu-icon-block-text {
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+.cseu-icon-block-picture {
+  margin: 0 auto;
+  max-width: 158px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+

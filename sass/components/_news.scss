@@ -6,6 +6,7 @@
 .l-region--news {
   @include breakpoint($mobile, true) {
     @include layout(1) {
+      #block-cseu-blocks-builder-icons,
       #block-views-cseu-block-frontpage-news-block,
       #block-views-cseu-block-fp-events-block {
         @include grid-span(1, 1);
@@ -15,6 +16,7 @@
   }
   @include breakpoint($tab, true) {
     @include layout(1) {
+      #block-cseu-blocks-builder-icons,
       #block-views-cseu-block-frontpage-news-block,
       #block-views-cseu-block-fp-events-block {
         @include grid-span(1, 1);
@@ -24,34 +26,18 @@
   }
   @include breakpoint($desk, true) {
     @include layout(1) {
-      #block-views-cseu-block-frontpage-news-block {
-        @include grid-span(1, 1);
-      }
+      #block-cseu-blocks-builder-icons,
+      #block-views-cseu-block-frontpage-news-block,
       #block-views-cseu-block-fp-events-block {
         @include grid-span(1, 1);
+        margin-bottom: $vert-spacing-unit;
       }
     }
   }
-  margin-bottom: $vert-spacing-unit;
 }
 
-// News Frontpage Block
-.view-cseu-block-frontpage-news {
-  @include breakpoint($desk-fpb) {
-    @include layout(3, 0.1) {
-      @for $i from 1 through 3 {
-        .cseu-block-frontpage-row:nth-of-type(#{$i}) {
-          @include grid-span(1, $i)
-        }
-      }
-    }
-  }//desk-fpb
-  .cseu-block-link-to-all {
-    clear:both;
-  }
-}
-
-// Frontpage block
+// News Region: Frontpage blocks
+.block--cseu-blocks-builder-icons,
 .block--views-cseu-block-frontpage-news-block,
 .block--views-cseu-block-fp-events-block {
   margin-bottom: $vert-spacing-unit;
@@ -75,7 +61,7 @@
       text-decoration: none;
       color: inherit;
       &:hover {
-        text-decoration: node;
+        text-decoration: none;
         color: inherit;
       }
     }
@@ -96,6 +82,22 @@
       }
     }
   }//view-footer
+}
+
+// News Frontpage Block
+.view-cseu-block-frontpage-news {
+  @include breakpoint($desk-fpb) {
+    @include layout(3, 0.1) {
+      @for $i from 1 through 3 {
+        .cseu-block-frontpage-row:nth-of-type(#{$i}) {
+          @include grid-span(1, $i)
+        }
+      }
+    }
+  }//desk-fpb
+  .cseu-block-link-to-all {
+    clear:both;
+  }
 }
 
 // Frontpage block item
