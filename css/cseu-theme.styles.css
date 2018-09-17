@@ -1016,7 +1016,7 @@ table.views-table {
       .block--cseu-blocks-builder-icons .cseu-block-frontpage-row,
       .block--views-cseu-block-frontpage-news-block .cseu-block-frontpage-row,
       .block--views-cseu-block-fp-events-block .cseu-block-frontpage-row {
-        height: 280px;
+        height: 300px;
         overflow: hidden;
         margin: 12px 0; } }
     .block--cseu-blocks-builder-icons .cseu-block-frontpage-row a.cseu-block-frontpage-item-link,
