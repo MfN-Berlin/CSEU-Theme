@@ -1099,7 +1099,8 @@ table.views-table {
     overflow: hidden; }
     .cseu-block-frontpage-item .cseu-block-frontpage-teaser p {
       margin: 0;
-      line-height: 1.4; }
+      line-height: 1.4;
+      font-size: 15px; }
   .cseu-block-frontpage-item .cseu-block-frontpage-date {
     position: absolute;
     top: 0;

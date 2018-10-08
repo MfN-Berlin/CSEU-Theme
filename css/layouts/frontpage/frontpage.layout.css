@@ -236,7 +236,8 @@
 .cseu-icons-block p.cseu-icon-block-text {
   text-align: center;
   margin: 0;
-  line-height: 1.4; }
+  line-height: 1.4;
+  font-size: 15px; }
 
 .cseu-icon-block-picture {
   margin: 0 auto;
