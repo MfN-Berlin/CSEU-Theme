@@ -1377,6 +1377,9 @@ table.no-border th, table.no-border td {
   .tb-megamenu ul.tb-megamenu-subnav .nav-child li a {
     border-color: #FFF; }
 
+.tb-megamenu-main-menu .tb-megamenu-nav li.tb-megamenu-item:last-child a {
+  border-right-color: #E07B00; }
+
 .cseu-login-menu-block {
   background-color: #FAEAD6; }
   .cseu-login-menu-block a {

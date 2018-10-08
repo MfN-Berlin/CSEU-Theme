@@ -157,6 +157,17 @@
 }//.tb-megamenu
 
 
+.tb-megamenu-main-menu {
+  .tb-megamenu-nav {
+    li.tb-megamenu-item:last-child {
+      a {
+        border-right-color: $navigation-bg-color;  
+      }
+    }
+  }
+}
+
+
 // Login block
 .cseu-login-menu-block {
   background-color: $block_bg_color;
@@ -172,3 +183,5 @@
     margin-top: 1em;
   }
 }
+
+
