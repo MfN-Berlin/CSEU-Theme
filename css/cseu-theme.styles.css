@@ -600,6 +600,10 @@ img.file-media-cseu-cover-photo {
   font-size: 14px;
   line-height: 1.4; }
 
+.cseu-article-teaser-header-container .cseu-article-teaser-date-bold {
+  font-weight: 600;
+  color: #4d4d4d; }
+
 .cseu-article-teaser-header-container h2.cseu-article-teaser-title-smaller,
 .cseu-article-teaser-header-container h2.cseu-article-teaser-title-bold {
   width: 100%; }
@@ -652,6 +656,9 @@ img.file-media-cseu-cover-photo {
       display: table-cell;
       vertical-align: top;
       padding-left: 1em; } }
+
+.cseu-article-teaser-content-container.without-teaser-image {
+  padding-left: 0; }
 
 .view-cseu-internal-user-list-view td,
 .view-cseu-internal-user-interest-view td,

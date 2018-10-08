@@ -42,6 +42,10 @@
     font-size: $date-font-size;
     line-height: $date-line-height;
   }
+  .cseu-article-teaser-date-bold {
+    font-weight: 600;
+    color: #4d4d4d;
+  }
   h2.cseu-article-teaser-title-smaller,
   h2.cseu-article-teaser-title-bold {
     width: 100%;
@@ -109,6 +113,11 @@
     }
   }
 }
+.cseu-article-teaser-content-container.without-teaser-image {
+  padding-left: 0;
+}
+
+
 
 // Internals
 .view-cseu-internal-user-list-view td,
