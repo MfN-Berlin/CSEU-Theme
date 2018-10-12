@@ -12,3 +12,13 @@ cd cseu_theme/
 
 npm install
 ```
+## Usage
+Create CSS files for development
+```
+npm run sass:dev
+```
+
+Create CSS file for production
+```
+npm run sass:prod
+```
