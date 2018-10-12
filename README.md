@@ -7,6 +7,8 @@ Omega 4 based CSEU theme.
 # Installation
 ```
 git clone https://github.com/MfN-Berlin/CSEU-Theme.git cseu_theme
+
 cd cseu_theme/
+
 npm install
 ```
