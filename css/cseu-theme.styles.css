@@ -950,22 +950,28 @@ table.views-table {
 .cseu-event-category-44 {
   color: #A03800; }
 
-.page-events ul.tabs--primary {
+.page-events ul.tabs--primary,
+.page-training-schools ul.tabs--primary {
   display: -ms-flex;
   display: -ms-flexbox;
   display: flex; }
-  .page-events ul.tabs--primary li {
+  .page-events ul.tabs--primary li,
+  .page-training-schools ul.tabs--primary li {
     display: inline-block;
     list-style: none; }
-    .page-events ul.tabs--primary li a {
+    .page-events ul.tabs--primary li a,
+    .page-training-schools ul.tabs--primary li a {
       background-color: #FAEAD6;
       color: #A03800; }
-  .page-events ul.tabs--primary li.active a {
+  .page-events ul.tabs--primary li.active a,
+  .page-training-schools ul.tabs--primary li.active a {
     background-color: #F3DCC5;
     font-weight: bold; }
-  .page-events ul.tabs--primary li:not(:last-of-type) {
+  .page-events ul.tabs--primary li:not(:last-of-type),
+  .page-training-schools ul.tabs--primary li:not(:last-of-type) {
     margin: 0 8px; }
-  .page-events ul.tabs--primary li:last-of-type {
+  .page-events ul.tabs--primary li:last-of-type,
+  .page-training-schools ul.tabs--primary li:last-of-type {
     margin-left: auto; }
 
 @media (max-width: 479px) {
