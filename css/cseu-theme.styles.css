@@ -383,7 +383,8 @@ body {
   .l-branding {
     height: 155px; }
     .l-branding img {
-      margin-top: 20px; } }
+      margin-top: 20px;
+      margin-left: 12px; } }
 
 .l-branding img {
   width: 100%;
