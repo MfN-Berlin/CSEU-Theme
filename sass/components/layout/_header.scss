@@ -30,8 +30,10 @@
     }
   } 
   @include breakpoint($desk, true) {
-    padding: $vert-spacing-unit;
-    padding-bottom: 0;
+    height: 155px;
+    img {
+      margin-top: $vert-spacing-unit;
+    }
   } 
 
   img {

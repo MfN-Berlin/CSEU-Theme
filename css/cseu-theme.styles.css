@@ -296,13 +296,13 @@ body {
 
 @media (min-width: 980px) {
   .l-header .l-branding {
-    width: 28.53067%;
+    width: 24.96879%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
   .l-header .l-region--header {
-    width: 71.398%;
+    width: 74.96879%;
     float: right;
     margin-left: 0;
     margin-right: 0;
@@ -381,8 +381,9 @@ body {
 
 @media (min-width: 980px) {
   .l-branding {
-    padding: 20px;
-    padding-bottom: 0; } }
+    height: 155px; }
+    .l-branding img {
+      margin-top: 20px; } }
 
 .l-branding img {
   width: 100%;
